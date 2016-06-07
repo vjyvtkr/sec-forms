@@ -1,0 +1,643 @@
+<?xml version="1.0" encoding="US-ASCII"?>
+<!--XBRL Document Created with Wdesk from Workiva, formerly WebFilings-->
+<!-- -->
+<xsd:schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://www.corelab.com/20141231" xmlns:clb="http://www.corelab.com/20141231" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:nonnum="http://www.xbrl.org/dtr/type/non-numeric" xmlns:num="http://www.xbrl.org/dtr/type/numeric" xmlns:xbrldt="http://xbrl.org/2005/xbrldt" xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:import namespace="http://fasb.org/us-gaap/2013-01-31" schemaLocation="http://xbrl.fasb.org/us-gaap/2013/elts/us-gaap-2013-01-31.xsd" />
+  <xsd:import namespace="http://fasb.org/us-roles/2013-01-31" schemaLocation="http://xbrl.fasb.org/us-gaap/2013/elts/us-roles-2013-01-31.xsd" />
+  <xsd:import namespace="http://fasb.org/us-types/2013-01-31" schemaLocation="http://xbrl.fasb.org/us-gaap/2013/elts/us-types-2013-01-31.xsd" />
+  <xsd:import namespace="http://www.xbrl.org/2003/instance" schemaLocation="http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd" />
+  <xsd:import namespace="http://www.xbrl.org/2003/linkbase" schemaLocation="http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd" />
+  <xsd:import namespace="http://www.xbrl.org/2009/arcrole/fact-explanatoryFact" schemaLocation="http://www.xbrl.org/lrr/arcrole/factExplanatory-2009-12-16.xsd" />
+  <xsd:import namespace="http://www.xbrl.org/2009/role/negated" schemaLocation="http://www.xbrl.org/lrr/role/negated-2009-12-16.xsd" />
+  <xsd:import namespace="http://www.xbrl.org/2009/role/net" schemaLocation="http://www.xbrl.org/lrr/role/net-2009-12-16.xsd" />
+  <xsd:import namespace="http://www.xbrl.org/dtr/type/non-numeric" schemaLocation="http://www.xbrl.org/dtr/type/nonNumeric-2009-12-16.xsd" />
+  <xsd:import namespace="http://www.xbrl.org/dtr/type/numeric" schemaLocation="http://www.xbrl.org/dtr/type/numeric-2009-12-16.xsd" />
+  <xsd:import namespace="http://xbrl.org/2005/xbrldt" schemaLocation="http://www.xbrl.org/2005/xbrldt-2005.xsd" />
+  <xsd:import namespace="http://xbrl.sec.gov/country/2013-01-31" schemaLocation="http://xbrl.sec.gov/country/2013/country-2013-01-31.xsd" />
+  <xsd:import namespace="http://xbrl.sec.gov/currency/2012-01-31" schemaLocation="http://xbrl.sec.gov/currency/2012/currency-2012-01-31.xsd" />
+  <xsd:import namespace="http://xbrl.sec.gov/dei/2013-01-31" schemaLocation="http://xbrl.sec.gov/dei/2013/dei-2013-01-31.xsd" />
+  <xsd:import namespace="http://xbrl.sec.gov/exch/2013-01-31" schemaLocation="http://xbrl.sec.gov/exch/2013/exch-2013-01-31.xsd" />
+  <xsd:import namespace="http://xbrl.sec.gov/invest/2013-01-31" schemaLocation="http://xbrl.sec.gov/invest/2013/invest-2013-01-31.xsd" />
+  <xsd:import namespace="http://xbrl.sec.gov/naics/2011-01-31" schemaLocation="http://xbrl.sec.gov/naics/2011/naics-2011-01-31.xsd" />
+  <xsd:import namespace="http://xbrl.sec.gov/sic/2011-01-31" schemaLocation="http://xbrl.sec.gov/sic/2011/sic-2011-01-31.xsd" />
+  <xsd:import namespace="http://xbrl.sec.gov/stpr/2011-01-31" schemaLocation="http://xbrl.sec.gov/stpr/2011/stpr-2011-01-31.xsd" />
+  <xsd:annotation>
+    <xsd:appinfo>
+      <link:linkbaseRef xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="clb-20141231_cal.xml" xlink:role="http://www.xbrl.org/2003/role/calculationLinkbaseRef" xlink:type="simple" />
+      <link:linkbaseRef xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="clb-20141231_def.xml" xlink:role="http://www.xbrl.org/2003/role/definitionLinkbaseRef" xlink:type="simple" />
+      <link:linkbaseRef xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="clb-20141231_lab.xml" xlink:role="http://www.xbrl.org/2003/role/labelLinkbaseRef" xlink:type="simple" />
+      <link:linkbaseRef xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="clb-20141231_pre.xml" xlink:role="http://www.xbrl.org/2003/role/presentationLinkbaseRef" xlink:type="simple" />
+      <link:roleType id="Acquisitions" roleURI="http://www.corelab.com/role/Acquisitions">
+        <link:definition>2107100 - Disclosure - Acquisitions</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="AcquisitionsDetails" roleURI="http://www.corelab.com/role/AcquisitionsDetails">
+        <link:definition>2407402 - Disclosure - Acquisitions (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="AcquisitionsTables" roleURI="http://www.corelab.com/role/AcquisitionsTables">
+        <link:definition>2307301 - Disclosure - Acquisitions (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CommitmentsAndContingencies" roleURI="http://www.corelab.com/role/CommitmentsAndContingencies">
+        <link:definition>2131100 - Disclosure - Commitments and Contingencies</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CommitmentsAndContingenciesDetails" roleURI="http://www.corelab.com/role/CommitmentsAndContingenciesDetails">
+        <link:definition>2431402 - Disclosure - Commitments and Contingencies (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CommitmentsAndContingenciesTables" roleURI="http://www.corelab.com/role/CommitmentsAndContingenciesTables">
+        <link:definition>2331301 - Disclosure - Commitments and Contingencies (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ConsolidatedBalanceSheets" roleURI="http://www.corelab.com/role/ConsolidatedBalanceSheets">
+        <link:definition>1001000 - Statement - Consolidated Balance Sheets</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ConsolidatedBalanceSheetsBalanceSheetParenthetical" roleURI="http://www.corelab.com/role/ConsolidatedBalanceSheetsBalanceSheetParenthetical">
+        <link:definition>1001001 - Statement - Consolidated Balance Sheets Balance Sheet Parenthetical</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ConsolidatedStatementOfOtherComprehensiveIncome" roleURI="http://www.corelab.com/role/ConsolidatedStatementOfOtherComprehensiveIncome">
+        <link:definition>1005000 - Statement - Consolidated Statement of Other Comprehensive Income</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DebtAndCapitalLeaseObligations" roleURI="http://www.corelab.com/role/DebtAndCapitalLeaseObligations">
+        <link:definition>2122100 - Disclosure - Debt and Capital Lease Obligations</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DebtAndCapitalLeaseObligationsDetails" roleURI="http://www.corelab.com/role/DebtAndCapitalLeaseObligationsDetails">
+        <link:definition>2422402 - Disclosure - Debt and Capital Lease Obligations (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DebtAndCapitalLeaseObligationsTables" roleURI="http://www.corelab.com/role/DebtAndCapitalLeaseObligationsTables">
+        <link:definition>2322301 - Disclosure - Debt and Capital Lease Obligations (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DeiDocument" roleURI="http://www.corelab.com/role/DeiDocument">
+        <link:definition>0001000 - Document - DEI Document</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DerivativeInstrumentsDerivativeGainLossDetails" roleURI="http://www.corelab.com/role/DerivativeInstrumentsDerivativeGainLossDetails">
+        <link:definition>2440403 - Disclosure - Derivative Instruments Derivative gain loss (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DerivativeInstrumentsDetails" roleURI="http://www.corelab.com/role/DerivativeInstrumentsDetails">
+        <link:definition>2440402 - Disclosure - Derivative Instruments (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DerivativeInstrumentsNotes" roleURI="http://www.corelab.com/role/DerivativeInstrumentsNotes">
+        <link:definition>2140100 - Disclosure - Derivative Instruments (Notes)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DerivativeInstrumentsTables" roleURI="http://www.corelab.com/role/DerivativeInstrumentsTables">
+        <link:definition>2340301 - Disclosure - Derivative Instruments (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DescriptionOfBusiness" roleURI="http://www.corelab.com/role/DescriptionOfBusiness">
+        <link:definition>2101100 - Disclosure - Description of Business</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DescriptionOfBusinessDetails" roleURI="http://www.corelab.com/role/DescriptionOfBusinessDetails">
+        <link:definition>2401402 - Disclosure - Description of Business (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DescriptionOfBusinessTables" roleURI="http://www.corelab.com/role/DescriptionOfBusinessTables">
+        <link:definition>2301301 - Disclosure - Description of Business (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="Equity" roleURI="http://www.corelab.com/role/Equity">
+        <link:definition>2134100 - Disclosure - Equity</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EquityDetails" roleURI="http://www.corelab.com/role/EquityDetails">
+        <link:definition>2434402 - Disclosure - Equity (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EquityTables" roleURI="http://www.corelab.com/role/EquityTables">
+        <link:definition>2334301 - Disclosure - Equity (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FinancialInstrumentsDetails" roleURI="http://www.corelab.com/role/FinancialInstrumentsDetails">
+        <link:definition>2443402 - Disclosure - Financial Instruments (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FinancialInstrumentsNotes" roleURI="http://www.corelab.com/role/FinancialInstrumentsNotes">
+        <link:definition>2143100 - Disclosure - Financial Instruments (Notes)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FinancialInstrumentsTables" roleURI="http://www.corelab.com/role/FinancialInstrumentsTables">
+        <link:definition>2343301 - Disclosure - Financial Instruments (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="Goodwill" roleURI="http://www.corelab.com/role/Goodwill">
+        <link:definition>2119100 - Disclosure - Goodwill</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="GoodwillDetails" roleURI="http://www.corelab.com/role/GoodwillDetails">
+        <link:definition>2419402 - Disclosure - Goodwill (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="GoodwillTables" roleURI="http://www.corelab.com/role/GoodwillTables">
+        <link:definition>2319301 - Disclosure - Goodwill (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxes" roleURI="http://www.corelab.com/role/IncomeTaxes">
+        <link:definition>2125100 - Disclosure - Income Taxes</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxesDeferredTaxAssetsLiabilitiesDetails" roleURI="http://www.corelab.com/role/IncomeTaxesDeferredTaxAssetsLiabilitiesDetails">
+        <link:definition>2425405 - Disclosure - Income Taxes Deferred Tax Assets Liabilities (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxesDetails" roleURI="http://www.corelab.com/role/IncomeTaxesDetails">
+        <link:definition>2425402 - Disclosure - Income Taxes (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxesEquityDetails" roleURI="http://www.corelab.com/role/IncomeTaxesEquityDetails">
+        <link:definition>2425407 - Disclosure - Income Taxes Equity (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxesIncomeBeforeIncomeTaxesDetails" roleURI="http://www.corelab.com/role/IncomeTaxesIncomeBeforeIncomeTaxesDetails">
+        <link:definition>2425404 - Disclosure - Income Taxes Income Before Income Taxes (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxesIncomeTaxContingencyDetails" roleURI="http://www.corelab.com/role/IncomeTaxesIncomeTaxContingencyDetails">
+        <link:definition>2425406 - Disclosure - Income Taxes Income Tax Contingency (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxesIncomeTaxExpenseIncomeTaxReconciliationDetails" roleURI="http://www.corelab.com/role/IncomeTaxesIncomeTaxExpenseIncomeTaxReconciliationDetails">
+        <link:definition>2425403 - Disclosure - Income Taxes Income tax expense, income tax reconciliation (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxesSummaryOfValuationAllowanceDetails" roleURI="http://www.corelab.com/role/IncomeTaxesSummaryOfValuationAllowanceDetails">
+        <link:definition>2425408 - Disclosure - Income Taxes Summary of Valuation Allowance (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxesTables" roleURI="http://www.corelab.com/role/IncomeTaxesTables">
+        <link:definition>2325301 - Disclosure - Income Taxes (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="Intangibles" roleURI="http://www.corelab.com/role/Intangibles">
+        <link:definition>2116100 - Disclosure - Intangibles</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IntangiblesDetails" roleURI="http://www.corelab.com/role/IntangiblesDetails">
+        <link:definition>2416402 - Disclosure - Intangibles (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IntangiblesTables" roleURI="http://www.corelab.com/role/IntangiblesTables">
+        <link:definition>2316301 - Disclosure - Intangibles (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="Inventories" roleURI="http://www.corelab.com/role/Inventories">
+        <link:definition>2110100 - Disclosure - Inventories</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="InventoriesDetails" roleURI="http://www.corelab.com/role/InventoriesDetails">
+        <link:definition>2410402 - Disclosure - Inventories (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="InventoriesTables" roleURI="http://www.corelab.com/role/InventoriesTables">
+        <link:definition>2310301 - Disclosure - Inventories (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="OtherIncomeExpense" roleURI="http://www.corelab.com/role/OtherIncomeExpense">
+        <link:definition>2146100 - Disclosure - Other (Income) Expense</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="OtherIncomeExpenseDetails" roleURI="http://www.corelab.com/role/OtherIncomeExpenseDetails">
+        <link:definition>2446402 - Disclosure - Other (Income) Expense (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="OtherIncomeExpenseForeignCurrencyGainLossByCurrencyDetails" roleURI="http://www.corelab.com/role/OtherIncomeExpenseForeignCurrencyGainLossByCurrencyDetails">
+        <link:definition>2446403 - Disclosure - Other (Income) Expense Foreign Currency Gain Loss by Currency (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="OtherIncomeExpenseTables" roleURI="http://www.corelab.com/role/OtherIncomeExpenseTables">
+        <link:definition>2346301 - Disclosure - Other (Income) Expense (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="PensionAndOtherPostretirementBenefitPlans" roleURI="http://www.corelab.com/role/PensionAndOtherPostretirementBenefitPlans">
+        <link:definition>2128100 - Disclosure - Pension and Other Postretirement Benefit Plans</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="PensionAndOtherPostretirementBenefitPlansComponentsOfNetPeriodicPensionCostsDetails" roleURI="http://www.corelab.com/role/PensionAndOtherPostretirementBenefitPlansComponentsOfNetPeriodicPensionCostsDetails">
+        <link:definition>2428405 - Disclosure - Pension and Other Postretirement Benefit Plans Components of Net Periodic Pension Costs (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="PensionAndOtherPostretirementBenefitPlansDeferredCompensationArrangementsDetails" roleURI="http://www.corelab.com/role/PensionAndOtherPostretirementBenefitPlansDeferredCompensationArrangementsDetails">
+        <link:definition>2428408 - Disclosure - Pension and Other Postretirement Benefit Plans Deferred Compensation Arrangements (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="PensionAndOtherPostretirementBenefitPlansDefinedContributionPlansDetails" roleURI="http://www.corelab.com/role/PensionAndOtherPostretirementBenefitPlansDefinedContributionPlansDetails">
+        <link:definition>2428407 - Disclosure - Pension and Other Postretirement Benefit Plans Defined Contribution Plans (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="PensionAndOtherPostretirementBenefitPlansDetails" roleURI="http://www.corelab.com/role/PensionAndOtherPostretirementBenefitPlansDetails">
+        <link:definition>2428402 - Disclosure - Pension and Other Postretirement Benefit Plans (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="PensionAndOtherPostretirementBenefitPlansScheduleOfAmountsRecognizedInBalanceSheetDetails" roleURI="http://www.corelab.com/role/PensionAndOtherPostretirementBenefitPlansScheduleOfAmountsRecognizedInBalanceSheetDetails">
+        <link:definition>2428403 - Disclosure - Pension and Other Postretirement Benefit Plans Schedule of Amounts Recognized in Balance Sheet (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="PensionAndOtherPostretirementBenefitPlansScheduleOfExpectedBenefitPaymentsDetails" roleURI="http://www.corelab.com/role/PensionAndOtherPostretirementBenefitPlansScheduleOfExpectedBenefitPaymentsDetails">
+        <link:definition>2428406 - Disclosure - Pension and Other Postretirement Benefit Plans Schedule of Expected Benefit Payments (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="PensionAndOtherPostretirementBenefitPlansTables" roleURI="http://www.corelab.com/role/PensionAndOtherPostretirementBenefitPlansTables">
+        <link:definition>2328301 - Disclosure - Pension and Other Postretirement Benefit Plans (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="PropertyPlantAndEquipment" roleURI="http://www.corelab.com/role/PropertyPlantAndEquipment">
+        <link:definition>2113100 - Disclosure - Property Plant and Equipment</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="PropertyPlantAndEquipmentDetails" roleURI="http://www.corelab.com/role/PropertyPlantAndEquipmentDetails">
+        <link:definition>2413402 - Disclosure - Property Plant and Equipment (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="PropertyPlantAndEquipmentTables" roleURI="http://www.corelab.com/role/PropertyPlantAndEquipmentTables">
+        <link:definition>2313301 - Disclosure - Property Plant and Equipment (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SegmentReporting" roleURI="http://www.corelab.com/role/SegmentReporting">
+        <link:definition>2147100 - Disclosure - Segment Reporting</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SegmentReportingDetails" roleURI="http://www.corelab.com/role/SegmentReportingDetails">
+        <link:definition>2447402 - Disclosure - Segment Reporting (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SegmentReportingRevenueByProductSalesAndServicesDetails" roleURI="http://www.corelab.com/role/SegmentReportingRevenueByProductSalesAndServicesDetails">
+        <link:definition>2447404 - Disclosure - Segment Reporting Revenue by Product Sales and Services (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SegmentReportingScheduleOfRevenuesFromExternalCustomersAndLongLivedAssetsDetails" roleURI="http://www.corelab.com/role/SegmentReportingScheduleOfRevenuesFromExternalCustomersAndLongLivedAssetsDetails">
+        <link:definition>2447403 - Disclosure - Segment Reporting Schedule of Revenues from External Customers and Long-Lived Assets (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SegmentReportingTables" roleURI="http://www.corelab.com/role/SegmentReportingTables">
+        <link:definition>2347301 - Disclosure - Segment Reporting (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SignificantAccountingPolicies" roleURI="http://www.corelab.com/role/SignificantAccountingPolicies">
+        <link:definition>2104100 - Disclosure - Significant Accounting Policies</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SignificantAccountingPoliciesAccountsReceivableDetails" roleURI="http://www.corelab.com/role/SignificantAccountingPoliciesAccountsReceivableDetails">
+        <link:definition>2404406 - Disclosure - Significant Accounting Policies Accounts Receivable (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SignificantAccountingPoliciesDerivativeInstrumentsPolicyPolicies" roleURI="http://www.corelab.com/role/SignificantAccountingPoliciesDerivativeInstrumentsPolicyPolicies">
+        <link:definition>2204202 - Disclosure - Significant Accounting Policies Derivative Instruments Policy (Policies)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SignificantAccountingPoliciesDetails" roleURI="http://www.corelab.com/role/SignificantAccountingPoliciesDetails">
+        <link:definition>2404404 - Disclosure - Significant Accounting Policies (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SignificantAccountingPoliciesForeignCurrencyDetails" roleURI="http://www.corelab.com/role/SignificantAccountingPoliciesForeignCurrencyDetails">
+        <link:definition>2404407 - Disclosure - Significant Accounting Policies Foreign Currency (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SignificantAccountingPoliciesOtherAssetsDetails" roleURI="http://www.corelab.com/role/SignificantAccountingPoliciesOtherAssetsDetails">
+        <link:definition>2404405 - Disclosure - Significant Accounting Policies Other Assets (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SignificantAccountingPoliciesPolicies" roleURI="http://www.corelab.com/role/SignificantAccountingPoliciesPolicies">
+        <link:definition>2204201 - Disclosure - Significant Accounting Policies (Policies)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SignificantAccountingPoliciesTables" roleURI="http://www.corelab.com/role/SignificantAccountingPoliciesTables">
+        <link:definition>2304303 - Disclosure - Significant Accounting Policies (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="StatementOfCashFlows" roleURI="http://www.corelab.com/role/StatementOfCashFlows">
+        <link:definition>1003000 - Statement - Statement of Cash Flows</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="StatementOfIncome" roleURI="http://www.corelab.com/role/StatementOfIncome">
+        <link:definition>1002000 - Statement - Statement of Income</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="StatementOfShareholdersEquity" roleURI="http://www.corelab.com/role/StatementOfShareholdersEquity">
+        <link:definition>1004000 - Statement - Statement of Shareholders' Equity</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="StockBasedCompensation" roleURI="http://www.corelab.com/role/StockBasedCompensation">
+        <link:definition>2137100 - Disclosure - Stock-based Compensation</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="StockBasedCompensationDetails" roleURI="http://www.corelab.com/role/StockBasedCompensationDetails">
+        <link:definition>2437402 - Disclosure - Stock-based Compensation (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="StockBasedCompensationEmployeeServiceShareBasedCompensationAllocationOfCostsDetails" roleURI="http://www.corelab.com/role/StockBasedCompensationEmployeeServiceShareBasedCompensationAllocationOfCostsDetails">
+        <link:definition>2437403 - Disclosure - Stock-based Compensation Employee Service Share-based Compensation, Allocation of Costs (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="StockBasedCompensationShareBasedCompensationByPaymentAwardDetails" roleURI="http://www.corelab.com/role/StockBasedCompensationShareBasedCompensationByPaymentAwardDetails">
+        <link:definition>2437404 - Disclosure - Stock-based Compensation Share Based Compensation by Payment Award (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="StockBasedCompensationStockBasedCompensationPhantomDetails" roleURI="http://www.corelab.com/role/StockBasedCompensationStockBasedCompensationPhantomDetails">
+        <link:definition>2437405 - Disclosure - Stock-based Compensation Stock Based Compensation Phantom (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="StockBasedCompensationTables" roleURI="http://www.corelab.com/role/StockBasedCompensationTables">
+        <link:definition>2337301 - Disclosure - Stock-based Compensation (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="UnauditedSelectedQuarterlyResultsOfOperations" roleURI="http://www.corelab.com/role/UnauditedSelectedQuarterlyResultsOfOperations">
+        <link:definition>2148100 - Disclosure - Unaudited Selected Quarterly Results of Operations</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="UnauditedSelectedQuarterlyResultsOfOperationsDetails" roleURI="http://www.corelab.com/role/UnauditedSelectedQuarterlyResultsOfOperationsDetails">
+        <link:definition>2448402 - Disclosure - Unaudited Selected Quarterly Results of Operations (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="UnauditedSelectedQuarterlyResultsOfOperationsTables" roleURI="http://www.corelab.com/role/UnauditedSelectedQuarterlyResultsOfOperationsTables">
+        <link:definition>2348301 - Disclosure - Unaudited Selected Quarterly Results of Operations (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+    </xsd:appinfo>
+  </xsd:annotation>
+  <xsd:element id="clb_AccountsPayablePolicyTextBlock" name="AccountsPayablePolicyTextBlock" nillable="true" substitutionGroup="xbrli:item" type="nonnum:textBlockItemType" xbrli:periodType="duration" />
+  <xsd:element id="clb_AccumulatedAmortization" name="AccumulatedAmortization" nillable="true" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType" xbrli:balance="credit" xbrli:periodType="instant" />
+  <xsd:element abstract="true" id="clb_AcquisitionsAbstract" name="AcquisitionsAbstract" nillable="true" substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="clb_AustraliandollarMember" name="AustraliandollarMember" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="clb_BalanceSheetAbstract" name="BalanceSheetAbstract" nillable="true" substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="clb_BritishPoundMember" name="BritishPoundMember" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="clb_CanadianDollarMember" name="CanadianDollarMember" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="clb_CashFlowAbstract" name="CashFlowAbstract" nillable="true" substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="clb_CommitmentsAndContingenciesAbstract" name="CommitmentsAndContingenciesAbstract" nillable="true" substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration" />
+  <xsd:element id="clb_CommonStockDividendsPerShareCashPaidPerQuarter" name="CommonStockDividendsPerShareCashPaidPerQuarter" nillable="true" substitutionGroup="xbrli:item" type="num:perShareItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="clb_ComponenetOfForeignCurrenciesGainLossAxis" name="ComponenetOfForeignCurrenciesGainLossAxis" nillable="true" substitutionGroup="xbrldt:dimensionItem" type="xbrli:stringItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="clb_ComponentOfNonIncomeTaxBenefitExpenseAxis" name="ComponentOfNonIncomeTaxBenefitExpenseAxis" nillable="true" substitutionGroup="xbrldt:dimensionItem" type="xbrli:stringItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="clb_ComponentofOtherOperatingCostLineItems" name="ComponentofOtherOperatingCostLineItems" nillable="true" substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="clb_ComponentofOtherOperatingCostTable" name="ComponentofOtherOperatingCostTable" nillable="true" substitutionGroup="xbrldt:hypercubeItem" type="xbrli:stringItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="clb_ComponentofgainlossoninsurancerecoveryAxis" name="ComponentofgainlossoninsurancerecoveryAxis" nillable="true" substitutionGroup="xbrldt:dimensionItem" type="xbrli:stringItemType" xbrli:periodType="duration" />
+  <xsd:element id="clb_ComprehensiveIncomePolicyTextBlock" name="ComprehensiveIncomePolicyTextBlock" nillable="true" substitutionGroup="xbrli:item" type="nonnum:textBlockItemType" xbrli:periodType="duration" />
+  <xsd:element id="clb_ConcentrationOfCreditRiskPolicyTextBlock" name="ConcentrationOfCreditRiskPolicyTextBlock" nillable="true" substitutionGroup="xbrli:item" type="nonnum:textBlockItemType" xbrli:periodType="duration" />
+  <xsd:element id="clb_ConcentrationofInterestRateRiskPolicyTextBlock" name="ConcentrationofInterestRateRiskPolicyTextBlock" nillable="true" substitutionGroup="xbrli:item" type="nonnum:textBlockItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="clb_ConcentrationofinterestrateriskLineItems" name="ConcentrationofinterestrateriskLineItems" nillable="true" substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="clb_ConcentrationofinterestrateriskTable" name="ConcentrationofinterestrateriskTable" nillable="true" substitutionGroup="xbrldt:hypercubeItem" type="xbrli:stringItemType" xbrli:periodType="duration" />
+  <xsd:element id="clb_CostOfServicesAndGoodsSold" name="CostOfServicesAndGoodsSold" nillable="true" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType" xbrli:balance="debit" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="clb_CostOfServicesAndSalesExclusiveOfDepreciationMember" name="CostOfServicesAndSalesExclusiveOfDepreciationMember" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="clb_DebtAbstract" name="DebtAbstract" nillable="true" substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration" />
+  <xsd:element id="clb_DefinedBenefitPlanAdministrativeExpenses" name="DefinedBenefitPlanAdministrativeExpenses" nillable="true" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType" xbrli:balance="debit" xbrli:periodType="duration" />
+  <xsd:element id="clb_DerivativeFixedRateandDebtInstrumentBasisSpreadonVariableRate" name="DerivativeFixedRateandDebtInstrumentBasisSpreadonVariableRate" nillable="true" substitutionGroup="xbrli:item" type="num:percentItemType" xbrli:periodType="instant" />
+  <xsd:element abstract="true" id="clb_DescriptionOfBusinessAbstract" name="DescriptionOfBusinessAbstract" nillable="true" substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="clb_DirectorStockAwardProgramMember" name="DirectorStockAwardProgramMember" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="clb_DocumentEntityInformationAbstract" name="DocumentEntityInformationAbstract" nillable="true" substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="clb_EmployeeStockAwardProgramMember" name="EmployeeStockAwardProgramMember" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="clb_EuroMember" name="EuroMember" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="clb_ForeignCurrencyExchangeGainsLossesByCurrencyTable" name="ForeignCurrencyExchangeGainsLossesByCurrencyTable" nillable="true" substitutionGroup="xbrldt:hypercubeItem" type="xbrli:stringItemType" xbrli:periodType="duration" />
+  <xsd:element id="clb_ForeignCurrencyGainsLossesByCurrencyTableTextBlock" name="ForeignCurrencyGainsLossesByCurrencyTableTextBlock" nillable="true" substitutionGroup="xbrli:item" type="nonnum:textBlockItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="clb_ForeignCurrencyTypeAxis" name="ForeignCurrencyTypeAxis" nillable="true" substitutionGroup="xbrldt:dimensionItem" type="xbrli:stringItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="clb_GainLossOnInsuranceRecoveryMember" name="GainLossOnInsuranceRecoveryMember" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="clb_GainlossonsaleofassetMember" name="GainlossonsaleofassetMember" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element id="clb_GeneralAndAdministrativeExpenseExcludingDepreciation" name="GeneralAndAdministrativeExpenseExcludingDepreciation" nillable="true" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType" xbrli:balance="debit" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="clb_GeneralAndAdminstrativeExpenseExclusiveOfDepreciationMember" name="GeneralAndAdminstrativeExpenseExclusiveOfDepreciationMember" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="clb_GoodwillAbstract" name="GoodwillAbstract" nillable="true" substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration" />
+  <xsd:element id="clb_IncomeBeforeInterestExpenseAndTaxes" name="IncomeBeforeInterestExpenseAndTaxes" nillable="true" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType" xbrli:balance="credit" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="clb_IncomeTaxesAbstract" name="IncomeTaxesAbstract" nillable="true" substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration" />
+  <xsd:element id="clb_IncrementalCommonSharesAttributableToStockOptions" name="IncrementalCommonSharesAttributableToStockOptions" nillable="true" substitutionGroup="xbrli:item" type="xbrli:sharesItemType" xbrli:periodType="duration" />
+  <xsd:element id="clb_IntangibleAssetsGross" name="IntangibleAssetsGross" nillable="true" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType" xbrli:balance="debit" xbrli:periodType="instant" />
+  <xsd:element abstract="true" id="clb_IntangiblesAbstract" name="IntangiblesAbstract" nillable="true" substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration" />
+  <xsd:element id="clb_InterestExpenseAndGainLossOnExtinguishmentOfDebt" name="InterestExpenseAndGainLossOnExtinguishmentOfDebt" nillable="true" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType" xbrli:balance="debit" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="clb_InterestRateSwapDomain" name="InterestRateSwapDomain" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="clb_InterestRateSwapNo.1Member" name="InterestRateSwapNo.1Member" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="clb_InterestRateSwapNo.2Member" name="InterestRateSwapNo.2Member" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="clb_InventoriesAbstract" name="InventoriesAbstract" nillable="true" substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="clb_InventoryTable" name="InventoryTable" nillable="true" substitutionGroup="xbrldt:hypercubeItem" type="xbrli:stringItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="clb_LegalEntityRealignmentMember" name="LegalEntityRealignmentMember" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="clb_MalaysianRinggitMember" name="MalaysianRinggitMember" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="clb_MexicanPesoMember" name="MexicanPesoMember" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="clb_NigerianNairaMember" name="NigerianNairaMember" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="clb_NonIncomeTaxLiabilityDomain" name="NonIncomeTaxLiabilityDomain" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="clb_NonIncomeTaxRelatedBenefitExpenseMember" name="NonIncomeTaxRelatedBenefitExpenseMember" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element id="clb_NoncontrollingInterestsPolicyTextBlock" name="NoncontrollingInterestsPolicyTextBlock" nillable="true" substitutionGroup="xbrli:item" type="nonnum:textBlockItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="clb_OperatingSegmentCorporateAndOtherMember" name="OperatingSegmentCorporateAndOtherMember" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="clb_OperatingSegmentProductionEnhancementMember" name="OperatingSegmentProductionEnhancementMember" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="clb_OperatingSegmentReservoirDescriptionMember" name="OperatingSegmentReservoirDescriptionMember" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="clb_OperatingSegmentReservoirManagementMember" name="OperatingSegmentReservoirManagementMember" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element id="clb_OtherAssetsPolicyTextBlock" name="OtherAssetsPolicyTextBlock" nillable="true" substitutionGroup="xbrli:item" type="nonnum:textBlockItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="clb_OtherCountriesMember" name="OtherCountriesMember" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="clb_OtherCurrenciesNetMember" name="OtherCurrenciesNetMember" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="clb_OtherIncomeExpenseNetAbstract" name="OtherIncomeExpenseNetAbstract" nillable="true" substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration" />
+  <xsd:element id="clb_OtherOperatingExpenses" name="OtherOperatingExpenses" nillable="true" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType" xbrli:balance="debit" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="clb_OtherOperatingExpensesLineItems" name="OtherOperatingExpensesLineItems" nillable="true" substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="clb_PensionAndOtherPostretirementBenefitPlansAbstract" name="PensionAndOtherPostretirementBenefitPlansAbstract" nillable="true" substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration" />
+  <xsd:element id="clb_PerformanceBonds" name="PerformanceBonds" nillable="true" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType" xbrli:balance="credit" xbrli:periodType="instant" />
+  <xsd:element id="clb_PerformanceBondsUnderCreditFacility" name="PerformanceBondsUnderCreditFacility" nillable="true" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType" xbrli:balance="credit" xbrli:periodType="instant" />
+  <xsd:element abstract="true" id="clb_PerformanceShareAwardProgram2011GrantMember" name="PerformanceShareAwardProgram2011GrantMember" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="clb_PerformanceShareAwardProgram2012GrantMember" name="PerformanceShareAwardProgram2012GrantMember" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="clb_PerformanceShareAwardProgram2013GrantDomain" name="PerformanceShareAwardProgram2013GrantDomain" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="clb_PerformanceShareAwardProgramGrantsAxis" name="PerformanceShareAwardProgramGrantsAxis" nillable="true" substitutionGroup="xbrldt:dimensionItem" type="xbrli:stringItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="clb_PerformanceShareAwardProgramMember" name="PerformanceShareAwardProgramMember" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="clb_PotentialincometaxinterestandpenaltyLineItems" name="PotentialincometaxinterestandpenaltyLineItems" nillable="true" substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration" />
+  <xsd:element id="clb_PrepaidExpensesAndOtherCurrentAssetsPolicyTextBlock" name="PrepaidExpensesAndOtherCurrentAssetsPolicyTextBlock" nillable="true" substitutionGroup="xbrli:item" type="nonnum:textBlockItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="clb_ProductionEnhancementSegmentMember" name="ProductionEnhancementSegmentMember" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="clb_RegistrationexpenseeuronextMember" name="RegistrationexpenseeuronextMember" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="clb_RentsAndRoyaltiesIncomeLossMember" name="RentsAndRoyaltiesIncomeLossMember" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="clb_ReservoirDescriptionSegmentMember" name="ReservoirDescriptionSegmentMember" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="clb_ReservoirManagementSegmentMember" name="ReservoirManagementSegmentMember" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="clb_RestrictedShareAwardProgramMember" name="RestrictedShareAwardProgramMember" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="clb_ScheduleOfShareBasedCompensationArrangementsByShareBasedPaymentAwardsTypeAxis" name="ScheduleOfShareBasedCompensationArrangementsByShareBasedPaymentAwardsTypeAxis" nillable="true" substitutionGroup="xbrldt:dimensionItem" type="xbrli:stringItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="clb_ScheduleOfShareBasedCompensationArrangementsByShareBasedPaymentAwardsTypeDomain" name="ScheduleOfShareBasedCompensationArrangementsByShareBasedPaymentAwardsTypeDomain" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="clb_ScheduleofAccumulatedOtherComprehensiveIncomeAbstract" name="ScheduleofAccumulatedOtherComprehensiveIncomeAbstract" nillable="true" substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="clb_SeniorNotesSeriesBMember" name="SeniorNotesSeriesBMember" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="clb_SeniorNotesSeriesMember" name="SeniorNotesSeriesMember" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="clb_ShareAwardRecipientAxis" name="ShareAwardRecipientAxis" nillable="true" substitutionGroup="xbrldt:dimensionItem" type="xbrli:stringItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="clb_ShareBasedCompensationSharesAuthorizedUnderStockOptionPlansExercisePriceRangeRange2Member" name="ShareBasedCompensationSharesAuthorizedUnderStockOptionPlansExercisePriceRangeRange2Member" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="clb_ShareBasedCompensationSharesAuthorizedUnderStockOptionPlansExercisePriceRangeRange3Member" name="ShareBasedCompensationSharesAuthorizedUnderStockOptionPlansExercisePriceRangeRange3Member" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="clb_ShareBasedCompensationSharesAuthorizedUnderStockOptionPlansExercisePriceRangeRange4Member" name="ShareBasedCompensationSharesAuthorizedUnderStockOptionPlansExercisePriceRangeRange4Member" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="clb_ShareBasedCompensationSharesAuthorizedUnderStockOptionPlansExercisePriceRangeRange5Member" name="ShareBasedCompensationSharesAuthorizedUnderStockOptionPlansExercisePriceRangeRange5Member" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="clb_ShareBasedCompensationSharesAuthorizedUnderStockOptionsPlansByExercisePriceRangeRange1Member" name="ShareBasedCompensationSharesAuthorizedUnderStockOptionsPlansByExercisePriceRangeRange1Member" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="clb_StatementOfChangesInEquityAbstract" name="StatementOfChangesInEquityAbstract" nillable="true" substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="clb_StockBasedCompensationAbstract" name="StockBasedCompensationAbstract" nillable="true" substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration" />
+  <xsd:element id="clb_Stockcompsharessurrendered" name="Stockcompsharessurrendered" nillable="true" substitutionGroup="xbrli:item" type="xbrli:sharesItemType" xbrli:periodType="duration" />
+  <xsd:element id="clb_Stockcompsharessurrenderedpershareprice" name="Stockcompsharessurrenderedpershareprice" nillable="true" substitutionGroup="xbrli:item" type="num:perShareItemType" xbrli:periodType="duration" />
+  <xsd:element id="clb_Stockcompsharessurrenderedvalue" name="Stockcompsharessurrenderedvalue" nillable="true" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType" xbrli:balance="debit" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="clb_SummaryOfSignificantAccountingPoliciesAbstract" name="SummaryOfSignificantAccountingPoliciesAbstract" nillable="true" substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="clb_TotalForeignCurrencyNetDomain" name="TotalForeignCurrencyNetDomain" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="clb_TotalPerformanceShareAwardProgramGrantsDomain" name="TotalPerformanceShareAwardProgramGrantsDomain" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="clb_TotalRestrictedStockAwardMember" name="TotalRestrictedStockAwardMember" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="clb_TotalStockAwardProgramsDomain" name="TotalStockAwardProgramsDomain" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="clb_TotalgainlossoninsurancerecoveryDomain" name="TotalgainlossoninsurancerecoveryDomain" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="clb_TradeNameInfiniteLivedMember" name="TradeNameInfiniteLivedMember" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element id="clb_TreasurySharesRemainingSharesAuthorizedToBePurchased" name="TreasurySharesRemainingSharesAuthorizedToBePurchased" nillable="true" substitutionGroup="xbrli:item" type="xbrli:sharesItemType" xbrli:periodType="instant" />
+  <xsd:element abstract="true" id="clb_UnauditedSelectedQuarterlyResultsOfOperationsAbstract" name="UnauditedSelectedQuarterlyResultsOfOperationsAbstract" nillable="true" substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration" />
+</xsd:schema>

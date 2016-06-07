@@ -1,0 +1,1227 @@
+<?xml version="1.0" encoding="US-ASCII"?>
+<!--XBRL Document Created with Wdesk from Workiva, formerly WebFilings-->
+<!-- -->
+<xsd:schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://www.sandisk.com/20141228" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:nonnum="http://www.xbrl.org/dtr/type/non-numeric" xmlns:num="http://www.xbrl.org/dtr/type/numeric" xmlns:sndk="http://www.sandisk.com/20141228" xmlns:us-types="http://fasb.org/us-types/2014-01-31" xmlns:xbrldt="http://xbrl.org/2005/xbrldt" xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:import namespace="http://fasb.org/us-gaap/2014-01-31" schemaLocation="http://xbrl.fasb.org/us-gaap/2014/elts/us-gaap-2014-01-31.xsd" />
+  <xsd:import namespace="http://fasb.org/us-roles/2014-01-31" schemaLocation="http://xbrl.fasb.org/us-gaap/2014/elts/us-roles-2014-01-31.xsd" />
+  <xsd:import namespace="http://fasb.org/us-types/2014-01-31" schemaLocation="http://xbrl.fasb.org/us-gaap/2014/elts/us-types-2014-01-31.xsd" />
+  <xsd:import namespace="http://www.xbrl.org/2003/instance" schemaLocation="http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd" />
+  <xsd:import namespace="http://www.xbrl.org/2003/linkbase" schemaLocation="http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd" />
+  <xsd:import namespace="http://www.xbrl.org/2009/arcrole/fact-explanatoryFact" schemaLocation="http://www.xbrl.org/lrr/arcrole/factExplanatory-2009-12-16.xsd" />
+  <xsd:import namespace="http://www.xbrl.org/2009/role/negated" schemaLocation="http://www.xbrl.org/lrr/role/negated-2009-12-16.xsd" />
+  <xsd:import namespace="http://www.xbrl.org/2009/role/net" schemaLocation="http://www.xbrl.org/lrr/role/net-2009-12-16.xsd" />
+  <xsd:import namespace="http://www.xbrl.org/dtr/type/non-numeric" schemaLocation="http://www.xbrl.org/dtr/type/nonNumeric-2009-12-16.xsd" />
+  <xsd:import namespace="http://www.xbrl.org/dtr/type/numeric" schemaLocation="http://www.xbrl.org/dtr/type/numeric-2009-12-16.xsd" />
+  <xsd:import namespace="http://xbrl.org/2005/xbrldt" schemaLocation="http://www.xbrl.org/2005/xbrldt-2005.xsd" />
+  <xsd:import namespace="http://xbrl.sec.gov/country/2013-01-31" schemaLocation="http://xbrl.sec.gov/country/2013/country-2013-01-31.xsd" />
+  <xsd:import namespace="http://xbrl.sec.gov/currency/2014-01-31" schemaLocation="http://xbrl.sec.gov/currency/2014/currency-2014-01-31.xsd" />
+  <xsd:import namespace="http://xbrl.sec.gov/dei/2014-01-31" schemaLocation="http://xbrl.sec.gov/dei/2014/dei-2014-01-31.xsd" />
+  <xsd:import namespace="http://xbrl.sec.gov/exch/2014-01-31" schemaLocation="http://xbrl.sec.gov/exch/2014/exch-2014-01-31.xsd" />
+  <xsd:import namespace="http://xbrl.sec.gov/invest/2013-01-31" schemaLocation="http://xbrl.sec.gov/invest/2013/invest-2013-01-31.xsd" />
+  <xsd:import namespace="http://xbrl.sec.gov/naics/2011-01-31" schemaLocation="http://xbrl.sec.gov/naics/2011/naics-2011-01-31.xsd" />
+  <xsd:import namespace="http://xbrl.sec.gov/sic/2011-01-31" schemaLocation="http://xbrl.sec.gov/sic/2011/sic-2011-01-31.xsd" />
+  <xsd:import namespace="http://xbrl.sec.gov/stpr/2011-01-31" schemaLocation="http://xbrl.sec.gov/stpr/2011/stpr-2011-01-31.xsd" />
+  <xsd:annotation>
+    <xsd:appinfo>
+      <link:linkbaseRef xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="sndk-20141228_cal.xml" xlink:role="http://www.xbrl.org/2003/role/calculationLinkbaseRef" xlink:type="simple" />
+      <link:linkbaseRef xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="sndk-20141228_def.xml" xlink:role="http://www.xbrl.org/2003/role/definitionLinkbaseRef" xlink:type="simple" />
+      <link:linkbaseRef xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="sndk-20141228_lab.xml" xlink:role="http://www.xbrl.org/2003/role/labelLinkbaseRef" xlink:type="simple" />
+      <link:linkbaseRef xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="sndk-20141228_pre.xml" xlink:role="http://www.xbrl.org/2003/role/presentationLinkbaseRef" xlink:type="simple" />
+      <link:roleType id="BalanceSheetInformation" roleURI="http://www.sandisk.com/role/BalanceSheetInformation">
+        <link:definition>2105100 - Disclosure - Balance Sheet Information</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="BalanceSheetInformationAociDetails8" roleURI="http://www.sandisk.com/role/BalanceSheetInformationAociDetails8">
+        <link:definition>2405412 - Disclosure - Balance Sheet Information-AOCI (Details 8)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="BalanceSheetInformationAociDetails8Calc2" roleURI="http://www.sandisk.com/role/BalanceSheetInformationAociDetails8Calc2">
+        <link:definition>2405412 - Disclosure - Balance Sheet Information-AOCI (Details 8)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="BalanceSheetInformationArAllowanceDetails1A" roleURI="http://www.sandisk.com/role/BalanceSheetInformationArAllowanceDetails1A">
+        <link:definition>2405404 - Disclosure - Balance Sheet Information-AR Allowance (Details 1A)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="BalanceSheetInformationBalanceSheetInformationPolicies" roleURI="http://www.sandisk.com/role/BalanceSheetInformationBalanceSheetInformationPolicies">
+        <link:definition>2205201 - Disclosure - Balance Sheet Information Balance Sheet Information (Policies)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="BalanceSheetInformationDetailsTextuals" roleURI="http://www.sandisk.com/role/BalanceSheetInformationDetailsTextuals">
+        <link:definition>2405414 - Disclosure - Balance Sheet Information (Details Textuals)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="BalanceSheetInformationEquityInvestmentsDetails4" roleURI="http://www.sandisk.com/role/BalanceSheetInformationEquityInvestmentsDetails4">
+        <link:definition>2405408 - Disclosure - Balance Sheet Information-Equity Investments (Details 4)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="BalanceSheetInformationInventoryDetails2" roleURI="http://www.sandisk.com/role/BalanceSheetInformationInventoryDetails2">
+        <link:definition>2405405 - Disclosure - Balance Sheet Information-Inventory (Details 2)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="BalanceSheetInformationLiabilitiesDetails5" roleURI="http://www.sandisk.com/role/BalanceSheetInformationLiabilitiesDetails5">
+        <link:definition>2405409 - Disclosure - Balance Sheet Information-Liabilities (Details 5)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="BalanceSheetInformationLiabilitiesDetails5Calc2" roleURI="http://www.sandisk.com/role/BalanceSheetInformationLiabilitiesDetails5Calc2">
+        <link:definition>2405409 - Disclosure - Balance Sheet Information-Liabilities (Details 5)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="BalanceSheetInformationOciDetails7" roleURI="http://www.sandisk.com/role/BalanceSheetInformationOciDetails7">
+        <link:definition>2405411 - Disclosure - Balance Sheet Information-OCI (Details 7)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="BalanceSheetInformationOtherAssetsDetails3" roleURI="http://www.sandisk.com/role/BalanceSheetInformationOtherAssetsDetails3">
+        <link:definition>2405406 - Disclosure - Balance Sheet Information-Other Assets (Details 3)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="BalanceSheetInformationPpeDetails3A" roleURI="http://www.sandisk.com/role/BalanceSheetInformationPpeDetails3A">
+        <link:definition>2405407 - Disclosure - Balance Sheet Information-PPE (Details 3A)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="BalanceSheetInformationReceivablesDetails1" roleURI="http://www.sandisk.com/role/BalanceSheetInformationReceivablesDetails1">
+        <link:definition>2405403 - Disclosure - Balance Sheet Information-Receivables (Details 1)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="BalanceSheetInformationTables" roleURI="http://www.sandisk.com/role/BalanceSheetInformationTables">
+        <link:definition>2305302 - Disclosure - Balance Sheet Information (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="BalanceSheetInformationWarrantyDetails6" roleURI="http://www.sandisk.com/role/BalanceSheetInformationWarrantyDetails6">
+        <link:definition>2405410 - Disclosure - Balance Sheet Information-Warranty (Details 6)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="BusinessAcquisition" roleURI="http://www.sandisk.com/role/BusinessAcquisition">
+        <link:definition>2124100 - Disclosure - Business Acquisition</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="BusinessAcquisitionBusinessAcquisitionEquityValuationAssumptionsDetails2" roleURI="http://www.sandisk.com/role/BusinessAcquisitionBusinessAcquisitionEquityValuationAssumptionsDetails2">
+        <link:definition>2424403 - Disclosure - Business Acquisition Business Acquisition - Equity Valuation Assumptions (Details 2)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="BusinessAcquisitionBusinessAcquisitionFairValueOfIntangibleAssetsDetails4" roleURI="http://www.sandisk.com/role/BusinessAcquisitionBusinessAcquisitionFairValueOfIntangibleAssetsDetails4">
+        <link:definition>2424405 - Disclosure - Business Acquisition Business Acquisition - Fair Value of Intangible Assets (Details 4)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="BusinessAcquisitionDetailsTextuals" roleURI="http://www.sandisk.com/role/BusinessAcquisitionDetailsTextuals">
+        <link:definition>2424406 - Disclosure - Business Acquisition (Details Textuals)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="BusinessAcquisitionFairValuesDetails3" roleURI="http://www.sandisk.com/role/BusinessAcquisitionFairValuesDetails3">
+        <link:definition>2424404 - Disclosure - Business Acquisition - Fair Values (Details 3)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="BusinessAcquisitionPurchasePriceDetails1" roleURI="http://www.sandisk.com/role/BusinessAcquisitionPurchasePriceDetails1">
+        <link:definition>2424402 - Disclosure - Business Acquisition - Purchase Price (Details 1)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="BusinessAcquisitionTables" roleURI="http://www.sandisk.com/role/BusinessAcquisitionTables">
+        <link:definition>2324301 - Disclosure - Business Acquisition (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CommitmentsContingenciesAndGuarantees" roleURI="http://www.sandisk.com/role/CommitmentsContingenciesAndGuarantees">
+        <link:definition>2121100 - Disclosure - Commitments, Contingencies and Guarantees</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CommitmentsContingenciesAndGuaranteesCommitmentTblDetails3" roleURI="http://www.sandisk.com/role/CommitmentsContingenciesAndGuaranteesCommitmentTblDetails3">
+        <link:definition>2421404 - Disclosure - Commitments, Contingencies and Guarantees-Commitment Tbl (Details 3)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CommitmentsContingenciesAndGuaranteesCommitmentsContingenciesAndGuaranteesOffBalanceSheetArrangementsDetailsTextuals5" roleURI="http://www.sandisk.com/role/CommitmentsContingenciesAndGuaranteesCommitmentsContingenciesAndGuaranteesOffBalanceSheetArrangementsDetailsTextuals5">
+        <link:definition>2421411 - Disclosure - Commitments, Contingencies and Guarantees Commitments, Contingencies and Guarantees-Off-balance Sheet Arrangements (Details Textuals 5)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CommitmentsContingenciesAndGuaranteesContractualObligationTableDetailsTextual4" roleURI="http://www.sandisk.com/role/CommitmentsContingenciesAndGuaranteesContractualObligationTableDetailsTextual4">
+        <link:definition>2421410 - Disclosure - Commitments, Contingencies and Guarantees-Contractual Obligation Table (Details Textual 4)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CommitmentsContingenciesAndGuaranteesFutureLeaseObligationDetails5" roleURI="http://www.sandisk.com/role/CommitmentsContingenciesAndGuaranteesFutureLeaseObligationDetails5">
+        <link:definition>2421406 - Disclosure - Commitments, Contingencies and Guarantees-Future Lease Obligation (Details 5)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CommitmentsContingenciesAndGuaranteesIndemnityDetailsTextual3" roleURI="http://www.sandisk.com/role/CommitmentsContingenciesAndGuaranteesIndemnityDetailsTextual3">
+        <link:definition>2421409 - Disclosure - Commitments, Contingencies and Guarantees-Indemnity (Details Textual 3)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CommitmentsContingenciesAndGuaranteesJvDetailsTextual1" roleURI="http://www.sandisk.com/role/CommitmentsContingenciesAndGuaranteesJvDetailsTextual1">
+        <link:definition>2421408 - Disclosure - Commitments, Contingencies and Guarantees-JV (Details Textual 1)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CommitmentsContingenciesAndGuaranteesJvLeaseAmountsDetails2" roleURI="http://www.sandisk.com/role/CommitmentsContingenciesAndGuaranteesJvLeaseAmountsDetails2">
+        <link:definition>2421403 - Disclosure - Commitments, Contingencies and Guarantees-JV Lease Amounts (Details 2)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CommitmentsContingenciesAndGuaranteesJvLeasesDetails1" roleURI="http://www.sandisk.com/role/CommitmentsContingenciesAndGuaranteesJvLeasesDetails1">
+        <link:definition>2421402 - Disclosure - Commitments, Contingencies and Guarantees-JV Leases (Details 1)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CommitmentsContingenciesAndGuaranteesOffBalanceSheetTblDetails4" roleURI="http://www.sandisk.com/role/CommitmentsContingenciesAndGuaranteesOffBalanceSheetTblDetails4">
+        <link:definition>2421405 - Disclosure - Commitments, Contingencies and Guarantees-Off-Balance Sheet Tbl (Details 4)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CommitmentsContingenciesAndGuaranteesOperatingLeasesDetailsTextual6" roleURI="http://www.sandisk.com/role/CommitmentsContingenciesAndGuaranteesOperatingLeasesDetailsTextual6">
+        <link:definition>2421412 - Disclosure - Commitments, Contingencies and Guarantees-Operating Leases (Details Textual 6)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CommitmentsContingenciesAndGuaranteesRentExpenseDetails6" roleURI="http://www.sandisk.com/role/CommitmentsContingenciesAndGuaranteesRentExpenseDetails6">
+        <link:definition>2421407 - Disclosure - Commitments, Contingencies and Guarantees-Rent Expense (Details 6)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CommitmentsContingenciesAndGuaranteesTables" roleURI="http://www.sandisk.com/role/CommitmentsContingenciesAndGuaranteesTables">
+        <link:definition>2321301 - Disclosure - Commitments Contingencies and Guarantees (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ConcentrationOfRiskAndSegmentInformation" roleURI="http://www.sandisk.com/role/ConcentrationOfRiskAndSegmentInformation">
+        <link:definition>2113100 - Disclosure - Concentration of Risk and Segment Information</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ConcentrationOfRiskAndSegmentInformationDetails1" roleURI="http://www.sandisk.com/role/ConcentrationOfRiskAndSegmentInformationDetails1">
+        <link:definition>2413402 - Disclosure - Concentration of Risk and Segment Information (Details 1)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ConcentrationOfRiskAndSegmentInformationDetails2" roleURI="http://www.sandisk.com/role/ConcentrationOfRiskAndSegmentInformationDetails2">
+        <link:definition>2413403 - Disclosure - Concentration of Risk and Segment Information (Details 2)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ConcentrationOfRiskAndSegmentInformationDetailsTextual" roleURI="http://www.sandisk.com/role/ConcentrationOfRiskAndSegmentInformationDetailsTextual">
+        <link:definition>2413404 - Disclosure - Concentration of Risk and Segment Information (Details Textual)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ConcentrationOfRiskAndSegmentInformationTables" roleURI="http://www.sandisk.com/role/ConcentrationOfRiskAndSegmentInformationTables">
+        <link:definition>2313301 - Disclosure - Concentration of Risk and Segment Information (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ConsolidatedBalanceSheets" roleURI="http://www.sandisk.com/role/ConsolidatedBalanceSheets">
+        <link:definition>1001000 - Statement - Consolidated Balance Sheets</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ConsolidatedBalanceSheetsParentheticals" roleURI="http://www.sandisk.com/role/ConsolidatedBalanceSheetsParentheticals">
+        <link:definition>1001001 - Statement - Consolidated Balance Sheets Parentheticals</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ConsolidatedStatementOfEquity" roleURI="http://www.sandisk.com/role/ConsolidatedStatementOfEquity">
+        <link:definition>1005000 - Statement - Consolidated Statement of Equity</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ConsolidatedStatementsOfCashFlows" roleURI="http://www.sandisk.com/role/ConsolidatedStatementsOfCashFlows">
+        <link:definition>1006000 - Statement - Consolidated Statements of Cash Flows</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ConsolidatedStatementsOfComprehensiveIncomeLoss" roleURI="http://www.sandisk.com/role/ConsolidatedStatementsOfComprehensiveIncomeLoss">
+        <link:definition>1003000 - Statement - Consolidated Statements of Comprehensive Income (Loss)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ConsolidatedStatementsOfOperations" roleURI="http://www.sandisk.com/role/ConsolidatedStatementsOfOperations">
+        <link:definition>1002000 - Statement - Consolidated Statements of Operations</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ConsolidatedStatementsOfOperationsCalc2" roleURI="http://www.sandisk.com/role/ConsolidatedStatementsOfOperationsCalc2">
+        <link:definition>1002000 - Statement - Consolidated Statements of Operations</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DerivativesAndHedgingActivities" roleURI="http://www.sandisk.com/role/DerivativesAndHedgingActivities">
+        <link:definition>2104100 - Disclosure - Derivatives and Hedging Activities</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DerivativesAndHedgingActivitiesDerivativeAndHedgingActivitiesPolicies" roleURI="http://www.sandisk.com/role/DerivativesAndHedgingActivitiesDerivativeAndHedgingActivitiesPolicies">
+        <link:definition>2204201 - Disclosure - Derivatives and Hedging Activities Derivative and Hedging Activities (Policies)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DerivativesAndHedgingActivitiesDerivativeContractsDetails2" roleURI="http://www.sandisk.com/role/DerivativesAndHedgingActivitiesDerivativeContractsDetails2">
+        <link:definition>2404404 - Disclosure - Derivatives and Hedging Activities - Derivative Contracts (Details 2)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DerivativesAndHedgingActivitiesDerivativesAndHedgingActivitiesCashFlowHedgeDetailsTextuals" roleURI="http://www.sandisk.com/role/DerivativesAndHedgingActivitiesDerivativesAndHedgingActivitiesCashFlowHedgeDetailsTextuals">
+        <link:definition>2404408 - Disclosure - Derivatives and Hedging Activities Derivatives and Hedging Activities - Cash Flow Hedge (Details Textuals)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DerivativesAndHedgingActivitiesDerivativesAndHedgingActivitiesGainsLossesAndNettingActivitiesDetailsTextuals" roleURI="http://www.sandisk.com/role/DerivativesAndHedgingActivitiesDerivativesAndHedgingActivitiesGainsLossesAndNettingActivitiesDetailsTextuals">
+        <link:definition>2404409 - Disclosure - Derivatives and Hedging Activities Derivatives and Hedging Activities - Gains (Losses) and Netting Activities (Details Textuals)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DerivativesAndHedgingActivitiesDerivativesAndHedgingActivitiesOutstandingDesignatedForwardContractsDetails1" roleURI="http://www.sandisk.com/role/DerivativesAndHedgingActivitiesDerivativesAndHedgingActivitiesOutstandingDesignatedForwardContractsDetails1">
+        <link:definition>2404403 - Disclosure - Derivatives and Hedging Activities Derivatives and Hedging Activities - Outstanding Designated Forward Contracts (Details 1)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DerivativesAndHedgingActivitiesEffectOfNonDesignatedContractsDetails5" roleURI="http://www.sandisk.com/role/DerivativesAndHedgingActivitiesEffectOfNonDesignatedContractsDetails5">
+        <link:definition>2404407 - Disclosure - Derivatives and Hedging Activities - Effect of Non-designated Contracts (Details 5)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DerivativesAndHedgingActivitiesImpactOnEarningsDetails3" roleURI="http://www.sandisk.com/role/DerivativesAndHedgingActivitiesImpactOnEarningsDetails3">
+        <link:definition>2404405 - Disclosure - Derivatives and Hedging Activities - Impact on Earnings (Details 3)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DerivativesAndHedgingActivitiesIneffectivePortionDetails4" roleURI="http://www.sandisk.com/role/DerivativesAndHedgingActivitiesIneffectivePortionDetails4">
+        <link:definition>2404406 - Disclosure - Derivatives and Hedging Activities - Ineffective Portion (Details 4)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DerivativesAndHedgingActivitiesTables" roleURI="http://www.sandisk.com/role/DerivativesAndHedgingActivitiesTables">
+        <link:definition>2304302 - Disclosure - Derivatives and Hedging Activities (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DocumentAndEntityInformation" roleURI="http://www.sandisk.com/role/DocumentAndEntityInformation">
+        <link:definition>0001000 - Document - Document and Entity Information</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EquityAndShareBasedCompensationTables" roleURI="http://www.sandisk.com/role/EquityAndShareBasedCompensationTables">
+        <link:definition>2314301 - Disclosure - Equity and Share-Based Compensation (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FinancingArrangements" roleURI="http://www.sandisk.com/role/FinancingArrangements">
+        <link:definition>2111100 - Disclosure - Financing Arrangements</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FinancingArrangementsCarryingValueAndInterestDetails1" roleURI="http://www.sandisk.com/role/FinancingArrangementsCarryingValueAndInterestDetails1">
+        <link:definition>2411402 - Disclosure - Financing Arrangements-Carrying Value and Interest (Details 1)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FinancingArrangementsDetailsTextuals" roleURI="http://www.sandisk.com/role/FinancingArrangementsDetailsTextuals">
+        <link:definition>2411405 - Disclosure - Financing Arrangements (Details Textuals)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FinancingArrangementsInterestDetails2" roleURI="http://www.sandisk.com/role/FinancingArrangementsInterestDetails2">
+        <link:definition>2411403 - Disclosure - Financing Arrangements-Interest (Details 2)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FinancingArrangementsTables" roleURI="http://www.sandisk.com/role/FinancingArrangementsTables">
+        <link:definition>2311301 - Disclosure - Financing Arrangements (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="GoodwillAndIntangibleAssets" roleURI="http://www.sandisk.com/role/GoodwillAndIntangibleAssets">
+        <link:definition>2107100 - Disclosure - Goodwill and Intangible Assets</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="GoodwillAndIntangibleAssetsDetailsTextual" roleURI="http://www.sandisk.com/role/GoodwillAndIntangibleAssetsDetailsTextual">
+        <link:definition>2407405 - Disclosure - Goodwill and Intangible Assets (Details Textual)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="GoodwillAndIntangibleAssetsGoodwillDetails1" roleURI="http://www.sandisk.com/role/GoodwillAndIntangibleAssetsGoodwillDetails1">
+        <link:definition>2407402 - Disclosure - Goodwill and Intangible Assets-Goodwill (Details 1)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="GoodwillAndIntangibleAssetsIntangibleAmortizationDetails3" roleURI="http://www.sandisk.com/role/GoodwillAndIntangibleAssetsIntangibleAmortizationDetails3">
+        <link:definition>2407404 - Disclosure - Goodwill and Intangible Assets-Intangible Amortization (Details 3)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="GoodwillAndIntangibleAssetsIntangiblesDetails2" roleURI="http://www.sandisk.com/role/GoodwillAndIntangibleAssetsIntangiblesDetails2">
+        <link:definition>2407403 - Disclosure - Goodwill and Intangible Assets-Intangibles (Details 2)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="GoodwillAndIntangibleAssetsTables" roleURI="http://www.sandisk.com/role/GoodwillAndIntangibleAssetsTables">
+        <link:definition>2307301 - Disclosure - Goodwill and Intangible Assets (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxes" roleURI="http://www.sandisk.com/role/IncomeTaxes">
+        <link:definition>2118100 - Disclosure - Income Taxes</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxesDetailsTextuals" roleURI="http://www.sandisk.com/role/IncomeTaxesDetailsTextuals">
+        <link:definition>2418407 - Disclosure - Income Taxes (Details Textuals)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxesIncomeTaxesDeferredTaxAssetsLiabilitiesDetails4" roleURI="http://www.sandisk.com/role/IncomeTaxesIncomeTaxesDeferredTaxAssetsLiabilitiesDetails4">
+        <link:definition>2418405 - Disclosure - Income Taxes Income Taxes - Deferred Tax Assets (Liabilities) (Details 4)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxesIncomeTaxesProvisionByCountryDetails2" roleURI="http://www.sandisk.com/role/IncomeTaxesIncomeTaxesProvisionByCountryDetails2">
+        <link:definition>2418403 - Disclosure - Income Taxes Income Taxes - Provision by Country (Details 2)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxesIncomeTaxesProvisionDetails1" roleURI="http://www.sandisk.com/role/IncomeTaxesIncomeTaxesProvisionDetails1">
+        <link:definition>2418402 - Disclosure - Income Taxes Income Taxes - Provision (Details 1)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxesIncomeTaxesReconciliationDetails3" roleURI="http://www.sandisk.com/role/IncomeTaxesIncomeTaxesReconciliationDetails3">
+        <link:definition>2418404 - Disclosure - Income Taxes Income Taxes - Reconciliation (Details 3)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxesIncomeTaxesUnrecognizedTaxBenefitReconciliationDetails5" roleURI="http://www.sandisk.com/role/IncomeTaxesIncomeTaxesUnrecognizedTaxBenefitReconciliationDetails5">
+        <link:definition>2418406 - Disclosure - Income Taxes Income Taxes - Unrecognized Tax Benefit Reconciliation (Details 5)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxesTables" roleURI="http://www.sandisk.com/role/IncomeTaxesTables">
+        <link:definition>2318301 - Disclosure - Income Taxes (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="InvestmentsAndFairValueMeasurements" roleURI="http://www.sandisk.com/role/InvestmentsAndFairValueMeasurements">
+        <link:definition>2103100 - Disclosure - Investments and Fair Value Measurements</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="InvestmentsAndFairValueMeasurementsAfsFvAndUnrealizedLossesDetails5" roleURI="http://www.sandisk.com/role/InvestmentsAndFairValueMeasurementsAfsFvAndUnrealizedLossesDetails5">
+        <link:definition>2403407 - Disclosure - Investments and Fair Value Measurements-AFS FV and Unrealized Losses (Details 5)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="InvestmentsAndFairValueMeasurementsAfsInvestmentsDetails4" roleURI="http://www.sandisk.com/role/InvestmentsAndFairValueMeasurementsAfsInvestmentsDetails4">
+        <link:definition>2403406 - Disclosure - Investments and Fair Value Measurements-AFS Investments (Details 4)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="InvestmentsAndFairValueMeasurementsAfsRealizedGainsAndLossesDetails6" roleURI="http://www.sandisk.com/role/InvestmentsAndFairValueMeasurementsAfsRealizedGainsAndLossesDetails6">
+        <link:definition>2403408 - Disclosure - Investments and Fair Value Measurements-AFS Realized Gains and Losses (Details 6)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="InvestmentsAndFairValueMeasurementsCashAndMktSecuritiesDetails1" roleURI="http://www.sandisk.com/role/InvestmentsAndFairValueMeasurementsCashAndMktSecuritiesDetails1">
+        <link:definition>2403403 - Disclosure - Investments and Fair Value Measurements-Cash and Mkt Securities (Details 1)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="InvestmentsAndFairValueMeasurementsDebtInstrumentFvDetails8" roleURI="http://www.sandisk.com/role/InvestmentsAndFairValueMeasurementsDebtInstrumentFvDetails8">
+        <link:definition>2403410 - Disclosure - Investments and Fair Value Measurements-Debt Instrument FV (Details 8)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="InvestmentsAndFairValueMeasurementsDetailsTextual" roleURI="http://www.sandisk.com/role/InvestmentsAndFairValueMeasurementsDetailsTextual">
+        <link:definition>2403411 - Disclosure - Investments and Fair Value Measurements (Details Textual)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="InvestmentsAndFairValueMeasurementsFinAssetsAndLiabilities1Details2" roleURI="http://www.sandisk.com/role/InvestmentsAndFairValueMeasurementsFinAssetsAndLiabilities1Details2">
+        <link:definition>2403404 - Disclosure - Investments and Fair Value Measurements-Fin Assets and Liabilities 1 (Details 2)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="InvestmentsAndFairValueMeasurementsFinAssetsAndLiabilities2Details3" roleURI="http://www.sandisk.com/role/InvestmentsAndFairValueMeasurementsFinAssetsAndLiabilities2Details3">
+        <link:definition>2403405 - Disclosure - Investments and Fair Value Measurements-Fin Assets and Liabilities 2 (Details 3)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="InvestmentsAndFairValueMeasurementsFixedIncomeMaturitiesDetails7" roleURI="http://www.sandisk.com/role/InvestmentsAndFairValueMeasurementsFixedIncomeMaturitiesDetails7">
+        <link:definition>2403409 - Disclosure - Investments and Fair Value Measurements-Fixed Income Maturities (Details 7)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="InvestmentsAndFairValueMeasurementsInvestmentsAndFairValueMeasurementsPolicies" roleURI="http://www.sandisk.com/role/InvestmentsAndFairValueMeasurementsInvestmentsAndFairValueMeasurementsPolicies">
+        <link:definition>2203201 - Disclosure - Investments and Fair Value Measurements Investments and Fair Value Measurements (Policies)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="InvestmentsAndFairValueMeasurementsTables" roleURI="http://www.sandisk.com/role/InvestmentsAndFairValueMeasurementsTables">
+        <link:definition>2303302 - Disclosure - Investments and Fair Value Measurements (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="Litigation" roleURI="http://www.sandisk.com/role/Litigation">
+        <link:definition>2125100 - Disclosure - Litigation</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LitigationLitigationLiabilityDetailsTextuals" roleURI="http://www.sandisk.com/role/LitigationLitigationLiabilityDetailsTextuals">
+        <link:definition>2425401 - Disclosure - Litigation Litigation Liability (Details Textuals)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="NetIncomePerShare" roleURI="http://www.sandisk.com/role/NetIncomePerShare">
+        <link:definition>2120100 - Disclosure - Net Income Per Share</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="NetIncomePerShareDetails" roleURI="http://www.sandisk.com/role/NetIncomePerShareDetails">
+        <link:definition>2420402 - Disclosure - Net Income Per Share (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="NetIncomePerShareTables" roleURI="http://www.sandisk.com/role/NetIncomePerShareTables">
+        <link:definition>2320301 - Disclosure - Net Income Per Share (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="OrganizationAndSummaryOfSignificantAccountingPolicies" roleURI="http://www.sandisk.com/role/OrganizationAndSummaryOfSignificantAccountingPolicies">
+        <link:definition>2101100 - Disclosure - Organization and Summary of Significant Accounting Policies</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="OrganizationAndSummaryOfSignificantAccountingPoliciesDetailsTextuals" roleURI="http://www.sandisk.com/role/OrganizationAndSummaryOfSignificantAccountingPoliciesDetailsTextuals">
+        <link:definition>2401402 - Disclosure - Organization and Summary of Significant Accounting Policies (Details Textuals)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="OrganizationAndSummaryOfSignificantAccountingPoliciesPolicies" roleURI="http://www.sandisk.com/role/OrganizationAndSummaryOfSignificantAccountingPoliciesPolicies">
+        <link:definition>2201201 - Disclosure - Organization and Summary of Significant Accounting Policies (Policies)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RecentAccountingPronouncements" roleURI="http://www.sandisk.com/role/RecentAccountingPronouncements">
+        <link:definition>2102100 - Disclosure - Recent Accounting Pronouncements</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RecentAccountingPronouncementsDetailsTextuals" roleURI="http://www.sandisk.com/role/RecentAccountingPronouncementsDetailsTextuals">
+        <link:definition>2401403 - Disclosure - Recent Accounting Pronouncements (Details Textuals)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RelatedPartiesAndStrategicInvestments" roleURI="http://www.sandisk.com/role/RelatedPartiesAndStrategicInvestments">
+        <link:definition>2122100 - Disclosure - Related Parties and Strategic Investments</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RelatedPartiesAndStrategicInvestmentsDetails1" roleURI="http://www.sandisk.com/role/RelatedPartiesAndStrategicInvestmentsDetails1">
+        <link:definition>2422402 - Disclosure - Related Parties and Strategic Investments (Details 1)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RelatedPartiesAndStrategicInvestmentsDetails2" roleURI="http://www.sandisk.com/role/RelatedPartiesAndStrategicInvestmentsDetails2">
+        <link:definition>2422403 - Disclosure - Related Parties and Strategic Investments (Details 2)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RelatedPartiesAndStrategicInvestmentsDetailsTextual" roleURI="http://www.sandisk.com/role/RelatedPartiesAndStrategicInvestmentsDetailsTextual">
+        <link:definition>2422404 - Disclosure - Related Parties and Strategic Investments (Details Textual)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RelatedPartiesAndStrategicInvestmentsTables" roleURI="http://www.sandisk.com/role/RelatedPartiesAndStrategicInvestmentsTables">
+        <link:definition>2322301 - Disclosure - Related Parties and Strategic Investments (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RestructuringAndOtherRelatedActivities" roleURI="http://www.sandisk.com/role/RestructuringAndOtherRelatedActivities">
+        <link:definition>2116100 - Disclosure - Restructuring and Other Related Activities</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RestructuringAndOtherRelatedActivitiesAccrualDetails2" roleURI="http://www.sandisk.com/role/RestructuringAndOtherRelatedActivitiesAccrualDetails2">
+        <link:definition>2416403 - Disclosure - Restructuring and Other Related Activities - Accrual (Details 2)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RestructuringAndOtherRelatedActivitiesDetailsTextuals" roleURI="http://www.sandisk.com/role/RestructuringAndOtherRelatedActivitiesDetailsTextuals">
+        <link:definition>2416404 - Disclosure - Restructuring and Other Related Activities (Details Textuals)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RestructuringAndOtherRelatedActivitiesRestructuringAndOtherRelatedActivitiesExpenseDetails1" roleURI="http://www.sandisk.com/role/RestructuringAndOtherRelatedActivitiesRestructuringAndOtherRelatedActivitiesExpenseDetails1">
+        <link:definition>2416402 - Disclosure - Restructuring and Other Related Activities Restructuring and Other Related Activities - Expense (Details 1)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RestructuringAndOtherRelatedActivitiesTables" roleURI="http://www.sandisk.com/role/RestructuringAndOtherRelatedActivitiesTables">
+        <link:definition>2316301 - Disclosure - Restructuring and Other Related Activities (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ShareBasedCompensationActivityDetailsTextuals1" roleURI="http://www.sandisk.com/role/ShareBasedCompensationActivityDetailsTextuals1">
+        <link:definition>2414409 - Disclosure - Share-Based Compensation-Activity (Details Textuals 1)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ShareBasedCompensationExpenseRecognitionDetails4" roleURI="http://www.sandisk.com/role/ShareBasedCompensationExpenseRecognitionDetails4">
+        <link:definition>2414407 - Disclosure - Share-Based Compensation-Expense Recognition (Details 4)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ShareBasedCompensationGrantDateFairValueOfVestedAwardsDetails5" roleURI="http://www.sandisk.com/role/ShareBasedCompensationGrantDateFairValueOfVestedAwardsDetails5">
+        <link:definition>2414408 - Disclosure - Share-Based Compensation-Grant Date Fair Value of Vested Awards (Details 5)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ShareBasedCompensationOptionRollforwardDetails2" roleURI="http://www.sandisk.com/role/ShareBasedCompensationOptionRollforwardDetails2">
+        <link:definition>2414405 - Disclosure - Share-Based Compensation-Option Rollforward (Details 2)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ShareBasedCompensationPlanInfoDetailsTextuals2" roleURI="http://www.sandisk.com/role/ShareBasedCompensationPlanInfoDetailsTextuals2">
+        <link:definition>2414410 - Disclosure - Share-Based Compensation-Plan Info (Details Textuals 2)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ShareBasedCompensationRsuRollforwardDetails3" roleURI="http://www.sandisk.com/role/ShareBasedCompensationRsuRollforwardDetails3">
+        <link:definition>2414406 - Disclosure - Share-Based Compensation-RSU Rollforward (Details 3)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ShareBasedCompensationValuationParametersDetails1" roleURI="http://www.sandisk.com/role/ShareBasedCompensationValuationParametersDetails1">
+        <link:definition>2414404 - Disclosure - Share-Based Compensation-Valuation Parameters (Details 1)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ShareRepurchases" roleURI="http://www.sandisk.com/role/ShareRepurchases">
+        <link:definition>2112100 - Disclosure - Share Repurchases</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ShareRepurchasesDetailsTextuals" roleURI="http://www.sandisk.com/role/ShareRepurchasesDetailsTextuals">
+        <link:definition>2412402 - Disclosure - Share Repurchases (Details Textuals)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="StockholdersEquityAndShareBasedCompensation" roleURI="http://www.sandisk.com/role/StockholdersEquityAndShareBasedCompensation">
+        <link:definition>2114100 - Disclosure - Stockholders Equity and Share-Based Compensation</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="StockholdersEquityAndShareBasedCompensationDividendDeclarationDetailTextual" roleURI="http://www.sandisk.com/role/StockholdersEquityAndShareBasedCompensationDividendDeclarationDetailTextual">
+        <link:definition>2414403 - Disclosure - Stockholders Equity and Share-Based Compensation Dividend Declaration (Detail Textual)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="StockholdersEquityAndShareBasedCompensationDividendDeclarationDetails1" roleURI="http://www.sandisk.com/role/StockholdersEquityAndShareBasedCompensationDividendDeclarationDetails1">
+        <link:definition>2414402 - Disclosure - Stockholders Equity and Share-Based Compensation Dividend Declaration (Details 1)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="StockholdersRightsPlan" roleURI="http://www.sandisk.com/role/StockholdersRightsPlan">
+        <link:definition>2123100 - Disclosure - Stockholders Rights Plan</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="StockholdersRightsPlanDetailsTextuals" roleURI="http://www.sandisk.com/role/StockholdersRightsPlanDetailsTextuals">
+        <link:definition>2423402 - Disclosure - Stockholders Rights Plan (Details Textuals)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="StockholdersRightsPlanTables" roleURI="http://www.sandisk.com/role/StockholdersRightsPlanTables">
+        <link:definition>2323301 - Disclosure - Stockholders Rights Plan (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SupplementaryFinancialDataDetails1" roleURI="http://www.sandisk.com/role/SupplementaryFinancialDataDetails1">
+        <link:definition>2426402 - Disclosure - Supplementary Financial Data (Details 1)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SupplementaryFinancialDataDetailsTextuals" roleURI="http://www.sandisk.com/role/SupplementaryFinancialDataDetailsTextuals">
+        <link:definition>2426404 - Disclosure - Supplementary Financial Data (Details Textuals)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SupplementaryFinancialDataNotes" roleURI="http://www.sandisk.com/role/SupplementaryFinancialDataNotes">
+        <link:definition>2126100 - Disclosure - Supplementary Financial Data (Notes)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SupplementaryFinancialDataTables" roleURI="http://www.sandisk.com/role/SupplementaryFinancialDataTables">
+        <link:definition>2326301 - Disclosure - Supplementary Financial Data (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+    </xsd:appinfo>
+  </xsd:annotation>
+  <xsd:element abstract="true" id="sndk_A1995IncentivePlanMember" name="A1995IncentivePlanMember" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_A2013IncentivePlanMember" name="A2013IncentivePlanMember" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_AcceleratedShareRepurchaseProgramAbstract" name="AcceleratedShareRepurchaseProgramAbstract" nillable="true" substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_AcceleratedShareRepurchaseProgramMember" name="AcceleratedShareRepurchaseProgramMember" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element id="sndk_AccountsReceivableNetTableTextBlock" name="AccountsReceivableNetTableTextBlock" nillable="true" substitutionGroup="xbrli:item" type="nonnum:textBlockItemType" xbrli:periodType="duration" />
+  <xsd:element id="sndk_AccumulatedDepreciationAmortizationAndDepletionExpensePropertyPlantAndEquipmentCurrentCharge" name="AccumulatedDepreciationAmortizationAndDepletionExpensePropertyPlantAndEquipmentCurrentCharge" nillable="true" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType" xbrli:balance="debit" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_AccumulatedOtherComprehensiveIncomeAbstract" name="AccumulatedOtherComprehensiveIncomeAbstract" nillable="true" substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_AccumulatedOtherComprehensiveIncomeLossAbstract" name="AccumulatedOtherComprehensiveIncomeLossAbstract" nillable="true" substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration" />
+  <xsd:element id="sndk_AccumulatedOtherComprehensiveIncomeLossCumulativeChangesInNetGainLossFromCashFlowHedgeEffectNetOfTax" name="AccumulatedOtherComprehensiveIncomeLossCumulativeChangesInNetGainLossFromCashFlowHedgeEffectNetOfTax" nillable="true" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType" xbrli:balance="credit" xbrli:periodType="duration" />
+  <xsd:element id="sndk_AcquiredInprocessResearchAndDevelopmentEstimatedCostToComplete" name="AcquiredInprocessResearchAndDevelopmentEstimatedCostToComplete" nillable="true" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType" xbrli:balance="debit" xbrli:periodType="instant" />
+  <xsd:element abstract="true" id="sndk_AcquisitionRelatedIntangibleAssetsMember" name="AcquisitionRelatedIntangibleAssetsMember" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element id="sndk_AdditionalCommonStockAddedToReserveKeptForIncentivePlan" name="AdditionalCommonStockAddedToReserveKeptForIncentivePlan" nillable="true" substitutionGroup="xbrli:item" type="xbrli:sharesItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_AdditionalDerivativesAndHedgingActivitiesTextualsAbstract" name="AdditionalDerivativesAndHedgingActivitiesTextualsAbstract" nillable="true" substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration" />
+  <xsd:element id="sndk_AdditionalSupplementaryFinancialDataTextBlock" name="AdditionalSupplementaryFinancialDataTextBlock" nillable="true" substitutionGroup="xbrli:item" type="nonnum:textBlockItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_AdditionsAbstract" name="AdditionsAbstract" nillable="true" substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration" />
+  <xsd:element id="sndk_AdjustmentToAdditionalPaidInCapitalDebtIssuanceCost" name="AdjustmentToAdditionalPaidInCapitalDebtIssuanceCost" nillable="true" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType" xbrli:balance="credit" xbrli:periodType="duration" />
+  <xsd:element id="sndk_AdjustmentsOfFiniteLivedIntangibleAssets" name="AdjustmentsOfFiniteLivedIntangibleAssets" nillable="true" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType" xbrli:balance="credit" xbrli:periodType="instant" />
+  <xsd:element id="sndk_AdjustmentsOfIndefiniteLivedIntangibleAssets" name="AdjustmentsOfIndefiniteLivedIntangibleAssets" nillable="true" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType" xbrli:balance="credit" xbrli:periodType="instant" />
+  <xsd:element id="sndk_AggregateCashReceivedUnderShareRepurchaseArrangement" name="AggregateCashReceivedUnderShareRepurchaseArrangement" nillable="true" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType" xbrli:balance="debit" xbrli:periodType="duration" />
+  <xsd:element id="sndk_AllocationOfAmountOfIncomeTaxBenefitExpenseTableTextBlock" name="AllocationOfAmountOfIncomeTaxBenefitExpenseTableTextBlock" nillable="true" substitutionGroup="xbrli:item" type="nonnum:textBlockItemType" xbrli:periodType="duration" />
+  <xsd:element id="sndk_AllowanceForDoubtfulAccountsTextBlock" name="AllowanceForDoubtfulAccountsTextBlock" nillable="true" substitutionGroup="xbrli:item" type="nonnum:textBlockItemType" xbrli:periodType="duration" />
+  <xsd:element id="sndk_AmortizationOfAcquisitionRelatedIntangibleAssets" name="AmortizationOfAcquisitionRelatedIntangibleAssets" nillable="true" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType" xbrli:balance="debit" xbrli:periodType="duration" />
+  <xsd:element id="sndk_AssetsAndLiabilitiesMeasuredAtFairValueOnRecurringBasisTableTextBlock" name="AssetsAndLiabilitiesMeasuredAtFairValueOnRecurringBasisTableTextBlock" nillable="true" substitutionGroup="xbrli:item" type="nonnum:textBlockItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_BalanceSheetInformationAbstract" name="BalanceSheetInformationAbstract" nillable="true" substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_BalanceSheetInformationArAllowanceAbstract" name="BalanceSheetInformationArAllowanceAbstract" nillable="true" substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_BalanceSheetInformationAxis" name="BalanceSheetInformationAxis" nillable="true" substitutionGroup="xbrldt:dimensionItem" type="xbrli:stringItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_BalanceSheetInformationLineItems" name="BalanceSheetInformationLineItems" nillable="true" substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_BalanceSheetInformationTable" name="BalanceSheetInformationTable" nillable="true" substitutionGroup="xbrldt:hypercubeItem" type="xbrli:stringItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_BalanceSheetInformationTextualsAbstract" name="BalanceSheetInformationTextualsAbstract" nillable="true" substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_BalanceSheetParentheticalAbstract" name="BalanceSheetParentheticalAbstract" nillable="true" substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_BondRedemptionAbstract" name="BondRedemptionAbstract" nillable="true" substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_BusinessAcquisitionAcquiredInprocessResearchandDevelopmentAbstract" name="BusinessAcquisitionAcquiredInprocessResearchandDevelopmentAbstract" nillable="true" substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_BusinessAcquisitionAcquiree1Member" name="BusinessAcquisitionAcquiree1Member" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_BusinessAcquisitionAcquiree2Member" name="BusinessAcquisitionAcquiree2Member" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_BusinessAcquisitionAcquiree3Member" name="BusinessAcquisitionAcquiree3Member" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_BusinessAcquisitionAcquiree4Member" name="BusinessAcquisitionAcquiree4Member" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_BusinessAcquisitionAcquiree5Member" name="BusinessAcquisitionAcquiree5Member" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_BusinessAcquisitionAcquiree6Member" name="BusinessAcquisitionAcquiree6Member" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element id="sndk_BusinessAcquisitionContingentConsiderationCashPayment" name="BusinessAcquisitionContingentConsiderationCashPayment" nillable="true" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType" xbrli:balance="credit" xbrli:periodType="duration" />
+  <xsd:element id="sndk_BusinessAcquisitionContractualPeriodofAdjustment" name="BusinessAcquisitionContractualPeriodofAdjustment" nillable="true" substitutionGroup="xbrli:item" type="xbrli:durationItemType" xbrli:periodType="duration" />
+  <xsd:element id="sndk_BusinessAcquisitionCostOfAcquiredEntityOtherCashConsideration" name="BusinessAcquisitionCostOfAcquiredEntityOtherCashConsideration" nillable="true" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType" xbrli:balance="debit" xbrli:periodType="instant" />
+  <xsd:element id="sndk_BusinessAcquisitionCostOfAcquiredEntityPurchasePriceTableTextBlock" name="BusinessAcquisitionCostOfAcquiredEntityPurchasePriceTableTextBlock" nillable="true" substitutionGroup="xbrli:item" type="nonnum:textBlockItemType" xbrli:periodType="duration" />
+  <xsd:element id="sndk_BusinessAcquisitionEquityInterestsIssuedOrIssuableWeightedAverageAcquisitionDateFairValue" name="BusinessAcquisitionEquityInterestsIssuedOrIssuableWeightedAverageAcquisitionDateFairValue" nillable="true" substitutionGroup="xbrli:item" type="num:perShareItemType" xbrli:periodType="duration" />
+  <xsd:element id="sndk_BusinessAcquisitionEquityInterestsIssuedOrIssuableWeightedAverageExercisePrice" name="BusinessAcquisitionEquityInterestsIssuedOrIssuableWeightedAverageExercisePrice" nillable="true" substitutionGroup="xbrli:item" type="num:perShareItemType" xbrli:periodType="duration" />
+  <xsd:element id="sndk_BusinessAcquisitionFairValueInputsofAssumedEquityAwardsTableTextBlock" name="BusinessAcquisitionFairValueInputsofAssumedEquityAwardsTableTextBlock" nillable="true" substitutionGroup="xbrli:item" type="nonnum:textBlockItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_BusinessAcquisitionOtherAbstract" name="BusinessAcquisitionOtherAbstract" nillable="true" substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_BusinessAcquisitionTextualsAbstract" name="BusinessAcquisitionTextualsAbstract" nillable="true" substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_BusinessAcquisitionTransactionCostsAbstract" name="BusinessAcquisitionTransactionCostsAbstract" nillable="true" substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration" />
+  <xsd:element id="sndk_BusinessCombinationFinitelivedandInfinitelivedIntangibleAssetsAcquired" name="BusinessCombinationFinitelivedandInfinitelivedIntangibleAssetsAcquired" nillable="true" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType" xbrli:balance="debit" xbrli:periodType="duration" />
+  <xsd:element id="sndk_BusinessCombinationRecognizedIdentifiableAssetsAcquiredandLiabilitiesAssumedDeferredTaxAssetsNetNoncurrent" name="BusinessCombinationRecognizedIdentifiableAssetsAcquiredandLiabilitiesAssumedDeferredTaxAssetsNetNoncurrent" nillable="true" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType" xbrli:balance="debit" xbrli:periodType="instant" />
+  <xsd:element id="sndk_Businessacquisitionsellerrefund" name="Businessacquisitionsellerrefund" nillable="true" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType" xbrli:balance="debit" xbrli:periodType="duration" />
+  <xsd:element id="sndk_Businessacquisitionunsettledliability" name="Businessacquisitionunsettledliability" nillable="true" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType" xbrli:balance="credit" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_CapitalEquipmentPurchasesMember" name="CapitalEquipmentPurchasesMember" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element id="sndk_CashAndCashEquivalentsAndMarketableSecuritiesTableTextBlock" name="CashAndCashEquivalentsAndMarketableSecuritiesTableTextBlock" nillable="true" substitutionGroup="xbrli:item" type="nonnum:textBlockItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_CashCashEquivalentsandMarketableSecuritiesAbstract" name="CashCashEquivalentsandMarketableSecuritiesAbstract" nillable="true" substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_CashFlowHedgeOneMember" name="CashFlowHedgeOneMember" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_CashFlowHedgeTwoMember" name="CashFlowHedgeTwoMember" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_CommitmentsContingenciesAndGuaranteesAbstract" name="CommitmentsContingenciesAndGuaranteesAbstract" nillable="true" substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_CommitmentsContingenciesAndGuaranteesDetailsTextual5Abstract" name="CommitmentsContingenciesAndGuaranteesDetailsTextual5Abstract" nillable="true" substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_CommitmentsContingenciesandGuaranteesOffbalanceSheetArrangementsDetailsTextual5Abstract" name="CommitmentsContingenciesandGuaranteesOffbalanceSheetArrangementsDetailsTextual5Abstract" nillable="true" substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_CompensationAndBenefitsTextualsAbstract" name="CompensationAndBenefitsTextualsAbstract" nillable="true" substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_ComputationOfBasicAndDilutedNetIncomePerShareAbstract" name="ComputationOfBasicAndDilutedNetIncomePerShareAbstract" nillable="true" substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_ConcentrationofRiskandSegmentInformationAbstract" name="ConcentrationofRiskandSegmentInformationAbstract" nillable="true" substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_ConcentrationsOfRiskAndSegmentInformationAbstract" name="ConcentrationsOfRiskAndSegmentInformationAbstract" nillable="true" substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_ConcentrationsOfRiskAndSegmentInformationDetails2Abstract" name="ConcentrationsOfRiskAndSegmentInformationDetails2Abstract" nillable="true" substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_ConditionOneMember" name="ConditionOneMember" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_ConditionThreeMember" name="ConditionThreeMember" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_ConditionTwoMember" name="ConditionTwoMember" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element id="sndk_ContingentReimbursementGuarantee" name="ContingentReimbursementGuarantee" nillable="true" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType" xbrli:balance="credit" xbrli:periodType="instant" />
+  <xsd:element abstract="true" id="sndk_ContractualMaturityAxis" name="ContractualMaturityAxis" nillable="true" substitutionGroup="xbrldt:dimensionItem" type="xbrli:stringItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_ContractualObligationsAbstract" name="ContractualObligationsAbstract" nillable="true" substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_ContractualObligationsAxis" name="ContractualObligationsAxis" nillable="true" substitutionGroup="xbrldt:dimensionItem" type="xbrli:stringItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_ContractualObligationsDomain" name="ContractualObligationsDomain" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_ContractualObligationsTextualsAbstract" name="ContractualObligationsTextualsAbstract" nillable="true" substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_ConversionInformationAbstract" name="ConversionInformationAbstract" nillable="true" substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration" />
+  <xsd:element id="sndk_ConversionOfNotesBaseConversionPrice" name="ConversionOfNotesBaseConversionPrice" nillable="true" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType" xbrli:balance="credit" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_ConversionPeriodOneMember" name="ConversionPeriodOneMember" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_ConversionPeriodTwoMember" name="ConversionPeriodTwoMember" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_ConversionSettledorOpenAxis" name="ConversionSettledorOpenAxis" nillable="true" substitutionGroup="xbrldt:dimensionItem" type="xbrli:stringItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_ConversionSettledorOpenDomain" name="ConversionSettledorOpenDomain" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element id="sndk_ConversionValueOfConvertibleNotes" name="ConversionValueOfConvertibleNotes" nillable="true" substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration" />
+  <xsd:element id="sndk_ConversionofDebtAmount" name="ConversionofDebtAmount" nillable="true" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType" xbrli:balance="debit" xbrli:periodType="instant" />
+  <xsd:element abstract="true" id="sndk_ConvertibleBondHedgeAbstract" name="ConvertibleBondHedgeAbstract" nillable="true" substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration" />
+  <xsd:element id="sndk_ConvertibleBondHedgesAccountedForEquityTransactionNet" name="ConvertibleBondHedgesAccountedForEquityTransactionNet" nillable="true" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType" xbrli:balance="credit" xbrli:periodType="duration" />
+  <xsd:element id="sndk_ConvertibleDebtEquityComponent" name="ConvertibleDebtEquityComponent" nillable="true" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType" xbrli:balance="debit" xbrli:periodType="duration" />
+  <xsd:element id="sndk_ConvertibleNoteConversionPeriod" name="ConvertibleNoteConversionPeriod" nillable="true" substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration" />
+  <xsd:element id="sndk_ConvertibleNotesConversionPeriodUnderGivenCondition" name="ConvertibleNotesConversionPeriodUnderGivenCondition" nillable="true" substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_ConvertibleNotesDueTwoThousandThirtyFiveMember" name="ConvertibleNotesDueTwoThousandThirtyFiveMember" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element id="sndk_ConvertibleNotesPrincipalAndInterest" name="ConvertibleNotesPrincipalAndInterest" nillable="true" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType" xbrli:balance="credit" xbrli:periodType="instant" />
+  <xsd:element id="sndk_ConvertibleNotesRedeemedandSettled" name="ConvertibleNotesRedeemedandSettled" nillable="true" substitutionGroup="xbrli:item" type="xbrli:pureItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_ConvertibleSeniorNotesDueTwoThousandSeventeenMember" name="ConvertibleSeniorNotesDueTwoThousandSeventeenMember" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_ConvertibleSeniorNotesDueTwoThousandThirteenMember" name="ConvertibleSeniorNotesDueTwoThousandThirteenMember" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_ConvertibleSeniorNotesDueTwoThousandTwentyMemberMember" name="ConvertibleSeniorNotesDueTwoThousandTwentyMemberMember" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_CoreTechnologyMember" name="CoreTechnologyMember" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_CurrentFiscalYearMember" name="CurrentFiscalYearMember" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_CustomerContractsAbstract" name="CustomerContractsAbstract" nillable="true" substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration" />
+  <xsd:element id="sndk_Customersgreaterthan10ofrevenue" name="Customersgreaterthan10ofrevenue" nillable="true" substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_DebtCarryingValueInformationAbstract" name="DebtCarryingValueInformationAbstract" nillable="true" substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration" />
+  <xsd:element id="sndk_DebtInstrumentConvertibleCarryingAmountOfEquityComponentAndAdjustmentToAdditionalPaidInCapitalDebtIssuanceCosts" name="DebtInstrumentConvertibleCarryingAmountOfEquityComponentAndAdjustmentToAdditionalPaidInCapitalDebtIssuanceCosts" nillable="true" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType" xbrli:balance="credit" xbrli:periodType="duration" />
+  <xsd:element id="sndk_DebtInstrumentConvertibleCarryingAmountOfLiabilityComponent" name="DebtInstrumentConvertibleCarryingAmountOfLiabilityComponent" nillable="true" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType" xbrli:balance="credit" xbrli:periodType="instant" />
+  <xsd:element id="sndk_DebtInstrumentConvertibleConversionShares" name="DebtInstrumentConvertibleConversionShares" nillable="true" substitutionGroup="xbrli:item" type="xbrli:sharesItemType" xbrli:periodType="instant" />
+  <xsd:element id="sndk_DebtInstrumentConvertibleIfConvertedSharesforValueinExcessofPrincipal" name="DebtInstrumentConvertibleIfConvertedSharesforValueinExcessofPrincipal" nillable="true" substitutionGroup="xbrli:item" type="xbrli:sharesItemType" xbrli:periodType="instant" />
+  <xsd:element id="sndk_DebtInstrumentConvertibleRedemptionNumberofEquityInstruments" name="DebtInstrumentConvertibleRedemptionNumberofEquityInstruments" nillable="true" substitutionGroup="xbrli:item" type="xbrli:integerItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_DebtInstrumentDetailsAbstract" name="DebtInstrumentDetailsAbstract" nillable="true" substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration" />
+  <xsd:element id="sndk_DebtInstrumentFaceAmountAfterRedemption" name="DebtInstrumentFaceAmountAfterRedemption" nillable="true" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType" xbrli:balance="credit" xbrli:periodType="instant" />
+  <xsd:element abstract="true" id="sndk_DebtIssuanceCostsAbstract" name="DebtIssuanceCostsAbstract" nillable="true" substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_DebtSummaryAbstract" name="DebtSummaryAbstract" nillable="true" substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration" />
+  <xsd:element id="sndk_DeductionsWriteOffs" name="DeductionsWriteOffs" nillable="true" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType" xbrli:balance="debit" xbrli:periodType="duration" />
+  <xsd:element id="sndk_DeferredCreditsOnIntercompanyTransactions" name="DeferredCreditsOnIntercompanyTransactions" nillable="true" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType" xbrli:balance="credit" xbrli:periodType="instant" />
+  <xsd:element id="sndk_DeferredIncomeOnShipmentsToDistributorsAndRetailersAndDeferredRevenue" name="DeferredIncomeOnShipmentsToDistributorsAndRetailersAndDeferredRevenue" nillable="true" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType" xbrli:balance="credit" xbrli:periodType="instant" />
+  <xsd:element id="sndk_DeferredTaxAssetsLiabilitiesNetTextBlock" name="DeferredTaxAssetsLiabilitiesNetTextBlock" nillable="true" substitutionGroup="xbrli:item" type="nonnum:textBlockItemType" xbrli:periodType="duration" />
+  <xsd:element id="sndk_DeferredTaxAssetsUnrealizedLossesOnInvestments" name="DeferredTaxAssetsUnrealizedLossesOnInvestments" nillable="true" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType" xbrli:balance="debit" xbrli:periodType="instant" />
+  <xsd:element abstract="true" id="sndk_DenominatorForBasicNetIncomeLossPerShareAbstract" name="DenominatorForBasicNetIncomeLossPerShareAbstract" nillable="true" substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_DenominatorForDilutedNetIncomeLossPerShareAbstract" name="DenominatorForDilutedNetIncomeLossPerShareAbstract" nillable="true" substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration" />
+  <xsd:element id="sndk_DerivativeAssetSubjecttoNettingArrangementNet" name="DerivativeAssetSubjecttoNettingArrangementNet" nillable="true" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType" xbrli:balance="debit" xbrli:periodType="instant" />
+  <xsd:element abstract="true" id="sndk_DerivativeAssetsMember" name="DerivativeAssetsMember" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element id="sndk_DerivativeAssetsOffsetsNettingArrangements" name="DerivativeAssetsOffsetsNettingArrangements" nillable="true" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType" xbrli:balance="debit" xbrli:periodType="instant" />
+  <xsd:element abstract="true" id="sndk_DerivativeInstrumentRealizationPeriodRiskAxis" name="DerivativeInstrumentRealizationPeriodRiskAxis" nillable="true" substitutionGroup="xbrldt:dimensionItem" type="xbrli:stringItemType" xbrli:periodType="duration" />
+  <xsd:element id="sndk_DerivativeInstrumentsGainLossRecognizedInIncomeIneffectivePortionAndAmountExcludedFromEffectivenessTestingNetTableTextBlock" name="DerivativeInstrumentsGainLossRecognizedInIncomeIneffectivePortionAndAmountExcludedFromEffectivenessTestingNetTableTextBlock" nillable="true" substitutionGroup="xbrli:item" type="nonnum:textBlockItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_DerivativeInstrumentsandHedgingActivitiesAbstract" name="DerivativeInstrumentsandHedgingActivitiesAbstract" nillable="true" substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_DerivativeLiabilitiesMember" name="DerivativeLiabilitiesMember" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element id="sndk_DerivativeLiabilityOffsetNettingArrangements" name="DerivativeLiabilityOffsetNettingArrangements" nillable="true" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType" xbrli:balance="credit" xbrli:periodType="instant" />
+  <xsd:element id="sndk_DerivativeLiabilitySubjecttoNettingArrangementNet" name="DerivativeLiabilitySubjecttoNettingArrangementNet" nillable="true" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType" xbrli:balance="credit" xbrli:periodType="instant" />
+  <xsd:element abstract="true" id="sndk_DerivativesAndHedgingActivitiesDetails3Abstract" name="DerivativesAndHedgingActivitiesDetails3Abstract" nillable="true" substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_DerivativesAndHedgingActivitiesTextualsAbstract" name="DerivativesAndHedgingActivitiesTextualsAbstract" nillable="true" substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_DirectAcquisitionCostMember" name="DirectAcquisitionCostMember" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_DividendDeclarationAbstract" name="DividendDeclarationAbstract" nillable="true" substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration" />
+  <xsd:element id="sndk_DividendDeclarationTextBlock" name="DividendDeclarationTextBlock" nillable="true" substitutionGroup="xbrli:item" type="nonnum:textBlockItemType" xbrli:periodType="duration" />
+  <xsd:element id="sndk_DividendsAndDividendEquivalentsDeclaredOnCommonStockAndRestrictedStockUnits" name="DividendsAndDividendEquivalentsDeclaredOnCommonStockAndRestrictedStockUnits" nillable="true" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType" xbrli:balance="debit" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_DocumentAndEntityInformationAbstract" name="DocumentAndEntityInformationAbstract" nillable="true" substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_DueAfterFiveYearsMember" name="DueAfterFiveYearsMember" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_DueOverTenYearsMember" name="DueOverTenYearsMember" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_DueWithinFourToFiveYearsMember" name="DueWithinFourToFiveYearsMember" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_DueWithinOneYearMember" name="DueWithinOneYearMember" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_DueWithinSixToTenYearsMember" name="DueWithinSixToTenYearsMember" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_DueWithinTwoToFiveYearsMember" name="DueWithinTwoToFiveYearsMember" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_DueWithinTwoToThreeYearsMember" name="DueWithinTwoToThreeYearsMember" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_EffectOfNondesignatedDerivativeContractsAbstract" name="EffectOfNondesignatedDerivativeContractsAbstract" nillable="true" substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration" />
+  <xsd:element id="sndk_EffectOfNondesignatedDerivativeContractsTableTextBlock" name="EffectOfNondesignatedDerivativeContractsTableTextBlock" nillable="true" substitutionGroup="xbrli:item" type="nonnum:textBlockItemType" xbrli:periodType="duration" />
+  <xsd:element id="sndk_EmployeeServiceShareBasedCompensationUnrecognizedCompensationCostsOnEmployeeStockPurchasePlan" name="EmployeeServiceShareBasedCompensationUnrecognizedCompensationCostsOnEmployeeStockPurchasePlan" nillable="true" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType" xbrli:balance="debit" xbrli:periodType="instant" />
+  <xsd:element abstract="true" id="sndk_EmployeeStockPurchasePlanMember" name="EmployeeStockPurchasePlanMember" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_EnvironmentalCostMember" name="EnvironmentalCostMember" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_EquityInvestmentsAbstract" name="EquityInvestmentsAbstract" nillable="true" substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration" />
+  <xsd:element id="sndk_EquityMethodInvestmentDifferenceBetweenCarryingAmountAndUnderlyingEquityBasisAdjustment" name="EquityMethodInvestmentDifferenceBetweenCarryingAmountAndUnderlyingEquityBasisAdjustment" nillable="true" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType" xbrli:balance="debit" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_EquityMethodInvestorNameAxis" name="EquityMethodInvestorNameAxis" nillable="true" substitutionGroup="xbrldt:dimensionItem" type="xbrli:stringItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_EquityMethodInvestorNameDomain" name="EquityMethodInvestorNameDomain" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_EstimatedLitigationLiabilitiesAbstract" name="EstimatedLitigationLiabilitiesAbstract" nillable="true" substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_ExecutionDateDomain" name="ExecutionDateDomain" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element id="sndk_ExpectedDecreaseInUnrecognizedTaxBenefitsWithinNextTwelveMonths" name="ExpectedDecreaseInUnrecognizedTaxBenefitsWithinNextTwelveMonths" nillable="true" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType" xbrli:balance="debit" xbrli:periodType="duration" />
+  <xsd:element id="sndk_ExpectedLifeOfWarrants" name="ExpectedLifeOfWarrants" nillable="true" substitutionGroup="xbrli:item" type="xbrli:durationItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_ExpirationofStatuteofLimitationsMember" name="ExpirationofStatuteofLimitationsMember" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element id="sndk_ExpiryPeriodOfWarrants" name="ExpiryPeriodOfWarrants" nillable="true" substitutionGroup="xbrli:item" type="us-types:durationStringItemType" xbrli:periodType="duration" />
+  <xsd:element id="sndk_ExternalCreditRating" name="ExternalCreditRating" nillable="true" substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_ExtinguishmentOfDebtConversionPeriodAxis" name="ExtinguishmentOfDebtConversionPeriodAxis" nillable="true" substitutionGroup="xbrldt:dimensionItem" type="xbrli:stringItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_ExtinguishmentOfDebtConversionPeriodTypeDomain" name="ExtinguishmentOfDebtConversionPeriodTypeDomain" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_FairValueOfFinancialInstrumentsPolicyAbstract" name="FairValueOfFinancialInstrumentsPolicyAbstract" nillable="true" substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_FairValueOfOptionsAndAwardsVestedAbstract" name="FairValueOfOptionsAndAwardsVestedAbstract" nillable="true" substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration" />
+  <xsd:element id="sndk_FairValueOfOptionsAndAwardsVestedTableTextBlock" name="FairValueOfOptionsAndAwardsVestedTableTextBlock" nillable="true" substitutionGroup="xbrli:item" type="nonnum:textBlockItemType" xbrli:periodType="duration" />
+  <xsd:element id="sndk_FairValueShareBasedAwardsAssumedInConnectionWithAcquisitions" name="FairValueShareBasedAwardsAssumedInConnectionWithAcquisitions" nillable="true" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType" xbrli:balance="credit" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_FinancingArrangementsInterestAbstract" name="FinancingArrangementsInterestAbstract" nillable="true" substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_FinancingArrangementsTextualsAbstract" name="FinancingArrangementsTextualsAbstract" nillable="true" substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration" />
+  <xsd:element id="sndk_FiscalQuarterWeeks" name="FiscalQuarterWeeks" nillable="true" substitutionGroup="xbrli:item" type="xbrli:durationItemType" xbrli:periodType="duration" />
+  <xsd:element id="sndk_FiscalYearWeeks" name="FiscalYearWeeks" nillable="true" substitutionGroup="xbrli:item" type="xbrli:durationItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_FlashAllianceLtdMember" name="FlashAllianceLtdMember" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_FlashForwardLtdMember" name="FlashForwardLtdMember" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_FlashPartnersLtdMember" name="FlashPartnersLtdMember" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_FplMasterLeaseAgreementMarchTwoThousandTwelveMember" name="FplMasterLeaseAgreementMarchTwoThousandTwelveMember" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_GoodwillAndIntangibleAssetsAbstract" name="GoodwillAndIntangibleAssetsAbstract" nillable="true" substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_GuaranteeObligationAbstract" name="GuaranteeObligationAbstract" nillable="true" substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration" />
+  <xsd:element id="sndk_GuaranteeObligationsMaximumExposureYearFive" name="GuaranteeObligationsMaximumExposureYearFive" nillable="true" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType" xbrli:balance="credit" xbrli:periodType="instant" />
+  <xsd:element id="sndk_GuaranteeObligationsMaximumExposureYearFour" name="GuaranteeObligationsMaximumExposureYearFour" nillable="true" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType" xbrli:balance="credit" xbrli:periodType="instant" />
+  <xsd:element id="sndk_GuaranteeObligationsMaximumExposureYearOne" name="GuaranteeObligationsMaximumExposureYearOne" nillable="true" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType" xbrli:balance="credit" xbrli:periodType="instant" />
+  <xsd:element id="sndk_GuaranteeObligationsMaximumExposureYearSix" name="GuaranteeObligationsMaximumExposureYearSix" nillable="true" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType" xbrli:balance="credit" xbrli:periodType="instant" />
+  <xsd:element id="sndk_GuaranteeObligationsMaximumExposureYearThree" name="GuaranteeObligationsMaximumExposureYearThree" nillable="true" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType" xbrli:balance="credit" xbrli:periodType="instant" />
+  <xsd:element id="sndk_GuaranteeObligationsMaximumExposureYearTwo" name="GuaranteeObligationsMaximumExposureYearTwo" nillable="true" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType" xbrli:balance="credit" xbrli:periodType="instant" />
+  <xsd:element abstract="true" id="sndk_IncentivePlan2005Member" name="IncentivePlan2005Member" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element id="sndk_IncomeLossBeforeIncomeTaxes" name="IncomeLossBeforeIncomeTaxes" nillable="true" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType" xbrli:balance="credit" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_IncomeLossBeforeProvisionForIncomeTaxesAbstract" name="IncomeLossBeforeProvisionForIncomeTaxesAbstract" nillable="true" substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration" />
+  <xsd:element id="sndk_IncomeLossBeforeProvisionForIncomeTaxesTextBlock" name="IncomeLossBeforeProvisionForIncomeTaxesTextBlock" nillable="true" substitutionGroup="xbrli:item" type="nonnum:textBlockItemType" xbrli:periodType="duration" />
+  <xsd:element id="sndk_IncomeLossFromEquityMethodAndCostBasedInvestments" name="IncomeLossFromEquityMethodAndCostBasedInvestments" nillable="true" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType" xbrli:balance="credit" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_IncomeStatementLineItems" name="IncomeStatementLineItems" nillable="true" substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration" />
+  <xsd:element id="sndk_IncomeTaxExpenseAndEffectiveTaxRateTableTextBlock" name="IncomeTaxExpenseAndEffectiveTaxRateTableTextBlock" nillable="true" substitutionGroup="xbrli:item" type="nonnum:textBlockItemType" xbrli:periodType="duration" />
+  <xsd:element id="sndk_IncomeTaxExpenseBenefitContinuingOperationsTextBlock" name="IncomeTaxExpenseBenefitContinuingOperationsTextBlock" nillable="true" substitutionGroup="xbrli:item" type="nonnum:textBlockItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_IncomeTaxesAbstract" name="IncomeTaxesAbstract" nillable="true" substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_IncurredButNotPaidAbstract" name="IncurredButNotPaidAbstract" nillable="true" substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration" />
+  <xsd:element id="sndk_IndemnificationAccrualAtCarryingValue" name="IndemnificationAccrualAtCarryingValue" nillable="true" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType" xbrli:balance="credit" xbrli:periodType="instant" />
+  <xsd:element abstract="true" id="sndk_IndemnificationAgreementTypeAxis" name="IndemnificationAgreementTypeAxis" nillable="true" substitutionGroup="xbrldt:dimensionItem" type="xbrli:stringItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_IndemnificationAgreementTypeNameDomain" name="IndemnificationAgreementTypeNameDomain" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_IndemnificationTextualsLineItems" name="IndemnificationTextualsLineItems" nillable="true" substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration" />
+  <xsd:element id="sndk_InprocessResearchandDevelopmentReclassifiedtoDevelopedProductTechnology" name="InprocessResearchandDevelopmentReclassifiedtoDevelopedProductTechnology" nillable="true" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType" xbrli:balance="debit" xbrli:periodType="duration" />
+  <xsd:element id="sndk_IntangibleAssetAdjustment" name="IntangibleAssetAdjustment" nillable="true" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType" xbrli:balance="credit" xbrli:periodType="instant" />
+  <xsd:element abstract="true" id="sndk_IntangibleAssetsSubjectToAmortizationMember" name="IntangibleAssetsSubjectToAmortizationMember" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_InterestCostRecognizedForConvertibleNotesAbstract" name="InterestCostRecognizedForConvertibleNotesAbstract" nillable="true" substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration" />
+  <xsd:element id="sndk_InterestCostTableTextBlock" name="InterestCostTableTextBlock" nillable="true" substitutionGroup="xbrli:item" type="nonnum:textBlockItemType" xbrli:periodType="duration" />
+  <xsd:element id="sndk_InterestExpenseAndOtherIncomeExpenseNet" name="InterestExpenseAndOtherIncomeExpenseNet" nillable="true" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType" xbrli:balance="credit" xbrli:periodType="duration" />
+  <xsd:element id="sndk_InvestmentInCapacityExpansion" name="InvestmentInCapacityExpansion" nillable="true" substitutionGroup="xbrli:item" type="num:percentItemType" xbrli:periodType="instant" />
+  <xsd:element abstract="true" id="sndk_InvestmentsAndFairValueMeasurementsAbstract" name="InvestmentsAndFairValueMeasurementsAbstract" nillable="true" substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration" />
+  <xsd:element id="sndk_InvestmentsAndFairValueMeasurementsDisclosureTextBlock" name="InvestmentsAndFairValueMeasurementsDisclosureTextBlock" nillable="true" substitutionGroup="xbrli:item" type="nonnum:textBlockItemType" xbrli:periodType="duration" />
+  <xsd:element id="sndk_JointVentureMasterEquipmentLeaseAgreement" name="JointVentureMasterEquipmentLeaseAgreement" nillable="true" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType" xbrli:balance="credit" xbrli:periodType="instant" />
+  <xsd:element id="sndk_JointVentureMasterEquipmentLeaseAgreementGuarantorEquityCovenant" name="JointVentureMasterEquipmentLeaseAgreementGuarantorEquityCovenant" nillable="true" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType" xbrli:balance="credit" xbrli:periodType="instant" />
+  <xsd:element id="sndk_JointVentureMasterEquipmentLeaseAgreementOutstandingAmount" name="JointVentureMasterEquipmentLeaseAgreementOutstandingAmount" nillable="true" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType" xbrli:balance="credit" xbrli:periodType="instant" />
+  <xsd:element id="sndk_LeaseAgreementType" name="LeaseAgreementType" nillable="true" substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration" />
+  <xsd:element id="sndk_LicenseAndRoyalty" name="LicenseAndRoyalty" nillable="true" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType" xbrli:balance="credit" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_LicensingRoyaltyMember" name="LicensingRoyaltyMember" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_LongTermMarketableSecuritiesMember" name="LongTermMarketableSecuritiesMember" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element id="sndk_LongTermPrepaidIncomeTax" name="LongTermPrepaidIncomeTax" nillable="true" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType" xbrli:balance="debit" xbrli:periodType="instant" />
+  <xsd:element abstract="true" id="sndk_MajorCustomer1Member" name="MajorCustomer1Member" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_MajorCustomer2Member" name="MajorCustomer2Member" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_MajorCustomer3Member" name="MajorCustomer3Member" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_MasterLeaseAgreementAprilTwoThousandTenMember" name="MasterLeaseAgreementAprilTwoThousandTenMember" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_MasterLeaseAgreementAugTwoThousandFourteenFALMember" name="MasterLeaseAgreementAugTwoThousandFourteenFALMember" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_MasterLeaseAgreementByExecutionDateAxis" name="MasterLeaseAgreementByExecutionDateAxis" nillable="true" substitutionGroup="xbrldt:dimensionItem" type="xbrli:stringItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_MasterLeaseAgreementDecemberTwoThousandFourteenFALMember" name="MasterLeaseAgreementDecemberTwoThousandFourteenFALMember" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_MasterLeaseAgreementDecemberTwoThousandFourteenFFLMember" name="MasterLeaseAgreementDecemberTwoThousandFourteenFFLMember" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_MasterLeaseAgreementDecemberTwoThousandFourteenFPLMember" name="MasterLeaseAgreementDecemberTwoThousandFourteenFPLMember" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_MasterLeaseAgreementEightMember" name="MasterLeaseAgreementEightMember" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_MasterLeaseAgreementFebruaryTwoThousandEightMember" name="MasterLeaseAgreementFebruaryTwoThousandEightMember" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_MasterLeaseAgreementJanuaryTwoThousandElevenFplMember" name="MasterLeaseAgreementJanuaryTwoThousandElevenFplMember" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_MasterLeaseAgreementJulyTwoThousandTwelveFalMember" name="MasterLeaseAgreementJulyTwoThousandTwelveFalMember" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_MasterLeaseAgreementJulyTwoThousandTwelveFflMember" name="MasterLeaseAgreementJulyTwoThousandTwelveFflMember" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_MasterLeaseAgreementMarchTwoThousandFourteenFALMember" name="MasterLeaseAgreementMarchTwoThousandFourteenFALMember" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_MasterLeaseAgreementMarchTwoThousandFourteenFPLMember" name="MasterLeaseAgreementMarchTwoThousandFourteenFPLMember" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_MasterLeaseAgreementMarchTwoThousandTwelveFalMember" name="MasterLeaseAgreementMarchTwoThousandTwelveFalMember" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_MasterLeaseAgreementMarchTwoThousandTwelveFflMember" name="MasterLeaseAgreementMarchTwoThousandTwelveFflMember" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_MasterLeaseAgreementMayTwoThousandFourteenFalMember" name="MasterLeaseAgreementMayTwoThousandFourteenFalMember" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_MasterLeaseAgreementNovemberTwoThousandElevenFflMember" name="MasterLeaseAgreementNovemberTwoThousandElevenFflMember" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_MasterLeaseAgreementNovemberTwoThousandElevenFplMember" name="MasterLeaseAgreementNovemberTwoThousandElevenFplMember" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_MasterLeaseAgreementSevenMember" name="MasterLeaseAgreementSevenMember" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_MasterLeaseAgreementsAbstract" name="MasterLeaseAgreementsAbstract" nillable="true" substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_MasterLeaseCovenantsAbstract" name="MasterLeaseCovenantsAbstract" nillable="true" substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration" />
+  <xsd:element id="sndk_MaximumNumberOfSharesByWhichShareReserveCanBeIncreasedForIssuanceUnderIncentivePlan" name="MaximumNumberOfSharesByWhichShareReserveCanBeIncreasedForIssuanceUnderIncentivePlan" nillable="true" substitutionGroup="xbrli:item" type="xbrli:sharesItemType" xbrli:periodType="instant" />
+  <xsd:element abstract="true" id="sndk_MaximumReasonablyEstimableLossExposureExcludingLostProfitsBasedUpOnExchangeRateAbstract" name="MaximumReasonablyEstimableLossExposureExcludingLostProfitsBasedUpOnExchangeRateAbstract" nillable="true" substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_MdrmIncMember" name="MdrmIncMember" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element id="sndk_MinimumExternalCreditRating" name="MinimumExternalCreditRating" nillable="true" substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration" />
+  <xsd:element id="sndk_MinimumLiquidity" name="MinimumLiquidity" nillable="true" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType" xbrli:balance="debit" xbrli:periodType="instant" />
+  <xsd:element id="sndk_MinimumPercentageOfOwnershipRequiredToExerciseStockRightsPlan" name="MinimumPercentageOfOwnershipRequiredToExerciseStockRightsPlan" nillable="true" substitutionGroup="xbrli:item" type="num:percentItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_MunicipalNotesAndBondsMember" name="MunicipalNotesAndBondsMember" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element id="sndk_NetCashReceivedInSettlementOfPaidInAdvanceForStockRepurchaseContracts" name="NetCashReceivedInSettlementOfPaidInAdvanceForStockRepurchaseContracts" nillable="true" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType" xbrli:balance="debit" xbrli:periodType="duration" />
+  <xsd:element id="sndk_NetProceedsFromWarrantsAndBondHedgeDueToRedemption" name="NetProceedsFromWarrantsAndBondHedgeDueToRedemption" nillable="true" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType" xbrli:balance="debit" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_NonCurrentLiabilitiesMember" name="NonCurrentLiabilitiesMember" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_NonDesignatedCashFlowHedgesAssetsAbstract" name="NonDesignatedCashFlowHedgesAssetsAbstract" nillable="true" substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_NonDesignatedCashFlowHedgesLiabilitiesAbstract" name="NonDesignatedCashFlowHedgesLiabilitiesAbstract" nillable="true" substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_NonDirectCostsMember" name="NonDirectCostsMember" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element id="sndk_NoncashGainsAndImpairmentLosses" name="NoncashGainsAndImpairmentLosses" nillable="true" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType" xbrli:balance="credit" xbrli:periodType="duration" />
+  <xsd:element id="sndk_NotesReceivableAndInvestmentsInRelatedParties" name="NotesReceivableAndInvestmentsInRelatedParties" nillable="true" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType" xbrli:balance="debit" xbrli:periodType="instant" />
+  <xsd:element id="sndk_NotesReceivableAndInvestmentsInRelatedPartiesTableTextBlock" name="NotesReceivableAndInvestmentsInRelatedPartiesTableTextBlock" nillable="true" substitutionGroup="xbrli:item" type="nonnum:textBlockItemType" xbrli:periodType="duration" />
+  <xsd:element id="sndk_NumberOfSharesPurchasedUnderBondHedge" name="NumberOfSharesPurchasedUnderBondHedge" nillable="true" substitutionGroup="xbrli:item" type="xbrli:sharesItemType" xbrli:periodType="instant" />
+  <xsd:element id="sndk_NumberOfWarrantsExercised" name="NumberOfWarrantsExercised" nillable="true" substitutionGroup="xbrli:item" type="xbrli:sharesItemType" xbrli:periodType="instant" />
+  <xsd:element id="sndk_Numberofsharesanentitycanpurchasefromcounterparties" name="Numberofsharesanentitycanpurchasefromcounterparties" nillable="true" substitutionGroup="xbrli:item" type="xbrli:sharesItemType" xbrli:periodType="duration" />
+  <xsd:element id="sndk_Numberofsharescounterpartiescanpurchasefromentity" name="Numberofsharescounterpartiescanpurchasefromentity" nillable="true" substitutionGroup="xbrli:item" type="xbrli:sharesItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_NumeratorForBasicNetIncomeLossPerShareAbstract" name="NumeratorForBasicNetIncomeLossPerShareAbstract" nillable="true" substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_NumeratorForDilutedNetIncomeLossPerShareAbstract" name="NumeratorForDilutedNetIncomeLossPerShareAbstract" nillable="true" substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration" />
+  <xsd:element id="sndk_OciReclassificationsToEarningsNet" name="OciReclassificationsToEarningsNet" nillable="true" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType" xbrli:balance="credit" xbrli:periodType="duration" />
+  <xsd:element id="sndk_OffBalanceSheetArrangementsTableTextBlock" name="OffBalanceSheetArrangementsTableTextBlock" nillable="true" substitutionGroup="xbrli:item" type="nonnum:textBlockItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_OfficersEmployeesAndDirectorsMember" name="OfficersEmployeesAndDirectorsMember" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element id="sndk_OperatingLeasesFutureMinimumPaymentsDueRemainingofFiscalYear" name="OperatingLeasesFutureMinimumPaymentsDueRemainingofFiscalYear" nillable="true" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType" xbrli:balance="debit" xbrli:periodType="instant" />
+  <xsd:element id="sndk_OperatingLeasesFutureMinimumPaymentsNet" name="OperatingLeasesFutureMinimumPaymentsNet" nillable="true" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType" xbrli:balance="credit" xbrli:periodType="instant" />
+  <xsd:element abstract="true" id="sndk_OperatingLeasesRentExpensesAbstract" name="OperatingLeasesRentExpensesAbstract" nillable="true" substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_OperatingPurchaseCommitmentsMember" name="OperatingPurchaseCommitmentsMember" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_OrganizationAndPresentationAxis" name="OrganizationAndPresentationAxis" nillable="true" substitutionGroup="xbrldt:dimensionItem" type="xbrli:stringItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_OrganizationAndPresentationDomain" name="OrganizationAndPresentationDomain" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_OrganizationAndPresentationLineItems" name="OrganizationAndPresentationLineItems" nillable="true" substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_OrganizationAndSummaryOfSignificantAccountingPoliciesAbstract" name="OrganizationAndSummaryOfSignificantAccountingPoliciesAbstract" nillable="true" substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_OrganizationConsolidationAndPresentationOfFinancialStatementsTable" name="OrganizationConsolidationAndPresentationOfFinancialStatementsTable" nillable="true" substitutionGroup="xbrldt:hypercubeItem" type="xbrli:stringItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_OtherAssetsAxis" name="OtherAssetsAxis" nillable="true" substitutionGroup="xbrldt:dimensionItem" type="xbrli:stringItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_OtherAssetsDomain" name="OtherAssetsDomain" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_OtherAssetsLineItems" name="OtherAssetsLineItems" nillable="true" substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_OtherComprehensiveIncomeAxis" name="OtherComprehensiveIncomeAxis" nillable="true" substitutionGroup="xbrldt:dimensionItem" type="xbrli:stringItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_OtherComprehensiveIncomeDomain" name="OtherComprehensiveIncomeDomain" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_OtherComprehensiveIncomeLineItems" name="OtherComprehensiveIncomeLineItems" nillable="true" substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_OtherComprehensiveIncomeTable" name="OtherComprehensiveIncomeTable" nillable="true" substitutionGroup="xbrldt:hypercubeItem" type="xbrli:stringItemType" xbrli:periodType="duration" />
+  <xsd:element id="sndk_OtherCurrentAccruedLiabilitiesFairValueDisclosure" name="OtherCurrentAccruedLiabilitiesFairValueDisclosure" nillable="true" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType" xbrli:balance="credit" xbrli:periodType="instant" />
+  <xsd:element abstract="true" id="sndk_OtherCurrentAccruedLiabilitiesMember" name="OtherCurrentAccruedLiabilitiesMember" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_OtherCurrentAndNoncurrentLiabilitiesMember" name="OtherCurrentAndNoncurrentLiabilitiesMember" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_OtherForeignCountriesMember" name="OtherForeignCountriesMember" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_OtherLiabilitiesAxis" name="OtherLiabilitiesAxis" nillable="true" substitutionGroup="xbrldt:dimensionItem" type="xbrli:stringItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_OtherLiabilitiesDomain" name="OtherLiabilitiesDomain" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_OtherLiabilitiesLineItems" name="OtherLiabilitiesLineItems" nillable="true" substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration" />
+  <xsd:element id="sndk_OtherLiabilitiesNoncurrentOther" name="OtherLiabilitiesNoncurrentOther" nillable="true" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType" xbrli:balance="credit" xbrli:periodType="instant" />
+  <xsd:element abstract="true" id="sndk_OtherOffbalanceSheetDisclosuresAbstract" name="OtherOffbalanceSheetDisclosuresAbstract" nillable="true" substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_OtherSecuritiesMember" name="OtherSecuritiesMember" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element id="sndk_OtherTaxRelatedReceivables" name="OtherTaxRelatedReceivables" nillable="true" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType" xbrli:balance="debit" xbrli:periodType="instant" />
+  <xsd:element id="sndk_PartnersOwnershipInVentureBusiness" name="PartnersOwnershipInVentureBusiness" nillable="true" substitutionGroup="xbrli:item" type="num:percentItemType" xbrli:periodType="instant" />
+  <xsd:element id="sndk_PaymentModeForConversionValueOfConvertibleNotesDue" name="PaymentModeForConversionValueOfConvertibleNotesDue" nillable="true" substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_PaymentOfPrincipalAmortizationMember" name="PaymentOfPrincipalAmortizationMember" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element id="sndk_PaymentsForLongTermLoansForRelatedParties" name="PaymentsForLongTermLoansForRelatedParties" nillable="true" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType" xbrli:balance="credit" xbrli:periodType="duration" />
+  <xsd:element id="sndk_PaymentsForRepurchaseOfCommonStockAggregate" name="PaymentsForRepurchaseOfCommonStockAggregate" nillable="true" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType" xbrli:balance="credit" xbrli:periodType="instant" />
+  <xsd:element id="sndk_PaymentsToOrProceedsFromTechnologyAndOtherAssets" name="PaymentsToOrProceedsFromTechnologyAndOtherAssets" nillable="true" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType" xbrli:balance="credit" xbrli:periodType="duration" />
+  <xsd:element id="sndk_PercentageOfRevenueFromMajorCustomersOrLicensees" name="PercentageOfRevenueFromMajorCustomersOrLicensees" nillable="true" substitutionGroup="xbrli:item" type="num:percentItemType" xbrli:periodType="duration" />
+  <xsd:element id="sndk_PercentageofAccountsReceivablefromMajorCustomers" name="PercentageofAccountsReceivablefromMajorCustomers" nillable="true" substitutionGroup="xbrli:item" type="num:percentItemType" xbrli:periodType="instant" />
+  <xsd:element abstract="true" id="sndk_PotentialSettlementMember" name="PotentialSettlementMember" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element id="sndk_PreferredSharesPurchasedUnderStockholdersRightsPlan" name="PreferredSharesPurchasedUnderStockholdersRightsPlan" nillable="true" substitutionGroup="xbrli:item" type="xbrli:sharesItemType" xbrli:periodType="instant" />
+  <xsd:element id="sndk_PrepaidTaxOnIntercompanyTransactions" name="PrepaidTaxOnIntercompanyTransactions" nillable="true" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType" xbrli:balance="debit" xbrli:periodType="instant" />
+  <xsd:element id="sndk_PrepaymentsToRelatedPartiesOther" name="PrepaymentsToRelatedPartiesOther" nillable="true" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType" xbrli:balance="credit" xbrli:periodType="instant" />
+  <xsd:element id="sndk_PriceProtectionPromotionsAndOtherActivities" name="PriceProtectionPromotionsAndOtherActivities" nillable="true" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType" xbrli:balance="credit" xbrli:periodType="instant" />
+  <xsd:element abstract="true" id="sndk_PriorFiscalYearMember" name="PriorFiscalYearMember" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element id="sndk_ProceedsFromDistributionsFromEquityMethodInvestments" name="ProceedsFromDistributionsFromEquityMethodInvestments" nillable="true" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType" xbrli:balance="debit" xbrli:periodType="duration" />
+  <xsd:element id="sndk_ProceedsFromLongTermLoansForRelatedParties" name="ProceedsFromLongTermLoansForRelatedParties" nillable="true" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType" xbrli:balance="debit" xbrli:periodType="duration" />
+  <xsd:element id="sndk_ProceedsFromMaturitiesOfShortAndLongTermInvestments" name="ProceedsFromMaturitiesOfShortAndLongTermInvestments" nillable="true" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType" xbrli:balance="debit" xbrli:periodType="duration" />
+  <xsd:element id="sndk_ProceedsFromSalesOfShortAndLongTermInvestments" name="ProceedsFromSalesOfShortAndLongTermInvestments" nillable="true" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType" xbrli:balance="debit" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_ProductLiabilityContingencyAxis" name="ProductLiabilityContingencyAxis" nillable="true" substitutionGroup="xbrldt:dimensionItem" type="xbrli:stringItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_ProductLiabilityContingencyDomain" name="ProductLiabilityContingencyDomain" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_ProductLiabilityContingencyMember" name="ProductLiabilityContingencyMember" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element id="sndk_ProductWarrantyLife" name="ProductWarrantyLife" nillable="true" substitutionGroup="xbrli:item" type="us-types:dateStringItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_ProductionPurchaseCommitmentsMember" name="ProductionPurchaseCommitmentsMember" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element id="sndk_ProgramEndDate" name="ProgramEndDate" nillable="true" substitutionGroup="xbrli:item" type="xbrli:dateItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_ProvisionForIncomeTaxesTextualsAbstract" name="ProvisionForIncomeTaxesTextualsAbstract" nillable="true" substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_PurchaseOptionExercisePriceMember" name="PurchaseOptionExercisePriceMember" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element id="sndk_PurchasePriceOfCommonStockUnderEmployeeStockPurchasePlanAsPercentageOfFairMarketValueOfShare" name="PurchasePriceOfCommonStockUnderEmployeeStockPurchasePlanAsPercentageOfFairMarketValueOfShare" nillable="true" substitutionGroup="xbrli:item" type="num:percentItemType" xbrli:periodType="instant" />
+  <xsd:element abstract="true" id="sndk_RealizedBeyondTwelveMonthsMember" name="RealizedBeyondTwelveMonthsMember" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_RealizedPeriodTypeDomain" name="RealizedPeriodTypeDomain" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_RealizedWithinTwelveMonthsMember" name="RealizedWithinTwelveMonthsMember" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_RecentAccountingPronouncementsAbstract" name="RecentAccountingPronouncementsAbstract" nillable="true" substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration" />
+  <xsd:element id="sndk_ReclassificationOfAccumulatedOtherComprehensiveIncomeAmountsTableTextBlock" name="ReclassificationOfAccumulatedOtherComprehensiveIncomeAmountsTableTextBlock" nillable="true" substitutionGroup="xbrli:item" type="nonnum:textBlockItemType" xbrli:periodType="duration" />
+  <xsd:element id="sndk_ReconciliationOfFederalStatutoryRatesToEffectiveIncomeTaxRateTextBlock" name="ReconciliationOfFederalStatutoryRatesToEffectiveIncomeTaxRateTextBlock" nillable="true" substitutionGroup="xbrli:item" type="nonnum:textBlockItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_ReductionsAbstract" name="ReductionsAbstract" nillable="true" substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration" />
+  <xsd:element id="sndk_ReimbursementForCertainFixedCosts" name="ReimbursementForCertainFixedCosts" nillable="true" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType" xbrli:balance="credit" xbrli:periodType="instant" />
+  <xsd:element abstract="true" id="sndk_RelatedCostsAndFairValuesBasedOnQuotedMarketPricesAbstract" name="RelatedCostsAndFairValuesBasedOnQuotedMarketPricesAbstract" nillable="true" substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration" />
+  <xsd:element id="sndk_RelatedCostsAndFairValuesBasedOnQuotedMarketPricesTableTextBlock" name="RelatedCostsAndFairValuesBasedOnQuotedMarketPricesTableTextBlock" nillable="true" substitutionGroup="xbrli:item" type="nonnum:textBlockItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_RelatedPartiesAndStrategicInvestmentsTextualsAbstract" name="RelatedPartiesAndStrategicInvestmentsTextualsAbstract" nillable="true" substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_RemainingGuaranteeObligationsAbstract" name="RemainingGuaranteeObligationsAbstract" nillable="true" substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration" />
+  <xsd:element id="sndk_RemainingGuaranteeObligationsTableTextBlock" name="RemainingGuaranteeObligationsTableTextBlock" nillable="true" substitutionGroup="xbrli:item" type="nonnum:textBlockItemType" xbrli:periodType="duration" />
+  <xsd:element id="sndk_RepaymentOfUpfrontPaymentForShareRepurchases" name="RepaymentOfUpfrontPaymentForShareRepurchases" nillable="true" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType" xbrli:balance="debit" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_RepurchaseProgram1Member" name="RepurchaseProgram1Member" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_RepurchaseProgram2Member" name="RepurchaseProgram2Member" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element id="sndk_ResearchAndDevelopmentObligations" name="ResearchAndDevelopmentObligations" nillable="true" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType" xbrli:balance="credit" xbrli:periodType="instant" />
+  <xsd:element abstract="true" id="sndk_RestructuringandRelatedActivitiesExpenseAbstract" name="RestructuringandRelatedActivitiesExpenseAbstract" nillable="true" substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration" />
+  <xsd:element id="sndk_Restructuringandother" name="Restructuringandother" nillable="true" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType" xbrli:balance="debit" xbrli:periodType="duration" />
+  <xsd:element id="sndk_RestructuringandotherTableTextBlock" name="RestructuringandotherTableTextBlock" nillable="true" substitutionGroup="xbrli:item" type="nonnum:textBlockItemType" xbrli:periodType="duration" />
+  <xsd:element id="sndk_RoyaltyAndOtherReceivables" name="RoyaltyAndOtherReceivables" nillable="true" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType" xbrli:balance="debit" xbrli:periodType="instant" />
+  <xsd:element abstract="true" id="sndk_SandiskCorpMember" name="SandiskCorpMember" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_ScheduleOfCommitmentsContingenciesAndGuaranteesTable" name="ScheduleOfCommitmentsContingenciesAndGuaranteesTable" nillable="true" substitutionGroup="xbrldt:hypercubeItem" type="xbrli:stringItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_ScheduleOfGuarantorObligationsAdditionalTextualsAbstract" name="ScheduleOfGuarantorObligationsAdditionalTextualsAbstract" nillable="true" substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_ScheduleOfIndemnificationAgreementsIndemnificationAgreementTypeNameTable" name="ScheduleOfIndemnificationAgreementsIndemnificationAgreementTypeNameTable" nillable="true" substitutionGroup="xbrldt:hypercubeItem" type="xbrli:stringItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_ScheduleOfInventoryTable" name="ScheduleOfInventoryTable" nillable="true" substitutionGroup="xbrldt:hypercubeItem" type="xbrli:stringItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_ScheduleOfOtherAssetsTable" name="ScheduleOfOtherAssetsTable" nillable="true" substitutionGroup="xbrldt:hypercubeItem" type="xbrli:stringItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_ScheduleOfOtherLiabilitiesTable" name="ScheduleOfOtherLiabilitiesTable" nillable="true" substitutionGroup="xbrldt:hypercubeItem" type="xbrli:stringItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_ScheduleOfTradeReceivablesTable" name="ScheduleOfTradeReceivablesTable" nillable="true" substitutionGroup="xbrldt:hypercubeItem" type="xbrli:stringItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_SecurityContractualMaturityDomain" name="SecurityContractualMaturityDomain" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_SettledCurrentandPastPeriodMember" name="SettledCurrentandPastPeriodMember" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_SettledFuturePeriodMember" name="SettledFuturePeriodMember" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_SettledShareAmountsAxis" name="SettledShareAmountsAxis" nillable="true" substitutionGroup="xbrldt:dimensionItem" type="xbrli:stringItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_SettledShareAmountsDomain" name="SettledShareAmountsDomain" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element id="sndk_ShareBasedCompensationArrangementByShareBasedPaymentAwardEquityInstrumentsOptionsAndAwardsVestedInPeriodAggregateFairValue" name="ShareBasedCompensationArrangementByShareBasedPaymentAwardEquityInstrumentsOptionsAndAwardsVestedInPeriodAggregateFairValue" nillable="true" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType" xbrli:balance="debit" xbrli:periodType="duration" />
+  <xsd:element id="sndk_ShareBasedCompensationArrangementByShareBasedPaymentAwardFairValueAssumptionsEstimatedAnnualForfeitureRate" name="ShareBasedCompensationArrangementByShareBasedPaymentAwardFairValueAssumptionsEstimatedAnnualForfeitureRate" nillable="true" substitutionGroup="xbrli:item" type="num:percentItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_ShareBasedCompensationArrangementByShareBasedPaymentAwardOptionsAndStockAppreciationRightsAdditionalDisclosuresAbstract" name="ShareBasedCompensationArrangementByShareBasedPaymentAwardOptionsAndStockAppreciationRightsAdditionalDisclosuresAbstract" nillable="true" substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_ShareBasedCompensationPlanInfoDetailsTextuals2Abstract" name="ShareBasedCompensationPlanInfoDetailsTextuals2Abstract" nillable="true" substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_ShareBasedCompensationPlansAbstract" name="ShareBasedCompensationPlansAbstract" nillable="true" substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration" />
+  <xsd:element id="sndk_ShareReductionfromPlanReserve" name="ShareReductionfromPlanReserve" nillable="true" substitutionGroup="xbrli:item" type="xbrli:sharesItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_ShareRepurchaseProgramSummaryAbstract" name="ShareRepurchaseProgramSummaryAbstract" nillable="true" substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_ShareRepurchasesAbstract" name="ShareRepurchasesAbstract" nillable="true" substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration" />
+  <xsd:element id="sndk_SharebasedAwardVestingTerm" name="SharebasedAwardVestingTerm" nillable="true" substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_SharebasedBenefitPlanRepurchasesAbstract" name="SharebasedBenefitPlanRepurchasesAbstract" nillable="true" substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_SharesFractionalMember" name="SharesFractionalMember" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_SharesWholeMember" name="SharesWholeMember" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_SimBusinessMember" name="SimBusinessMember" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_SpecialArrangementRepurchaseProgramMember" name="SpecialArrangementRepurchaseProgramMember" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element id="sndk_StateResearchCredit" name="StateResearchCredit" nillable="true" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType" xbrli:balance="debit" xbrli:periodType="instant" />
+  <xsd:element abstract="true" id="sndk_StatementOfCashFlowAxis" name="StatementOfCashFlowAxis" nillable="true" substitutionGroup="xbrldt:dimensionItem" type="xbrli:stringItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_StatementOfCashFlowDomain" name="StatementOfCashFlowDomain" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_StatementOfCashFlowLineItems" name="StatementOfCashFlowLineItems" nillable="true" substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_StatementOfCashFlowTable" name="StatementOfCashFlowTable" nillable="true" substitutionGroup="xbrldt:hypercubeItem" type="xbrli:stringItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_StatementOfEquityLineItems" name="StatementOfEquityLineItems" nillable="true" substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_StatementOfEquityTable" name="StatementOfEquityTable" nillable="true" substitutionGroup="xbrldt:hypercubeItem" type="xbrli:stringItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_StatementOfOperationsTable" name="StatementOfOperationsTable" nillable="true" substitutionGroup="xbrldt:hypercubeItem" type="xbrli:stringItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_StockOptionAndStockAppreciationRightsMember" name="StockOptionAndStockAppreciationRightsMember" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_StockOptionsAndStockAppreciationRightsExercisableAbstract" name="StockOptionsAndStockAppreciationRightsExercisableAbstract" nillable="true" substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_StockOptionsAndStockAppreciationRightsExpectedToVestAbstract" name="StockOptionsAndStockAppreciationRightsExpectedToVestAbstract" nillable="true" substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_StockOptionsPlansAbstract" name="StockOptionsPlansAbstract" nillable="true" substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration" />
+  <xsd:element id="sndk_StockPlanTerminationDate" name="StockPlanTerminationDate" nillable="true" substitutionGroup="xbrli:item" type="xbrli:dateItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_StockPurchasePlansAbstract" name="StockPurchasePlansAbstract" nillable="true" substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration" />
+  <xsd:element id="sndk_StockRepurchasedAndRetiredDuringProgramShares" name="StockRepurchasedAndRetiredDuringProgramShares" nillable="true" substitutionGroup="xbrli:item" type="xbrli:sharesItemType" xbrli:periodType="instant" />
+  <xsd:element abstract="true" id="sndk_StockholderRightsPlanAxis" name="StockholderRightsPlanAxis" nillable="true" substitutionGroup="xbrldt:dimensionItem" type="xbrli:stringItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_StockholdersRightsPlanAbstract" name="StockholdersRightsPlanAbstract" nillable="true" substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_StockholdersRightsPlanDomain" name="StockholdersRightsPlanDomain" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_StockholdersRightsPlanLineItems" name="StockholdersRightsPlanLineItems" nillable="true" substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_StockholdersRightsPlanMember" name="StockholdersRightsPlanMember" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_StockholdersRightsPlanTable" name="StockholdersRightsPlanTable" nillable="true" substitutionGroup="xbrldt:hypercubeItem" type="xbrli:stringItemType" xbrli:periodType="duration" />
+  <xsd:element id="sndk_StockholdersRightsPlanTextBlock" name="StockholdersRightsPlanTextBlock" nillable="true" substitutionGroup="xbrli:item" type="nonnum:textBlockItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_StructuredShareRepurchaseProgramAbstract" name="StructuredShareRepurchaseProgramAbstract" nillable="true" substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration" />
+  <xsd:element id="sndk_SummarizedAggregateBalanceSheetInformationForJointVentureTextBlock" name="SummarizedAggregateBalanceSheetInformationForJointVentureTextBlock" nillable="true" substitutionGroup="xbrli:item" type="nonnum:textBlockItemType" xbrli:periodType="duration" />
+  <xsd:element id="sndk_SummarizedAggregateIncomeStatementInformationForJointVentureTextBlock" name="SummarizedAggregateIncomeStatementInformationForJointVentureTextBlock" nillable="true" substitutionGroup="xbrli:item" type="nonnum:textBlockItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_SupplementaryFinancialDataAbstract" name="SupplementaryFinancialDataAbstract" nillable="true" substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_SupplementaryFinancialDataAxis" name="SupplementaryFinancialDataAxis" nillable="true" substitutionGroup="xbrldt:dimensionItem" type="xbrli:stringItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_SupplementaryFinancialDataDomain" name="SupplementaryFinancialDataDomain" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_SupplementaryFinancialDataLineItems" name="SupplementaryFinancialDataLineItems" nillable="true" substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_SupplementaryFinancialDataTable" name="SupplementaryFinancialDataTable" nillable="true" substitutionGroup="xbrldt:hypercubeItem" type="xbrli:stringItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_SupplementaryFinancialUnauditedAbstract" name="SupplementaryFinancialUnauditedAbstract" nillable="true" substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_SupplierAndCustomerMember" name="SupplierAndCustomerMember" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element id="sndk_TaxBenefitFromDeferredTaxAssetRelatedToConvertibleBondHedge" name="TaxBenefitFromDeferredTaxAssetRelatedToConvertibleBondHedge" nillable="true" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType" xbrli:balance="credit" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_TaxCommitmentAbstract" name="TaxCommitmentAbstract" nillable="true" substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration" />
+  <xsd:element id="sndk_TaxEffectFromShareBasedCompensationAdjustmentsToAdditionalPaidInCapital" name="TaxEffectFromShareBasedCompensationAdjustmentsToAdditionalPaidInCapital" nillable="true" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType" xbrli:balance="credit" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_TemporaryConversionObligationAbstract" name="TemporaryConversionObligationAbstract" nillable="true" substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_ToshibaCorpMember" name="ToshibaCorpMember" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element id="sndk_TotalCashAndCashEquivalentsAndMarketableSecurities" name="TotalCashAndCashEquivalentsAndMarketableSecurities" nillable="true" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType" xbrli:balance="debit" xbrli:periodType="instant" />
+  <xsd:element id="sndk_TotalIntangibleAssetsGross" name="TotalIntangibleAssetsGross" nillable="true" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType" xbrli:balance="debit" xbrli:periodType="instant" />
+  <xsd:element abstract="true" id="sndk_TradeReceivablesLineItems" name="TradeReceivablesLineItems" nillable="true" substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration" />
+  <xsd:element id="sndk_TransactionCostOfConvertibleBondHedgeAccountedForEquityTransaction" name="TransactionCostOfConvertibleBondHedgeAccountedForEquityTransaction" nillable="true" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType" xbrli:balance="credit" xbrli:periodType="duration" />
+  <xsd:element id="sndk_UnamortizedDebtIssuanceExpenseCurrent" name="UnamortizedDebtIssuanceExpenseCurrent" nillable="true" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType" xbrli:balance="debit" xbrli:periodType="instant" />
+  <xsd:element id="sndk_UnrealizedGainOnInvestments" name="UnrealizedGainOnInvestments" nillable="true" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType" xbrli:balance="credit" xbrli:periodType="instant" />
+  <xsd:element id="sndk_UnrealizedHoldingGainLossOnDerivativesQualifyingAsHedgesBeforeReclassificationAdjustmentAndTaxes" name="UnrealizedHoldingGainLossOnDerivativesQualifyingAsHedgesBeforeReclassificationAdjustmentAndTaxes" nillable="true" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType" xbrli:balance="credit" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_UnrecognizedTaxBenefitsExplanationAxis" name="UnrecognizedTaxBenefitsExplanationAxis" nillable="true" substitutionGroup="xbrldt:dimensionItem" type="xbrli:stringItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_UnrecognizedTaxBenefitsExplanationDomain" name="UnrecognizedTaxBenefitsExplanationDomain" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element id="sndk_UnrecognizedTaxBenefitsFromContractualObligation" name="UnrecognizedTaxBenefitsFromContractualObligation" nillable="true" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType" xbrli:balance="credit" xbrli:periodType="duration" />
+  <xsd:element id="sndk_UpfrontPaymentForShareRepurchases" name="UpfrontPaymentForShareRepurchases" nillable="true" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType" xbrli:balance="credit" xbrli:periodType="duration" />
+  <xsd:element id="sndk_UpfrontPaymentUnderAcceleratedShareRepurchaseProgram" name="UpfrontPaymentUnderAcceleratedShareRepurchaseProgram" nillable="true" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType" xbrli:balance="credit" xbrli:periodType="instant" />
+  <xsd:element id="sndk_VariableInterestEntityEntityMaximumLossExposureTableTextBlock" name="VariableInterestEntityEntityMaximumLossExposureTableTextBlock" nillable="true" substitutionGroup="xbrli:item" type="nonnum:textBlockItemType" xbrli:periodType="duration" />
+  <xsd:element id="sndk_VentureOriginationYear" name="VentureOriginationYear" nillable="true" substitutionGroup="xbrli:item" type="xbrli:dateItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_VentureOwnershipAbstract" name="VentureOwnershipAbstract" nillable="true" substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_VestingTerm1Member" name="VestingTerm1Member" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_VestingTerm2Member" name="VestingTerm2Member" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_VestingTermAxis" name="VestingTermAxis" nillable="true" substitutionGroup="xbrldt:dimensionItem" type="xbrli:stringItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_VestingTermGroupDomain" name="VestingTermGroupDomain" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_WaferMember" name="WaferMember" nillable="true" substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration" />
+  <xsd:element abstract="true" id="sndk_WarrantsAbstract" name="WarrantsAbstract" nillable="true" substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration" />
+</xsd:schema>

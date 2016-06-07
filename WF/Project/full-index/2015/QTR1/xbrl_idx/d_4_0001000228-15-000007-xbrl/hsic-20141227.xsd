@@ -1,0 +1,559 @@
+<?xml version="1.0" encoding="ASCII"?>
+<!-- Prepared by IBM Cognos FSR v6.7.3.37 using Fujitsu Interstage XWand -->
+<schema targetNamespace="http://henryschein.com/20141227" elementFormDefault="qualified" xmlns="http://www.w3.org/2001/XMLSchema" xmlns:hsic="http://henryschein.com/20141227" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:nonnum="http://www.xbrl.org/dtr/type/non-numeric" xmlns:num="http://www.xbrl.org/dtr/type/numeric">
+    <annotation>
+        <appinfo>
+            <link:linkbaseRef xlink:type="simple" xlink:href="hsic-20141227_pre.xml" xlink:role="http://www.xbrl.org/2003/role/presentationLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" />
+            <link:linkbaseRef xlink:type="simple" xlink:href="hsic-20141227_cal.xml" xlink:role="http://www.xbrl.org/2003/role/calculationLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" />
+            <link:linkbaseRef xlink:type="simple" xlink:href="hsic-20141227_def.xml" xlink:role="http://www.xbrl.org/2003/role/definitionLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" />
+            <link:linkbaseRef xlink:type="simple" xlink:href="hsic-20141227_lab.xml" xlink:role="http://www.xbrl.org/2003/role/labelLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" />
+            <link:roleType roleURI="http://henryschein.com/role/StatementCONSOLIDATEDBALANCESHEETS" id="hsic_ELRID_CONSOLIDATEDBALANCESHEETS">
+                <link:definition>000020 - Statement - CONSOLIDATED BALANCE SHEETS</link:definition>
+                <link:usedOn>link:presentationLink</link:usedOn>
+                <link:usedOn>link:calculationLink</link:usedOn>
+                <link:usedOn>link:definitionLink</link:usedOn>
+            </link:roleType>
+            <link:roleType roleURI="http://henryschein.com/role/StatementCONSOLIDATEDSTATEMENTSOFINCOME" id="hsic_ELRID_CONSOLIDATEDSTATEMENTSOFINCOME">
+                <link:definition>000040 - Statement - CONSOLIDATED STATEMENTS OF INCOME</link:definition>
+                <link:usedOn>link:presentationLink</link:usedOn>
+                <link:usedOn>link:calculationLink</link:usedOn>
+                <link:usedOn>link:definitionLink</link:usedOn>
+            </link:roleType>
+            <link:roleType roleURI="http://henryschein.com/role/StatementCONSOLIDATEDSTATEMENTSOFCASHFLOWS" id="hsic_ELRID_CONSOLIDATEDSTATEMENTSOFCASHFLOWS">
+                <link:definition>000070 - Statement - CONSOLIDATED STATEMENTS OF CASH FLOWS</link:definition>
+                <link:usedOn>link:presentationLink</link:usedOn>
+                <link:usedOn>link:calculationLink</link:usedOn>
+                <link:usedOn>link:definitionLink</link:usedOn>
+            </link:roleType>
+            <link:roleType roleURI="http://henryschein.com/role/SignificantAccountingPolicies" id="hsic_ELRID_SignificantAccountingPolicies">
+                <link:definition>100010 - Disclosure - Significant Accounting Policies</link:definition>
+                <link:usedOn>link:presentationLink</link:usedOn>
+                <link:usedOn>link:calculationLink</link:usedOn>
+                <link:usedOn>link:definitionLink</link:usedOn>
+            </link:roleType>
+            <link:roleType roleURI="http://henryschein.com/role/SegmentAndGeographicData" id="hsic_ELRID_SegmentAndGeographicData">
+                <link:definition>100150 - Disclosure - Segment and Geographic Data</link:definition>
+                <link:usedOn>link:presentationLink</link:usedOn>
+                <link:usedOn>link:calculationLink</link:usedOn>
+                <link:usedOn>link:definitionLink</link:usedOn>
+            </link:roleType>
+            <link:roleType roleURI="http://henryschein.com/role/EmployeeBenefitPlans" id="hsic_ELRID_EmployeeBenefitPlans">
+                <link:definition>100160 - Disclosure - Employee Benefit Plans</link:definition>
+                <link:usedOn>link:presentationLink</link:usedOn>
+                <link:usedOn>link:calculationLink</link:usedOn>
+                <link:usedOn>link:definitionLink</link:usedOn>
+            </link:roleType>
+            <link:roleType roleURI="http://henryschein.com/role/DisclosureBusinessAcquisitionsAndDivestiture" id="hsic_ELRID_BusinessAcquisitionsAndDivestiture">
+                <link:definition>100090 - Disclosure - Business Acquisitions and Divestiture</link:definition>
+                <link:usedOn>link:presentationLink</link:usedOn>
+                <link:usedOn>link:calculationLink</link:usedOn>
+                <link:usedOn>link:definitionLink</link:usedOn>
+            </link:roleType>
+            <link:roleType roleURI="http://henryschein.com/role/EarningsPerShare" id="hsic_ELRID_EarningsPerShare">
+                <link:definition>100110 - Disclosure - Earnings Per Share</link:definition>
+                <link:usedOn>link:presentationLink</link:usedOn>
+                <link:usedOn>link:calculationLink</link:usedOn>
+                <link:usedOn>link:definitionLink</link:usedOn>
+            </link:roleType>
+            <link:roleType roleURI="http://henryschein.com/role/ComprehensiveIncome" id="hsic_ELRID_ComprehensiveIncome">
+                <link:definition>100070 - Disclosure - Comprehensive Income</link:definition>
+                <link:usedOn>link:presentationLink</link:usedOn>
+                <link:usedOn>link:calculationLink</link:usedOn>
+                <link:usedOn>link:definitionLink</link:usedOn>
+            </link:roleType>
+            <link:roleType roleURI="http://henryschein.com/role/FairValueMeasurements" id="hsic_ELRID_FairValueMeasurements">
+                <link:definition>100080 - Disclosure - Fair Value Measurements</link:definition>
+                <link:usedOn>link:presentationLink</link:usedOn>
+                <link:usedOn>link:calculationLink</link:usedOn>
+                <link:usedOn>link:definitionLink</link:usedOn>
+            </link:roleType>
+            <link:roleType roleURI="http://henryschein.com/role/IncomeTaxes" id="hsic_ELRID_IncomeTaxes">
+                <link:definition>100120 - Disclosure - Income Taxes</link:definition>
+                <link:usedOn>link:presentationLink</link:usedOn>
+                <link:usedOn>link:calculationLink</link:usedOn>
+                <link:usedOn>link:definitionLink</link:usedOn>
+            </link:roleType>
+            <link:roleType roleURI="http://henryschein.com/role/SupplementalCashFlowInformation" id="hsic_ELRID_SupplementalCashFlowInformation">
+                <link:definition>100190 - Disclosure - Supplemental Cash Flow Information</link:definition>
+                <link:usedOn>link:presentationLink</link:usedOn>
+                <link:usedOn>link:calculationLink</link:usedOn>
+                <link:usedOn>link:definitionLink</link:usedOn>
+            </link:roleType>
+            <link:roleType roleURI="http://henryschein.com/role/DisclosurePlansOfRestructuring" id="hsic_ELRID_PlansOfRestructuring">
+                <link:definition>100100 - Disclosure - Plans of Restructuring</link:definition>
+                <link:usedOn>link:presentationLink</link:usedOn>
+                <link:usedOn>link:calculationLink</link:usedOn>
+                <link:usedOn>link:definitionLink</link:usedOn>
+            </link:roleType>
+            <link:roleType roleURI="http://henryschein.com/role/DerivativesAndHedgingActivities" id="hsic_ELRID_DerivativesAndHedgingActivities">
+                <link:definition>100140 - Disclosure - Derivatives and Hedging Activities</link:definition>
+                <link:usedOn>link:presentationLink</link:usedOn>
+                <link:usedOn>link:calculationLink</link:usedOn>
+                <link:usedOn>link:definitionLink</link:usedOn>
+            </link:roleType>
+            <link:roleType roleURI="http://henryschein.com/role/CONSOLIDATEDBALANCESHEETSParenthetical" id="hsic_ELRID_CONSOLIDATEDBALANCESHEETSParenthetical">
+                <link:definition>000030 - Statement - CONSOLIDATED BALANCE SHEETS (Parenthetical)</link:definition>
+                <link:usedOn>link:presentationLink</link:usedOn>
+                <link:usedOn>link:calculationLink</link:usedOn>
+                <link:usedOn>link:definitionLink</link:usedOn>
+            </link:roleType>
+            <link:roleType roleURI="http://henryschein.com/role/StatementCONSOLIDATEDSTATEMENTSOFCHANGESINSTOCKHOLDERSEQUITY" id="hsic_ELRID_CONSOLIDATEDSTATEMENTSOFCHANGESINSTOCKHOLDERSEQUITY">
+                <link:definition>000050 - Statement - CONSOLIDATED STATEMENTS OF CHANGES IN STOCKHOLDERS' EQUITY</link:definition>
+                <link:usedOn>link:presentationLink</link:usedOn>
+                <link:usedOn>link:calculationLink</link:usedOn>
+                <link:usedOn>link:definitionLink</link:usedOn>
+            </link:roleType>
+            <link:roleType roleURI="http://henryschein.com/role/StatementCONSOLIDATEDSTATEMENTSOFCHANGESINSTOCKHOLDERSEQUITYParenthetical" id="hsic_ELRID_CONSOLIDATEDSTATEMENTSOFCHANGESINSTOCKHOLDERSEQUITYParenthetical">
+                <link:definition>000060 - Statement - CONSOLIDATED STATEMENTS OF CHANGES IN STOCKHOLDERS' EQUITY (Parenthetical)</link:definition>
+                <link:usedOn>link:presentationLink</link:usedOn>
+                <link:usedOn>link:calculationLink</link:usedOn>
+                <link:usedOn>link:definitionLink</link:usedOn>
+            </link:roleType>
+            <link:roleType roleURI="http://henryschein.com/role/RedeemableNoncontrollingInterests" id="hsic_ELRID_RedeemableNoncontrollingInterests">
+                <link:definition>100060 - Disclosure - Redeemable Noncontrolling Interests</link:definition>
+                <link:usedOn>link:presentationLink</link:usedOn>
+                <link:usedOn>link:calculationLink</link:usedOn>
+                <link:usedOn>link:definitionLink</link:usedOn>
+            </link:roleType>
+            <link:roleType roleURI="http://henryschein.com/role/EarningsPerShareTables" id="hsic_ELRID_EarningsPerShareTables">
+                <link:definition>300090 - Disclosure - Earnings Per Share (Tables)</link:definition>
+                <link:usedOn>link:presentationLink</link:usedOn>
+                <link:usedOn>link:calculationLink</link:usedOn>
+                <link:usedOn>link:definitionLink</link:usedOn>
+            </link:roleType>
+            <link:roleType roleURI="http://henryschein.com/role/EarningsPerShareDetails" id="hsic_ELRID_EarningsPerShareDetails">
+                <link:definition>400150 - Disclosure - Earnings Per Share (Details)</link:definition>
+                <link:usedOn>link:presentationLink</link:usedOn>
+                <link:usedOn>link:calculationLink</link:usedOn>
+                <link:usedOn>link:definitionLink</link:usedOn>
+            </link:roleType>
+            <link:roleType roleURI="http://henryschein.com/role/SupplementalCashFlowInformationTables" id="hsic_ELRID_SupplementalCashFlowInformationTables">
+                <link:definition>300150 - Disclosure - Supplemental Cash Flow Information (Tables)</link:definition>
+                <link:usedOn>link:presentationLink</link:usedOn>
+                <link:usedOn>link:calculationLink</link:usedOn>
+                <link:usedOn>link:definitionLink</link:usedOn>
+            </link:roleType>
+            <link:roleType roleURI="http://henryschein.com/role/SupplementalCashFlowInformationDetails" id="hsic_ELRID_SupplementalCashFlowInformationDetails">
+                <link:definition>400240 - Disclosure - Supplemental Cash Flow Information (Details)</link:definition>
+                <link:usedOn>link:presentationLink</link:usedOn>
+                <link:usedOn>link:calculationLink</link:usedOn>
+                <link:usedOn>link:definitionLink</link:usedOn>
+            </link:roleType>
+            <link:roleType roleURI="http://henryschein.com/role/SegmentAndGeographicDataTables" id="hsic_ELRID_SegmentAndGeographicDataTables">
+                <link:definition>300110 - Disclosure - Segment and Geographic Data (Tables)</link:definition>
+                <link:usedOn>link:presentationLink</link:usedOn>
+                <link:usedOn>link:calculationLink</link:usedOn>
+                <link:usedOn>link:definitionLink</link:usedOn>
+            </link:roleType>
+            <link:roleType roleURI="http://henryschein.com/role/DisclosureSegmentAndGeographicDataDetails" id="hsic_ELRID_SegmentAndGeographicDataDetails">
+                <link:definition>400180 - Disclosure - Segment and Geographic Data (Details)</link:definition>
+                <link:usedOn>link:presentationLink</link:usedOn>
+                <link:usedOn>link:calculationLink</link:usedOn>
+                <link:usedOn>link:definitionLink</link:usedOn>
+            </link:roleType>
+            <link:roleType roleURI="http://henryschein.com/role/PlansOfRestructuringTables" id="hsic_ELRID_PlansOfRestructuringTables">
+                <link:definition>300080 - Disclosure - Plans of Restructuring (Tables)</link:definition>
+                <link:usedOn>link:presentationLink</link:usedOn>
+                <link:usedOn>link:calculationLink</link:usedOn>
+                <link:usedOn>link:definitionLink</link:usedOn>
+            </link:roleType>
+            <link:roleType roleURI="http://henryschein.com/role/DisclosurePlansOfRestructuringDetails" id="hsic_ELRID_PlansOfRestructuringDetails">
+                <link:definition>400140 - Disclosure - Plans of Restructuring (Details)</link:definition>
+                <link:usedOn>link:presentationLink</link:usedOn>
+                <link:usedOn>link:calculationLink</link:usedOn>
+                <link:usedOn>link:definitionLink</link:usedOn>
+            </link:roleType>
+            <link:roleType roleURI="http://henryschein.com/role/ComprehensiveIncomeAccumulatedOtherComprehensiveIncomeAndComprehensiveIncomeComponentsDetails" id="hsic_ELRID_ComprehensiveIncomeAccumulatedOtherComprehensiveIncomeAndComprehensiveIncomeComponentsDetails">
+                <link:definition>400090 - Disclosure - Comprehensive Income - Accumulated Other Comprehensive Income and Comprehensive Income Components (Details)</link:definition>
+                <link:usedOn>link:presentationLink</link:usedOn>
+                <link:usedOn>link:calculationLink</link:usedOn>
+                <link:usedOn>link:definitionLink</link:usedOn>
+            </link:roleType>
+            <link:roleType roleURI="http://henryschein.com/role/DisclosureRedeemableNoncontrollingInterestsDetails" id="hsic_ELRID_RedeemableNoncontrollingInterestsDetails">
+                <link:definition>400080 - Disclosure - Redeemable Noncontrolling Interests (Details)</link:definition>
+                <link:usedOn>link:presentationLink</link:usedOn>
+                <link:usedOn>link:calculationLink</link:usedOn>
+                <link:usedOn>link:definitionLink</link:usedOn>
+            </link:roleType>
+            <link:roleType roleURI="http://henryschein.com/role/FairValueMeasurementsTables" id="hsic_ELRID_FairValueMeasurementsTables">
+                <link:definition>300070 - Disclosure - Fair Value Measurements (Tables)</link:definition>
+                <link:usedOn>link:presentationLink</link:usedOn>
+                <link:usedOn>link:calculationLink</link:usedOn>
+                <link:usedOn>link:definitionLink</link:usedOn>
+            </link:roleType>
+            <link:roleType roleURI="http://henryschein.com/role/FairValueMeasurementsDetails" id="hsic_ELRID_FairValueMeasurementsDetails">
+                <link:definition>400110 - Disclosure - Fair Value Measurements (Details)</link:definition>
+                <link:usedOn>link:presentationLink</link:usedOn>
+                <link:usedOn>link:calculationLink</link:usedOn>
+                <link:usedOn>link:definitionLink</link:usedOn>
+            </link:roleType>
+            <link:roleType roleURI="http://henryschein.com/role/DisclosureIncomeTaxesDetails1" id="hsic_ELRID_IncomeTaxesDetails1">
+                <link:definition>400160 - Disclosure - Income Taxes (Details 1)</link:definition>
+                <link:usedOn>link:presentationLink</link:usedOn>
+                <link:usedOn>link:calculationLink</link:usedOn>
+                <link:usedOn>link:definitionLink</link:usedOn>
+            </link:roleType>
+            <link:roleType roleURI="http://henryschein.com/role/Debt" id="hsic_ELRID_Debt">
+                <link:definition>100050 - Disclosure - Debt</link:definition>
+                <link:usedOn>link:presentationLink</link:usedOn>
+                <link:usedOn>link:calculationLink</link:usedOn>
+                <link:usedOn>link:definitionLink</link:usedOn>
+            </link:roleType>
+            <link:roleType roleURI="http://henryschein.com/role/DisclosureDebtLongtermDetails" id="hsic_ELRID_DebtLongtermDetails">
+                <link:definition>400060 - Disclosure - Debt - Long-term (Details)</link:definition>
+                <link:usedOn>link:presentationLink</link:usedOn>
+                <link:usedOn>link:calculationLink</link:usedOn>
+                <link:usedOn>link:definitionLink</link:usedOn>
+            </link:roleType>
+            <link:roleType roleURI="http://henryschein.com/role/RedeemableNoncontrollingInterestsTables" id="hsic_ELRID_RedeemableNoncontrollingInterestsTables">
+                <link:definition>300050 - Disclosure - Redeemable Noncontrolling Interests (Tables)</link:definition>
+                <link:usedOn>link:presentationLink</link:usedOn>
+                <link:usedOn>link:calculationLink</link:usedOn>
+                <link:usedOn>link:definitionLink</link:usedOn>
+            </link:roleType>
+            <link:roleType roleURI="http://henryschein.com/role/ComprehensiveIncomeTables" id="hsic_ELRID_ComprehensiveIncomeTables">
+                <link:definition>300060 - Disclosure - Comprehensive Income (Tables)</link:definition>
+                <link:usedOn>link:presentationLink</link:usedOn>
+                <link:usedOn>link:calculationLink</link:usedOn>
+                <link:usedOn>link:definitionLink</link:usedOn>
+            </link:roleType>
+            <link:roleType roleURI="http://henryschein.com/role/DisclosureEmployeeBenefitPlansTables" id="hsic_ELRID_EmployeeBenefitPlansTables">
+                <link:definition>300120 - Disclosure - Employee Benefit Plans (Tables)</link:definition>
+                <link:usedOn>link:presentationLink</link:usedOn>
+                <link:usedOn>link:calculationLink</link:usedOn>
+                <link:usedOn>link:definitionLink</link:usedOn>
+            </link:roleType>
+            <link:roleType roleURI="http://henryschein.com/role/DisclosureEmployeeBenefitPlansStockbasedCompensationDetails" id="hsic_ELRID_EmployeeBenefitPlansStockbasedCompensationDetails">
+                <link:definition>400200 - Disclosure - Employee Benefit Plans - Stock-based Compensation (Details)</link:definition>
+                <link:usedOn>link:presentationLink</link:usedOn>
+                <link:usedOn>link:calculationLink</link:usedOn>
+                <link:usedOn>link:definitionLink</link:usedOn>
+            </link:roleType>
+            <link:roleType roleURI="http://henryschein.com/role/DocumentDocumentAndEntityInformation" id="hsic_ELRID_DocumentAndEntityInformation">
+                <link:definition>000010 - Document - Document and Entity Information</link:definition>
+                <link:usedOn>link:presentationLink</link:usedOn>
+                <link:usedOn>link:calculationLink</link:usedOn>
+                <link:usedOn>link:definitionLink</link:usedOn>
+            </link:roleType>
+            <link:roleType roleURI="http://henryschein.com/role/StatementCONSOLIDATEDSTATEMENTSOFCOMPREHENSIVEINCOME" id="hsic_ELRID_CONSOLIDATEDSTATEMENTSOFCOMPREHENSIVEINCOME">
+                <link:definition>000045 - Statement - CONSOLIDATED STATEMENTS OF COMPREHENSIVE INCOME</link:definition>
+                <link:usedOn>link:presentationLink</link:usedOn>
+                <link:usedOn>link:calculationLink</link:usedOn>
+                <link:usedOn>link:definitionLink</link:usedOn>
+            </link:roleType>
+            <link:roleType roleURI="http://henryschein.com/role/DebtTables" id="hsic_ELRID_DebtTables">
+                <link:definition>300040 - Disclosure - Debt (Tables)</link:definition>
+                <link:usedOn>link:presentationLink</link:usedOn>
+                <link:usedOn>link:calculationLink</link:usedOn>
+                <link:usedOn>link:definitionLink</link:usedOn>
+            </link:roleType>
+            <link:roleType roleURI="http://henryschein.com/role/ComprehensiveIncomeTotalComprehensiveIncomeDetails" id="hsic_ELRID_ComprehensiveIncomeTotalComprehensiveIncomeDetails">
+                <link:definition>400100 - Disclosure - Comprehensive Income - Total Comprehensive Income (Details)</link:definition>
+                <link:usedOn>link:presentationLink</link:usedOn>
+                <link:usedOn>link:calculationLink</link:usedOn>
+                <link:usedOn>link:definitionLink</link:usedOn>
+            </link:roleType>
+            <link:roleType roleURI="http://henryschein.com/role/DisclosureBusinessAcquisitionsAndDivestitureAcquisitionsDetails" id="hsic_ELRID_BusinessAcquisitionsAndDivestitureAcquisitionsDetails">
+                <link:definition>400120 - Disclosure - Business Acquisitions and Divestiture - Acquisitions (Details)</link:definition>
+                <link:usedOn>link:presentationLink</link:usedOn>
+                <link:usedOn>link:calculationLink</link:usedOn>
+                <link:usedOn>link:definitionLink</link:usedOn>
+            </link:roleType>
+            <link:roleType roleURI="http://henryschein.com/role/DebtBankCreditLinesDetails" id="hsic_ELRID_DebtBankCreditLinesDetails">
+                <link:definition>400050 - Disclosure - Debt - Bank Credit Lines (Details)</link:definition>
+                <link:usedOn>link:presentationLink</link:usedOn>
+                <link:usedOn>link:calculationLink</link:usedOn>
+                <link:usedOn>link:definitionLink</link:usedOn>
+            </link:roleType>
+            <link:roleType roleURI="http://henryschein.com/role/PropertyAndEquipmentNet" id="hsic_ELRID_PropertyAndEquipmentNet">
+                <link:definition>100020 - Disclosure - Property and Equipment, Net</link:definition>
+                <link:usedOn>link:presentationLink</link:usedOn>
+                <link:usedOn>link:calculationLink</link:usedOn>
+                <link:usedOn>link:definitionLink</link:usedOn>
+            </link:roleType>
+            <link:roleType roleURI="http://henryschein.com/role/GoodwillAndOtherIntangiblesNet" id="hsic_ELRID_GoodwillAndOtherIntangiblesNet">
+                <link:definition>100030 - Disclosure - Goodwill and Other Intangibles, Net</link:definition>
+                <link:usedOn>link:presentationLink</link:usedOn>
+                <link:usedOn>link:calculationLink</link:usedOn>
+                <link:usedOn>link:definitionLink</link:usedOn>
+            </link:roleType>
+            <link:roleType roleURI="http://henryschein.com/role/InvestmentsAndOther" id="hsic_ELRID_InvestmentsAndOther">
+                <link:definition>100040 - Disclosure - Investments and Other</link:definition>
+                <link:usedOn>link:presentationLink</link:usedOn>
+                <link:usedOn>link:calculationLink</link:usedOn>
+                <link:usedOn>link:definitionLink</link:usedOn>
+            </link:roleType>
+            <link:roleType roleURI="http://henryschein.com/role/ConcentrationsOfRisk" id="hsic_ELRID_ConcentrationsOfRisk">
+                <link:definition>100130 - Disclosure - Concentrations of Risk</link:definition>
+                <link:usedOn>link:presentationLink</link:usedOn>
+                <link:usedOn>link:calculationLink</link:usedOn>
+                <link:usedOn>link:definitionLink</link:usedOn>
+            </link:roleType>
+            <link:roleType roleURI="http://henryschein.com/role/CommitmentsAndContingencies" id="hsic_ELRID_CommitmentsAndContingencies">
+                <link:definition>100170 - Disclosure - Commitments and Contingencies</link:definition>
+                <link:usedOn>link:presentationLink</link:usedOn>
+                <link:usedOn>link:calculationLink</link:usedOn>
+                <link:usedOn>link:definitionLink</link:usedOn>
+            </link:roleType>
+            <link:roleType roleURI="http://henryschein.com/role/QuarterlyInformationUnaudited" id="hsic_ELRID_QuarterlyInformationUnaudited">
+                <link:definition>100180 - Disclosure - Quarterly Information (Unaudited)</link:definition>
+                <link:usedOn>link:presentationLink</link:usedOn>
+                <link:usedOn>link:calculationLink</link:usedOn>
+                <link:usedOn>link:definitionLink</link:usedOn>
+            </link:roleType>
+            <link:roleType roleURI="http://henryschein.com/role/ScheduleIIValuationAndQualifyingAccounts" id="hsic_ELRID_ScheduleIIValuationAndQualifyingAccounts">
+                <link:definition>100200 - Disclosure - Schedule II - Valuation and Qualifying Accounts</link:definition>
+                <link:usedOn>link:presentationLink</link:usedOn>
+                <link:usedOn>link:calculationLink</link:usedOn>
+                <link:usedOn>link:definitionLink</link:usedOn>
+            </link:roleType>
+            <link:roleType roleURI="http://henryschein.com/role/DisclosureSignificantAccountingPoliciesPolicies" id="hsic_ELRID_SignificantAccountingPoliciesPolicies">
+                <link:definition>200010 - Disclosure - Significant Accounting Policies (Policies)</link:definition>
+                <link:usedOn>link:presentationLink</link:usedOn>
+                <link:usedOn>link:calculationLink</link:usedOn>
+                <link:usedOn>link:definitionLink</link:usedOn>
+            </link:roleType>
+            <link:roleType roleURI="http://henryschein.com/role/PropertyAndEquipmentNetTables" id="hsic_ELRID_PropertyAndEquipmentNetTables">
+                <link:definition>300010 - Disclosure - Property and Equipment, Net (Tables)</link:definition>
+                <link:usedOn>link:presentationLink</link:usedOn>
+                <link:usedOn>link:calculationLink</link:usedOn>
+                <link:usedOn>link:definitionLink</link:usedOn>
+            </link:roleType>
+            <link:roleType roleURI="http://henryschein.com/role/GoodwillAndOtherIntangiblesNetTables" id="hsic_ELRID_GoodwillAndOtherIntangiblesNetTables">
+                <link:definition>300020 - Disclosure - Goodwill and Other Intangibles, Net (Tables)</link:definition>
+                <link:usedOn>link:presentationLink</link:usedOn>
+                <link:usedOn>link:calculationLink</link:usedOn>
+                <link:usedOn>link:definitionLink</link:usedOn>
+            </link:roleType>
+            <link:roleType roleURI="http://henryschein.com/role/InvestmentsAndOtherTables" id="hsic_ELRID_InvestmentsAndOtherTables">
+                <link:definition>300030 - Disclosure - Investments and Other (Tables)</link:definition>
+                <link:usedOn>link:presentationLink</link:usedOn>
+                <link:usedOn>link:calculationLink</link:usedOn>
+                <link:usedOn>link:definitionLink</link:usedOn>
+            </link:roleType>
+            <link:roleType roleURI="http://henryschein.com/role/DisclosureIncomeTaxesTables" id="hsic_ELRID_IncomeTaxesTables">
+                <link:definition>300100 - Disclosure - Income Taxes (Tables)</link:definition>
+                <link:usedOn>link:presentationLink</link:usedOn>
+                <link:usedOn>link:calculationLink</link:usedOn>
+                <link:usedOn>link:definitionLink</link:usedOn>
+            </link:roleType>
+            <link:roleType roleURI="http://henryschein.com/role/CommitmentsAndContingenciesTables" id="hsic_ELRID_CommitmentsAndContingenciesTables">
+                <link:definition>300130 - Disclosure - Commitments and Contingencies (Tables)</link:definition>
+                <link:usedOn>link:presentationLink</link:usedOn>
+                <link:usedOn>link:calculationLink</link:usedOn>
+                <link:usedOn>link:definitionLink</link:usedOn>
+            </link:roleType>
+            <link:roleType roleURI="http://henryschein.com/role/QuarterlyInformationUnauditedTables" id="hsic_ELRID_QuarterlyInformationUnauditedTables">
+                <link:definition>300140 - Disclosure - Quarterly Information (Unaudited) (Tables)</link:definition>
+                <link:usedOn>link:presentationLink</link:usedOn>
+                <link:usedOn>link:calculationLink</link:usedOn>
+                <link:usedOn>link:definitionLink</link:usedOn>
+            </link:roleType>
+            <link:roleType roleURI="http://henryschein.com/role/DisclosureSignificantAccountingPoliciesDetails" id="hsic_ELRID_SignificantAccountingPoliciesDetails">
+                <link:definition>400010 - Disclosure - Significant Accounting Policies (Details)</link:definition>
+                <link:usedOn>link:presentationLink</link:usedOn>
+                <link:usedOn>link:calculationLink</link:usedOn>
+                <link:usedOn>link:definitionLink</link:usedOn>
+            </link:roleType>
+            <link:roleType roleURI="http://henryschein.com/role/PropertyAndEquipmentNetDetails" id="hsic_ELRID_PropertyAndEquipmentNetDetails">
+                <link:definition>400020 - Disclosure - Property and Equipment, Net (Details)</link:definition>
+                <link:usedOn>link:presentationLink</link:usedOn>
+                <link:usedOn>link:calculationLink</link:usedOn>
+                <link:usedOn>link:definitionLink</link:usedOn>
+            </link:roleType>
+            <link:roleType roleURI="http://henryschein.com/role/DisclosureGoodwillAndOtherIntangiblesNetDetails" id="hsic_ELRID_GoodwillAndOtherIntangiblesNetDetails">
+                <link:definition>400030 - Disclosure - Goodwill and Other Intangibles, Net (Details)</link:definition>
+                <link:usedOn>link:presentationLink</link:usedOn>
+                <link:usedOn>link:calculationLink</link:usedOn>
+                <link:usedOn>link:definitionLink</link:usedOn>
+            </link:roleType>
+            <link:roleType roleURI="http://henryschein.com/role/DisclosureInvestmentsAndOtherDetails" id="hsic_ELRID_InvestmentsAndOtherDetails">
+                <link:definition>400040 - Disclosure - Investments and Other (Details)</link:definition>
+                <link:usedOn>link:presentationLink</link:usedOn>
+                <link:usedOn>link:calculationLink</link:usedOn>
+                <link:usedOn>link:definitionLink</link:usedOn>
+            </link:roleType>
+            <link:roleType roleURI="http://henryschein.com/role/DisclosureDebtMaturitiesDetails" id="hsic_ELRID_DebtMaturitiesDetails">
+                <link:definition>400070 - Disclosure - Debt - Maturities (Details)</link:definition>
+                <link:usedOn>link:presentationLink</link:usedOn>
+                <link:usedOn>link:calculationLink</link:usedOn>
+                <link:usedOn>link:definitionLink</link:usedOn>
+            </link:roleType>
+            <link:roleType roleURI="http://henryschein.com/role/DisclosureBusinessAcquisitionsAndDivestitureDivestitureDetails" id="hsic_ELRID_BusinessAcquisitionsAndDivestitureDivestitureDetails">
+                <link:definition>400130 - Disclosure - Business Acquisitions and Divestiture - Divestiture (Details)</link:definition>
+                <link:usedOn>link:presentationLink</link:usedOn>
+                <link:usedOn>link:calculationLink</link:usedOn>
+                <link:usedOn>link:definitionLink</link:usedOn>
+            </link:roleType>
+            <link:roleType roleURI="http://henryschein.com/role/DisclosureConcentrationsOfRiskDetails" id="hsic_ELRID_ConcentrationsOfRiskDetails">
+                <link:definition>400170 - Disclosure - Concentrations of Risk (Details)</link:definition>
+                <link:usedOn>link:presentationLink</link:usedOn>
+                <link:usedOn>link:calculationLink</link:usedOn>
+                <link:usedOn>link:definitionLink</link:usedOn>
+            </link:roleType>
+            <link:roleType roleURI="http://henryschein.com/role/SegmentAndGeographicDataNetSalesAndLongLivedAssetsByGeographicAreaDetails" id="hsic_ELRID_SegmentAndGeographicDataNetSalesAndLongLivedAssetsByGeographicAreaDetails">
+                <link:definition>400190 - Disclosure - Segment and Geographic Data - Net Sales and Long-Lived Assets by Geographic Area (Details)</link:definition>
+                <link:usedOn>link:presentationLink</link:usedOn>
+                <link:usedOn>link:calculationLink</link:usedOn>
+                <link:usedOn>link:definitionLink</link:usedOn>
+            </link:roleType>
+            <link:roleType roleURI="http://henryschein.com/role/StatementEmployeeBenefitPlansOtherEmployeeBenefitsDetails" id="hsic_ELRID_EmployeeBenefitPlansOtherEmployeeBenefitsDetails">
+                <link:definition>400210 - Statement - Employee Benefit Plans - Other Employee Benefits (Details)</link:definition>
+                <link:usedOn>link:presentationLink</link:usedOn>
+                <link:usedOn>link:calculationLink</link:usedOn>
+                <link:usedOn>link:definitionLink</link:usedOn>
+            </link:roleType>
+            <link:roleType roleURI="http://henryschein.com/role/CommitmentsAndContingenciesDetails" id="hsic_ELRID_CommitmentsAndContingenciesDetails">
+                <link:definition>400220 - Disclosure - Commitments and Contingencies (Details)</link:definition>
+                <link:usedOn>link:presentationLink</link:usedOn>
+                <link:usedOn>link:calculationLink</link:usedOn>
+                <link:usedOn>link:definitionLink</link:usedOn>
+            </link:roleType>
+            <link:roleType roleURI="http://henryschein.com/role/QuarterlyInformationUnauditedDetails" id="hsic_ELRID_QuarterlyInformationUnauditedDetails">
+                <link:definition>400230 - Disclosure - Quarterly Information (Unaudited) (Details)</link:definition>
+                <link:usedOn>link:presentationLink</link:usedOn>
+                <link:usedOn>link:calculationLink</link:usedOn>
+                <link:usedOn>link:definitionLink</link:usedOn>
+            </link:roleType>
+            <link:roleType roleURI="http://henryschein.com/role/ScheduleIIValuationAndQualifyingAccountsDetails" id="hsic_ELRID_ScheduleIIValuationAndQualifyingAccountsDetails">
+                <link:definition>400250 - Disclosure - Schedule II - Valuation and Qualifying Accounts (Details)</link:definition>
+                <link:usedOn>link:presentationLink</link:usedOn>
+                <link:usedOn>link:calculationLink</link:usedOn>
+                <link:usedOn>link:definitionLink</link:usedOn>
+            </link:roleType>
+            <link:roleType roleURI="http://henryschein.com/role/DisclosureIncomeTaxesDetails2" id="hsic_ELRID_IncomeTaxesDetails2">
+                <link:definition>400165 - Disclosure - Income Taxes (Details 2)</link:definition>
+                <link:usedOn>link:presentationLink</link:usedOn>
+                <link:usedOn>link:calculationLink</link:usedOn>
+                <link:usedOn>link:definitionLink</link:usedOn>
+            </link:roleType>
+            <link:roleType roleURI="http://henryschein.com/role/DerivativesAndHedgingActivitiesDetails" id="hsic_ELRID_DerivativesAndHedgingActivitiesDetails">
+                <link:definition>400175 - Disclosure - Derivatives and Hedging Activities (Details)</link:definition>
+                <link:usedOn>link:presentationLink</link:usedOn>
+                <link:usedOn>link:calculationLink</link:usedOn>
+                <link:usedOn>link:definitionLink</link:usedOn>
+            </link:roleType>
+        </appinfo>
+    </annotation>
+    <import namespace="http://www.xbrl.org/2003/instance" schemaLocation="http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd" />
+    <import namespace="http://xbrl.org/2005/xbrldt" schemaLocation="http://www.xbrl.org/2005/xbrldt-2005.xsd" />
+    <import namespace="http://fasb.org/us-gaap/2014-01-31" schemaLocation="http://xbrl.fasb.org/us-gaap/2014/elts/us-gaap-2014-01-31.xsd" />
+    <import namespace="http://www.xbrl.org/2009/role/negated" schemaLocation="http://www.xbrl.org/lrr/role/negated-2009-12-16.xsd" />
+    <import namespace="http://xbrl.sec.gov/dei/2014-01-31" schemaLocation="http://xbrl.sec.gov/dei/2014/dei-2014-01-31.xsd" />
+    <import namespace="http://xbrl.sec.gov/invest/2013-01-31" schemaLocation="http://xbrl.sec.gov/invest/2013/invest-2013-01-31.xsd" />
+    <import namespace="http://xbrl.sec.gov/country/2013-01-31" schemaLocation="http://xbrl.sec.gov/country/2013/country-2013-01-31.xsd" />
+    <import namespace="http://xbrl.sec.gov/currency/2014-01-31" schemaLocation="http://xbrl.sec.gov/currency/2014/currency-2014-01-31.xsd" />
+    <import namespace="http://www.xbrl.org/dtr/type/non-numeric" schemaLocation="http://www.xbrl.org/dtr/type/nonNumeric-2009-12-16.xsd" />
+    <import namespace="http://www.xbrl.org/dtr/type/numeric" schemaLocation="http://www.xbrl.org/dtr/type/numeric-2009-12-16.xsd" />
+    <element name="RedeemableNoncontrollingInterestsTextBlock" id="hsic_RedeemableNoncontrollingInterestsTextBlock" type="nonnum:textBlockItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:periodType="duration" />
+    <element name="HealthcareDistributionMember" id="hsic_HealthcareDistributionMember" type="nonnum:domainItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="duration" />
+    <element name="TechnologyMember" id="hsic_TechnologyMember" type="nonnum:domainItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="duration" />
+    <element name="DentalMember" id="hsic_DentalMember" type="nonnum:domainItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="duration" />
+    <element name="MedicalMember" id="hsic_MedicalMember" type="nonnum:domainItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="duration" />
+    <element name="AnimalHealthMember" id="hsic_AnimalHealthMember" type="nonnum:domainItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="duration" />
+    <element name="RedeemableNoncontrollingInterestsAbstract" id="hsic_RedeemableNoncontrollingInterestsAbstract" type="xbrli:stringItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="duration" />
+    <element name="AccumulatedOtherComprehensiveIncomeLossForeignCurrencyTranslationAdjustmentAttributableToRedeemableNoncontrollingInterestNetOfTax" id="hsic_AccumulatedOtherComprehensiveIncomeLossForeignCurrencyTranslationAdjustmentAttributableToRedeemableNoncontrollingInterestNetOfTax" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" />
+    <element name="AttributableToParentAbstract" id="hsic_AttributableToParentAbstract" type="xbrli:stringItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="duration" />
+    <element name="ComprehensiveIncomeNetOfApplicableTaxesAbstract" id="hsic_ComprehensiveIncomeNetOfApplicableTaxesAbstract" type="xbrli:stringItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="duration" />
+    <element name="ComprehensiveIncomeNetOfTaxAttributableToRedeemableNoncontrollingInterest" id="hsic_ComprehensiveIncomeNetOfTaxAttributableToRedeemableNoncontrollingInterest" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" />
+    <element name="RedeemableNoncontrollingDecreaseFromDistributionsByRedeemableNoncontrollingInterest" id="hsic_RedeemableNoncontrollingDecreaseFromDistributionsByRedeemableNoncontrollingInterest" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" />
+    <element name="UnrecognizedTaxBenefitsIncludingAccruedInterest" id="hsic_UnrecognizedTaxBenefitsIncludingAccruedInterest" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" />
+    <element name="VariousBankCreditLinesMember" id="hsic_VariousBankCreditLinesMember" type="nonnum:domainItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="duration" />
+    <element name="AdditionalCreditAvailableUnderExpansionFeatureOfCurrentRevolvingCreditFacility" id="hsic_AdditionalCreditAvailableUnderExpansionFeatureOfCurrentRevolvingCreditFacility" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" />
+    <element name="PrivatePlacementFacilitiesMember" id="hsic_PrivatePlacementFacilitiesMember" type="nonnum:domainItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="duration" />
+    <element name="TimeBasedRestrictedStockRestrictedUnitsMember" id="hsic_TimeBasedRestrictedStockRestrictedUnitsMember" type="nonnum:domainItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="duration" />
+    <element name="PeriodOverWhichEarningsPerSharePerformanceIsMeasuredAgainstSpecifiedTargets" id="hsic_PeriodOverWhichEarningsPerSharePerformanceIsMeasuredAgainstSpecifiedTargets" type="xbrli:durationItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:periodType="duration" />
+    <element name="SharesSubjectToOptionAbstract" id="hsic_SharesSubjectToOptionAbstract" type="xbrli:stringItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="duration" />
+    <element name="NonVestedRestrictedSharesUnitsAbstract" id="hsic_NonVestedRestrictedSharesUnitsAbstract" type="xbrli:stringItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="duration" />
+    <element name="DocumentAndEntityInformationAbstract" id="hsic_DocumentAndEntityInformationAbstract" type="xbrli:stringItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="duration" />
+    <element name="ComponentsOfComprehensiveIncomeAbstract" id="hsic_ComponentsOfComprehensiveIncomeAbstract" type="xbrli:stringItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="duration" />
+    <element name="ScheduleOfPrivatePlacementFacilitiesDebtTableTextBlock" id="hsic_ScheduleOfPrivatePlacementFacilitiesDebtTableTextBlock" type="nonnum:textBlockItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:periodType="duration" />
+    <element name="ComprehensiveIncomeAttributableToNoncontrollingInterestsExcludingComprehensiveIncomeAttributableToRedeemableNoncontrollingInterests" id="hsic_ComprehensiveIncomeAttributableToNoncontrollingInterestsExcludingComprehensiveIncomeAttributableToRedeemableNoncontrollingInterests" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" />
+    <element name="PrivatePlacementFacilities2020Member" id="hsic_PrivatePlacementFacilities2020Member" type="nonnum:domainItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="duration" />
+    <element name="PrivatePlacementFacilities2024Member" id="hsic_PrivatePlacementFacilities2024Member" type="nonnum:domainItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="duration" />
+    <element name="PrivatePlacementFacilities2022Member" id="hsic_PrivatePlacementFacilities2022Member" type="nonnum:domainItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="duration" />
+    <element name="PrivatePlacementFacilitiesDecember2024Member" id="hsic_PrivatePlacementFacilitiesDecember2024Member" type="nonnum:domainItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="duration" />
+    <element name="ButlerScheinAnimalHealthDebtMember" id="hsic_ButlerScheinAnimalHealthDebtMember" type="nonnum:domainItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="duration" />
+    <element name="USTradeAccountsReceivableSecuritizationMember" id="hsic_USTradeAccountsReceivableSecuritizationMember" type="nonnum:domainItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="duration" />
+    <element name="DebtPricingCommittmentPeriod" id="hsic_DebtPricingCommittmentPeriod" type="xbrli:durationItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:periodType="duration" />
+    <element name="CommittmentFeeForUsageUpperFacilityLimit" id="hsic_CommittmentFeeForUsageUpperFacilityLimit" type="num:percentItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:periodType="instant" />
+    <element name="CommittmentFeeForUsageLowerFacilityLimit" id="hsic_CommittmentFeeForUsageLowerFacilityLimit" type="num:percentItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:periodType="instant" />
+    <element name="NumberOfInsuranceCompaniesProvidingPrivatePlacementFacilities" id="hsic_NumberOfInsuranceCompaniesProvidingPrivatePlacementFacilities" type="xbrli:integerItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:periodType="instant" />
+    <element name="AdjustmentsToAdditionalPaidInCapitalShareBasedCompensationOtherLongtermIncentivePlansSettledInCash" id="hsic_AdjustmentsToAdditionalPaidInCapitalShareBasedCompensationOtherLongtermIncentivePlansSettledInCash" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" />
+    <element name="AverageAssetBackedCommercialPaperRateMember" id="hsic_AverageAssetBackedCommercialPaperRateMember" type="nonnum:domainItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="duration" />
+    <element name="MaximumAverageMember" id="hsic_MaximumAverageMember" type="nonnum:domainItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="duration" />
+    <element name="PaymentsForRestructuringAndRestructuringReserveAccrualAdjustment" id="hsic_PaymentsForRestructuringAndRestructuringReserveAccrualAdjustment" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" />
+    <element name="EmployeeAndDirectorsStockOptionsMember" id="hsic_EmployeeAndDirectorsStockOptionsMember" type="nonnum:domainItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="duration" />
+    <element name="DebtInstrumentVariableRateBasisAtPeriodEnd" id="hsic_DebtInstrumentVariableRateBasisAtPeriodEnd" type="num:percentItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:periodType="instant" />
+    <element name="OtherComprehensiveIncomeLossForeignCurrencyTransactionAndTranslationAdjustmentNetOfTaxExcludingPortionAttributableToRedeemableNoncontrollingInterest" id="hsic_OtherComprehensiveIncomeLossForeignCurrencyTransactionAndTranslationAdjustmentNetOfTaxExcludingPortionAttributableToRedeemableNoncontrollingInterest" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" />
+    <element name="AttributableToNoncontrollingInterestsAbstract" id="hsic_AttributableToNoncontrollingInterestsAbstract" type="xbrli:stringItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="duration" />
+    <element name="DebtInstrumentMaximumBorrowingCapacity" id="hsic_DebtInstrumentMaximumBorrowingCapacity" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" />
+    <element name="DebtInstrumentIncreaseBorrowingCapacity" id="hsic_DebtInstrumentIncreaseBorrowingCapacity" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" />
+    <element name="AccumulatedOtherComprehensiveIncomeLossForeignCurrencyTranslationAdjustmentAttributableToNonredeemableNoncontrollingInterestsNetOfTax" id="hsic_AccumulatedOtherComprehensiveIncomeLossForeignCurrencyTranslationAdjustmentAttributableToNonredeemableNoncontrollingInterestsNetOfTax" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" />
+    <element name="AccumulatedOtherComprehensiveIncomeLossNetOfTaxIncludingPortionAttributableToRedeemableAndNonredeemableNoncontrollingInterests" id="hsic_AccumulatedOtherComprehensiveIncomeLossNetOfTaxIncludingPortionAttributableToRedeemableAndNonredeemableNoncontrollingInterests" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" />
+    <element name="SmartpakEquineLlcMember" id="hsic_SmartpakEquineLlcMember" type="nonnum:domainItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="duration" />
+    <element name="PrivatePlacementFacilitiesJune2021Member" id="hsic_PrivatePlacementFacilitiesJune2021Member" type="nonnum:domainItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="duration" />
+    <element name="StockIncentivePlanMember" id="hsic_StockIncentivePlanMember" type="nonnum:domainItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="duration" />
+    <element name="NonEmployeeDirectorStockIncentivePlanMember" id="hsic_NonEmployeeDirectorStockIncentivePlanMember" type="nonnum:domainItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="duration" />
+    <element name="DebtInstrumentBorrowingPerentageOfFacilityUsedForCalculatingCommitmentFee" id="hsic_DebtInstrumentBorrowingPerentageOfFacilityUsedForCalculatingCommitmentFee" type="num:percentItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:periodType="duration" />
+    <element name="TotalComprehensiveIncomeNetOfTaxTableTextBlock" id="hsic_TotalComprehensiveIncomeNetOfTaxTableTextBlock" type="nonnum:textBlockItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:periodType="duration" />
+    <element name="ScheduleOfRestructuringReserveBySegmentTableTextBlock" id="hsic_ScheduleOfRestructuringReserveBySegmentTableTextBlock" type="nonnum:textBlockItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:periodType="duration" />
+    <element name="InitialNoncontrollingInterestsAndAdjustmentsRelatedToBusinessAcquisitions" id="hsic_InitialNoncontrollingInterestsAndAdjustmentsRelatedToBusinessAcquisitions" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" />
+    <element name="EffectiveIncomeTaxRateContinuingOperationsWithoutEffectOfReductionOfValuationAllowance" id="hsic_EffectiveIncomeTaxRateContinuingOperationsWithoutEffectOfReductionOfValuationAllowance" type="num:percentItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:periodType="duration" />
+    <element name="ChangesInFairValueOfRedeemableSecurities" id="hsic_ChangesInFairValueOfRedeemableSecurities" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" />
+    <element name="RestrictedStockAndRestrictedStockUnitAwardsMember" id="hsic_RestrictedStockAndRestrictedStockUnitAwardsMember" type="nonnum:domainItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="duration" />
+    <element name="PerformanceBasedRestrictedStockRestrictedUnitsMember" id="hsic_PerformanceBasedRestrictedStockRestrictedUnitsMember" type="nonnum:domainItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="duration" />
+    <element name="RestructuringChargesPerDilutedShare" id="hsic_RestructuringChargesPerDilutedShare" type="num:perShareItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:periodType="duration" />
+    <element name="RestructuringAndRelatedCostExpectedCostPerDilutedShare" id="hsic_RestructuringAndRelatedCostExpectedCostPerDilutedShare" type="num:perShareItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:periodType="instant" />
+    <element name="RestructuringPlan2012Member" id="hsic_RestructuringPlan2012Member" type="nonnum:domainItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="duration" />
+    <element name="RestructuringPlan2015Member" id="hsic_RestructuringPlan2015Member" type="nonnum:domainItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="duration" />
+    <element name="RestructuringAndRelatedCostExpectedPercentageOfWorkforceEliminated" id="hsic_RestructuringAndRelatedCostExpectedPercentageOfWorkforceEliminated" type="num:percentItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:periodType="instant" />
+    <element name="InvestmentsAndOtherAbstract" id="hsic_InvestmentsAndOtherAbstract" type="xbrli:stringItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="duration" />
+    <element name="RedeemableNoncontrollingInterestsPolicyTextBlock" id="hsic_RedeemableNoncontrollingInterestsPolicyTextBlock" type="nonnum:textBlockItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:periodType="duration" />
+    <element name="ImpairmentOrDisposalOfLongLivedAssetsIncludingDefiniteLivedAssetsPolicyTextBlock" id="hsic_ImpairmentOrDisposalOfLongLivedAssetsIncludingDefiniteLivedAssetsPolicyTextBlock" type="nonnum:textBlockItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:periodType="duration" />
+    <element name="IntrinsicValuesOfStockOptionsTableTextBlock" id="hsic_IntrinsicValuesOfStockOptionsTableTextBlock" type="nonnum:textBlockItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:periodType="duration" />
+    <element name="DistributionNetworkCosts" id="hsic_DistributionNetworkCosts" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" />
+    <element name="FurnitureFixturesAndOtherMember" id="hsic_FurnitureFixturesAndOtherMember" type="nonnum:domainItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="duration" />
+    <element name="ComputerEquipmentAndSoftwareMember" id="hsic_ComputerEquipmentAndSoftwareMember" type="nonnum:domainItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="duration" />
+    <element name="GoodwillAdjustmentAbstract" id="hsic_GoodwillAdjustmentAbstract" type="xbrli:stringItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="duration" />
+    <element name="DistributionRightsAndExclusivityAgreementsNetOfAmortization" id="hsic_DistributionRightsAndExclusivityAgreementsNetOfAmortization" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:balance="debit" xbrli:periodType="instant" />
+    <element name="BusinessCombinationSeparatelyRecognizedTransactionsLoanReceivableNoncurrent" id="hsic_BusinessCombinationSeparatelyRecognizedTransactionsLoanReceivableNoncurrent" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:balance="debit" xbrli:periodType="instant" />
+    <element name="NoteReceivableNoncurrentInterestRateMinimum" id="hsic_NoteReceivableNoncurrentInterestRateMinimum" type="num:percentItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:periodType="duration" />
+    <element name="NoteReceivableNoncurrentInterestRateMaximum" id="hsic_NoteReceivableNoncurrentInterestRateMaximum" type="num:percentItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:periodType="duration" />
+    <element name="NoteReceivableMaturityDateRangeEnd" id="hsic_NoteReceivableMaturityDateRangeEnd" type="xbrli:dateItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:periodType="duration" />
+    <element name="OtherAssetsNoncurrentAmortization" id="hsic_OtherAssetsNoncurrentAmortization" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" />
+    <element name="BusinessCombinationLongTermReceivableReclassifiedAsIntercompanyLoan" id="hsic_BusinessCombinationLongTermReceivableReclassifiedAsIntercompanyLoan" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:balance="debit" xbrli:periodType="instant" />
+    <element name="BiohorizonsIncMember" id="hsic_BiohorizonsIncMember" type="nonnum:domainItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="duration" />
+    <element name="ArseusNvMember" id="hsic_ArseusNvMember" type="nonnum:domainItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="duration" />
+    <element name="MedivetMember" id="hsic_MedivetMember" type="nonnum:domainItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="duration" />
+    <element name="EquityMethodInvestmentRealizedGainLossOnDisposalPerDilutedShare" id="hsic_EquityMethodInvestmentRealizedGainLossOnDisposalPerDilutedShare" type="num:perShareItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:periodType="duration" />
+    <element name="MiddleEastEquityAffiliateMember" id="hsic_MiddleEastEquityAffiliateMember" type="nonnum:domainItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="duration" />
+    <element name="OperatingLossCarryforwardsWithExpirationDates" id="hsic_OperatingLossCarryforwardsWithExpirationDates" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:balance="debit" xbrli:periodType="instant" />
+    <element name="OperatingLossCarryforwardsNotSubjectToExpiration" id="hsic_OperatingLossCarryforwardsNotSubjectToExpiration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:balance="debit" xbrli:periodType="instant" />
+    <element name="IncomeTaxReconciliationInterestExpenseRelatedToLoans" id="hsic_IncomeTaxReconciliationInterestExpenseRelatedToLoans" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" />
+    <element name="AnySingleCustomerMember" id="hsic_AnySingleCustomerMember" type="nonnum:domainItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="duration" />
+    <element name="TopTenHealthCareDistributionSuppliersMember" id="hsic_TopTenHealthCareDistributionSuppliersMember" type="nonnum:domainItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="duration" />
+    <element name="SingleLargestSupplierMember" id="hsic_SingleLargestSupplierMember" type="nonnum:domainItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="duration" />
+    <element name="LocationsOtherThanUnitedStatesMember" id="hsic_LocationsOtherThanUnitedStatesMember" type="nonnum:domainItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="duration" />
+    <element name="FairValueAdjustmentForCashSettlementStockBasedCompensationAwards" id="hsic_FairValueAdjustmentForCashSettlementStockBasedCompensationAwards" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" />
+    <element name="ShareBasedCompensationArrangementByShareBasedPaymentAwardOptionsAndOtherEquityInstrumentsGrantsInPeriodWeightedAverageGrantDateFairValue" id="hsic_ShareBasedCompensationArrangementByShareBasedPaymentAwardOptionsAndOtherEquityInstrumentsGrantsInPeriodWeightedAverageGrantDateFairValue" type="num:perShareItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:periodType="duration" />
+    <element name="DefinedContributionPlanMaximumPercentContributionsAllocatedCompanyStockFund" id="hsic_DefinedContributionPlanMaximumPercentContributionsAllocatedCompanyStockFund" type="num:percentItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:periodType="duration" />
+    <element name="Qualified401kPlanMember" id="hsic_Qualified401kPlanMember" type="nonnum:domainItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="duration" />
+    <element name="SupplementalExecutiveRetirementPlanMember" id="hsic_SupplementalExecutiveRetirementPlanMember" type="nonnum:domainItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="duration" />
+    <element name="DeferredCompensationBonusAndCommissionPlanMember" id="hsic_DeferredCompensationBonusAndCommissionPlanMember" type="nonnum:domainItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="duration" />
+    <element name="CapitalLeasesMinimumInterestPercentage" id="hsic_CapitalLeasesMinimumInterestPercentage" type="num:percentItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:periodType="instant" />
+    <element name="CapitalLeasesMaximumInterestPercentage" id="hsic_CapitalLeasesMaximumInterestPercentage" type="num:percentItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:periodType="instant" />
+    <element name="CurrentCompensationPaidUnderLifetimeConsultingAgreement" id="hsic_CurrentCompensationPaidUnderLifetimeConsultingAgreement" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" />
+    <element name="AmountOfIncreaseEffectiveEveryFifthYearOnLifetimeConsultingAgreement" id="hsic_AmountOfIncreaseEffectiveEveryFifthYearOnLifetimeConsultingAgreement" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" />
+    <element name="EmploymentConsultingAndNoncompeteAgreementsMember" id="hsic_EmploymentConsultingAndNoncompeteAgreementsMember" type="nonnum:domainItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="duration" />
+    <element name="LifetimeConsultingAgreementMember" id="hsic_LifetimeConsultingAgreementMember" type="nonnum:domainItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="duration" />
+    <element name="AllowanceForDoubtfulAccountsSalesReturnsAndOtherMember" id="hsic_AllowanceForDoubtfulAccountsSalesReturnsAndOtherMember" type="nonnum:domainItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="duration" />
+    <element name="ConsolidatedTaxReturnInclusionThresholdPercentage" id="hsic_ConsolidatedTaxReturnInclusionThresholdPercentage" type="num:percentItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:periodType="duration" />
+    <element name="BusinessAcquisitionNumberOfCountriesInWhichAcquiredBusinessesOperate" id="hsic_BusinessAcquisitionNumberOfCountriesInWhichAcquiredBusinessesOperate" type="xbrli:integerItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:periodType="duration" />
+    <element name="CardinalHealthPhysicianOfficeCommercialOrganizationMember" id="hsic_CardinalHealthPhysicianOfficeCommercialOrganizationMember" type="nonnum:domainItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="duration" />
+    <element name="TotalNoncurrentDeferredTaxLiabilities" id="hsic_TotalNoncurrentDeferredTaxLiabilities" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" />
+    <element name="TotalNoncurrentDeferredTaxLiabilitiesNetOfValuationAllowance" id="hsic_TotalNoncurrentDeferredTaxLiabilitiesNetOfValuationAllowance" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" />
+    <element name="PurchasesMember" id="hsic_PurchasesMember" type="nonnum:domainItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="duration" />
+    <element name="ValuationAllowanceDeferredTaxAssetChangeInAmountPortionRelatedToChangeInExpectationOfRealization" id="hsic_ValuationAllowanceDeferredTaxAssetChangeInAmountPortionRelatedToChangeInExpectationOfRealization" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" />
+    <element name="BusinessCombinationsAndDivestituresAbstract" id="hsic_BusinessCombinationsAndDivestituresAbstract" type="xbrli:stringItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="duration" />
+</schema>

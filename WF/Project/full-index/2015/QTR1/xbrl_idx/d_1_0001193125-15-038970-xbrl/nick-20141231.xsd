@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--XBRL Document Modified with Ez-Editor Version 1.1.0.1 on Monday, February 09, 2015 09:52:11 PM -->
+<schema targetNamespace="http://www.nicholasfinancial.com/20141231" elementFormDefault="qualified" xmlns:nick="http://www.nicholasfinancial.com/20141231" xmlns="http://www.w3.org/2001/XMLSchema" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xbrldt="http://xbrl.org/2005/xbrldt" xmlns:xl="http://www.xbrl.org/2003/XLink" xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:negated="http://www.xbrl.org/2009/role/negated" xmlns:us-gaap="http://fasb.org/us-gaap/2014-01-31" xmlns:us-gaap-att="http://fasb.org/us-gaap/attributes" xmlns:country="http://xbrl.sec.gov/country/2013-01-31" xmlns:currency="http://xbrl.sec.gov/currency/2014-01-31" xmlns:dei="http://xbrl.sec.gov/dei/2014-01-31" xmlns:exch="http://xbrl.sec.gov/exch/2014-01-31" xmlns:invest="http://xbrl.sec.gov/invest/2013-01-31" xmlns:naics="http://xbrl.sec.gov/naics/2011-01-31" xmlns:sic="http://xbrl.sec.gov/sic/2011-01-31" xmlns:us-types="http://fasb.org/us-types/2014-01-31" xmlns:stpr="http://xbrl.sec.gov/stpr/2011-01-31" xmlns:ref="http://www.xbrl.org/2006/ref" xmlns:deprecated="http://www.xbrl.org/2009/arcrole/fact-explanatoryFact" xmlns:nonnum="http://www.xbrl.org/dtr/type/non-numeric" xmlns:num="http://www.xbrl.org/dtr/type/numeric">
+<annotation><appinfo>
+<link:roleType roleURI="http://www.nicholasfinancial.com/role/DocumentAndEntityInformation" id="DocumentAndEntityInformation">
+<link:definition>001 - Document - Document and Entity Information</link:definition>
+<link:usedOn>link:presentationLink</link:usedOn>
+<link:usedOn>link:definitionLink</link:usedOn>
+<link:usedOn>link:calculationLink</link:usedOn>
+</link:roleType>
+<link:roleType roleURI="http://www.nicholasfinancial.com/role/ConsolidatedBalanceSheets" id="ConsolidatedBalanceSheets">
+<link:definition>002 - Statement - Consolidated Balance Sheets</link:definition>
+<link:usedOn>link:presentationLink</link:usedOn>
+<link:usedOn>link:definitionLink</link:usedOn>
+<link:usedOn>link:calculationLink</link:usedOn>
+</link:roleType>
+<link:roleType roleURI="http://www.nicholasfinancial.com/role/ConsolidatedBalanceSheetsParentheticals" id="ConsolidatedBalanceSheetsParentheticals">
+<link:definition>003 - Statement - Consolidated Balance Sheets (Parentheticals)</link:definition>
+<link:usedOn>link:presentationLink</link:usedOn>
+<link:usedOn>link:definitionLink</link:usedOn>
+<link:usedOn>link:calculationLink</link:usedOn>
+</link:roleType>
+<link:roleType roleURI="http://www.nicholasfinancial.com/role/ConsolidatedStatementsOfIncomeUnaudited" id="ConsolidatedStatementsOfIncomeUnaudited">
+<link:definition>004 - Statement - Consolidated Statements of Income (Unaudited)</link:definition>
+<link:usedOn>link:presentationLink</link:usedOn>
+<link:usedOn>link:definitionLink</link:usedOn>
+<link:usedOn>link:calculationLink</link:usedOn>
+</link:roleType>
+<link:roleType roleURI="http://www.nicholasfinancial.com/role/ConsolidatedStatementsOfCashFlowsUnaudited" id="ConsolidatedStatementsOfCashFlowsUnaudited">
+<link:definition>005 - Statement - Consolidated Statements of Cash Flows (Unaudited)</link:definition>
+<link:usedOn>link:presentationLink</link:usedOn>
+<link:usedOn>link:definitionLink</link:usedOn>
+<link:usedOn>link:calculationLink</link:usedOn>
+</link:roleType>
+<link:roleType roleURI="http://www.nicholasfinancial.com/role/BasisOfPresentation" id="BasisOfPresentation">
+<link:definition>006 - Disclosure - Basis of Presentation</link:definition>
+<link:usedOn>link:presentationLink</link:usedOn>
+<link:usedOn>link:definitionLink</link:usedOn>
+<link:usedOn>link:calculationLink</link:usedOn>
+</link:roleType>
+<link:roleType roleURI="http://www.nicholasfinancial.com/role/RevenueRecognition" id="RevenueRecognition">
+<link:definition>007 - Disclosure - Revenue Recognition</link:definition>
+<link:usedOn>link:presentationLink</link:usedOn>
+<link:usedOn>link:definitionLink</link:usedOn>
+<link:usedOn>link:calculationLink</link:usedOn>
+</link:roleType>
+<link:roleType roleURI="http://www.nicholasfinancial.com/role/EarningsPerShare" id="EarningsPerShare">
+<link:definition>008 - Disclosure - Earnings Per Share</link:definition>
+<link:usedOn>link:presentationLink</link:usedOn>
+<link:usedOn>link:definitionLink</link:usedOn>
+<link:usedOn>link:calculationLink</link:usedOn>
+</link:roleType>
+<link:roleType roleURI="http://www.nicholasfinancial.com/role/FinanceReceivables" id="FinanceReceivables">
+<link:definition>009 - Disclosure - Finance Receivables</link:definition>
+<link:usedOn>link:presentationLink</link:usedOn>
+<link:usedOn>link:definitionLink</link:usedOn>
+<link:usedOn>link:calculationLink</link:usedOn>
+</link:roleType>
+<link:roleType roleURI="http://www.nicholasfinancial.com/role/Lineofcredit" id="Lineofcredit">
+<link:definition>010 - Disclosure - Line of Credit</link:definition>
+<link:usedOn>link:presentationLink</link:usedOn>
+<link:usedOn>link:definitionLink</link:usedOn>
+<link:usedOn>link:calculationLink</link:usedOn>
+</link:roleType>
+<link:roleType roleURI="http://www.nicholasfinancial.com/role/InterestRateSwapAgreements" id="InterestRateSwapAgreements">
+<link:definition>011 - Disclosure - Interest Rate Swap Agreements</link:definition>
+<link:usedOn>link:presentationLink</link:usedOn>
+<link:usedOn>link:definitionLink</link:usedOn>
+<link:usedOn>link:calculationLink</link:usedOn>
+</link:roleType>
+<link:roleType roleURI="http://www.nicholasfinancial.com/role/IncomeTaxes" id="IncomeTaxes">
+<link:definition>012 - Disclosure - Income Taxes</link:definition>
+<link:usedOn>link:presentationLink</link:usedOn>
+<link:usedOn>link:definitionLink</link:usedOn>
+<link:usedOn>link:calculationLink</link:usedOn>
+</link:roleType>
+<link:roleType roleURI="http://www.nicholasfinancial.com/role/FairValueDisclosures" id="FairValueDisclosures">
+<link:definition>013 - Disclosure - Fair Value Disclosures</link:definition>
+<link:usedOn>link:presentationLink</link:usedOn>
+<link:usedOn>link:definitionLink</link:usedOn>
+<link:usedOn>link:calculationLink</link:usedOn>
+</link:roleType>
+<link:roleType roleURI="http://www.nicholasfinancial.com/role/CashDividend" id="CashDividend">
+<link:definition>014 - Disclosure - Cash Dividend</link:definition>
+<link:usedOn>link:presentationLink</link:usedOn>
+<link:usedOn>link:definitionLink</link:usedOn>
+<link:usedOn>link:calculationLink</link:usedOn>
+</link:roleType>
+<link:roleType roleURI="http://www.nicholasfinancial.com/role/Contingencies" id="Contingencies">
+<link:definition>015 - Disclosure - Contingencies</link:definition>
+<link:usedOn>link:presentationLink</link:usedOn>
+<link:usedOn>link:definitionLink</link:usedOn>
+<link:usedOn>link:calculationLink</link:usedOn>
+</link:roleType>
+<link:roleType roleURI="http://www.nicholasfinancial.com/role/RecentlyIssuedAccountingStandards" id="RecentlyIssuedAccountingStandards">
+<link:definition>016 - Disclosure - Recently Issued Accounting Standards</link:definition>
+<link:usedOn>link:presentationLink</link:usedOn>
+<link:usedOn>link:definitionLink</link:usedOn>
+<link:usedOn>link:calculationLink</link:usedOn>
+</link:roleType>
+<link:roleType roleURI="http://www.nicholasfinancial.com/role/SubsequentEvents" id="SubsequentEvents">
+<link:definition>017 - Disclosure - Subsequent Events</link:definition>
+<link:usedOn>link:presentationLink</link:usedOn>
+<link:usedOn>link:definitionLink</link:usedOn>
+<link:usedOn>link:calculationLink</link:usedOn>
+</link:roleType>
+<link:roleType roleURI="http://www.nicholasfinancial.com/role/EarningsPerShareTables" id="EarningsPerShareTables">
+<link:definition>018 - Disclosure - Earnings Per Share (Tables)</link:definition>
+<link:usedOn>link:presentationLink</link:usedOn>
+<link:usedOn>link:definitionLink</link:usedOn>
+<link:usedOn>link:calculationLink</link:usedOn>
+</link:roleType>
+<link:roleType roleURI="http://www.nicholasfinancial.com/role/FinanceReceivablesTables" id="FinanceReceivablesTables">
+<link:definition>019 - Disclosure - Finance Receivables (Tables)</link:definition>
+<link:usedOn>link:presentationLink</link:usedOn>
+<link:usedOn>link:definitionLink</link:usedOn>
+<link:usedOn>link:calculationLink</link:usedOn>
+</link:roleType>
+<link:roleType roleURI="http://www.nicholasfinancial.com/role/InterestRateSwapAgreementsTables" id="InterestRateSwapAgreementsTables">
+<link:definition>020 - Disclosure - Interest Rate Swap Agreements (Tables)</link:definition>
+<link:usedOn>link:presentationLink</link:usedOn>
+<link:usedOn>link:definitionLink</link:usedOn>
+<link:usedOn>link:calculationLink</link:usedOn>
+</link:roleType>
+<link:roleType roleURI="http://www.nicholasfinancial.com/role/FairValueDisclosuresTables" id="FairValueDisclosuresTables">
+<link:definition>021 - Disclosure - Fair Value Disclosures (Tables)</link:definition>
+<link:usedOn>link:presentationLink</link:usedOn>
+<link:usedOn>link:definitionLink</link:usedOn>
+<link:usedOn>link:calculationLink</link:usedOn>
+</link:roleType>
+<link:roleType roleURI="http://www.nicholasfinancial.com/role/RevenueRecognitionDetailTextuals" id="RevenueRecognitionDetailTextuals">
+<link:definition>022 - Disclosure - Revenue Recognition (Detail Textuals)</link:definition>
+<link:usedOn>link:presentationLink</link:usedOn>
+<link:usedOn>link:definitionLink</link:usedOn>
+<link:usedOn>link:calculationLink</link:usedOn>
+</link:roleType>
+<link:roleType roleURI="http://www.nicholasfinancial.com/role/EarningsPerShareBasicAndDilutedEarningsPerShareDetails" id="EarningsPerShareBasicAndDilutedEarningsPerShareDetails">
+<link:definition>023 - Disclosure - Earnings Per Share - Basic and diluted earnings per share (Details)</link:definition>
+<link:usedOn>link:presentationLink</link:usedOn>
+<link:usedOn>link:definitionLink</link:usedOn>
+<link:usedOn>link:calculationLink</link:usedOn>
+</link:roleType>
+<link:roleType roleURI="http://www.nicholasfinancial.com/role/EarningsPerShareDetailTextuals" id="EarningsPerShareDetailTextuals">
+<link:definition>024 - Disclosure - Earnings Per Share (Detail Textuals)</link:definition>
+<link:usedOn>link:presentationLink</link:usedOn>
+<link:usedOn>link:definitionLink</link:usedOn>
+<link:usedOn>link:calculationLink</link:usedOn>
+</link:roleType>
+<link:roleType roleURI="http://www.nicholasfinancial.com/role/FinanceReceivablesFinanceReceivablesConsistOfAutomobileFinanceInstallmentContractsAndDirectLoansDetails" id="FinanceReceivablesFinanceReceivablesConsistOfAutomobileFinanceInstallmentContractsAndDirectLoansDetails">
+<link:definition>025 - Disclosure - Finance Receivables - Finance receivables consist of automobile finance installment Contracts and Direct Loans (Details)</link:definition>
+<link:usedOn>link:presentationLink</link:usedOn>
+<link:usedOn>link:definitionLink</link:usedOn>
+<link:usedOn>link:calculationLink</link:usedOn>
+</link:roleType>
+<link:roleType roleURI="http://www.nicholasfinancial.com/role/FinanceReceivablesSummaryOfReconciliationOfChangesInAllowanceForCreditLossesOnContractsDetails1" id="FinanceReceivablesSummaryOfReconciliationOfChangesInAllowanceForCreditLossesOnContractsDetails1">
+<link:definition>026 - Disclosure - Finance Receivables - Summary of reconciliation of changes in allowance for credit losses on contracts (Details 1)</link:definition>
+<link:usedOn>link:presentationLink</link:usedOn>
+<link:usedOn>link:definitionLink</link:usedOn>
+<link:usedOn>link:calculationLink</link:usedOn>
+</link:roleType>
+<link:roleType roleURI="http://www.nicholasfinancial.com/role/Financereceivablesreconciliationofchangesinallowanceforcreditlossesondirectloansdetails2" id="Financereceivablesreconciliationofchangesinallowanceforcreditlossesondirectloansdetails2">
+<link:definition>027 - Disclosure - Finance Receivables - Reconciliation of changes in allowance for credit losses on direct loans (Details 2)</link:definition>
+<link:usedOn>link:presentationLink</link:usedOn>
+<link:usedOn>link:definitionLink</link:usedOn>
+<link:usedOn>link:calculationLink</link:usedOn>
+</link:roleType>
+<link:roleType roleURI="http://www.nicholasfinancial.com/role/FinanceReceivablesAssessmentOfCreditQualityByCreditworthinessDetails3" id="FinanceReceivablesAssessmentOfCreditQualityByCreditworthinessDetails3">
+<link:definition>028 - Disclosure - Finance Receivables - Assessment of credit quality by creditworthiness (Details 3)</link:definition>
+<link:usedOn>link:presentationLink</link:usedOn>
+<link:usedOn>link:definitionLink</link:usedOn>
+<link:usedOn>link:calculationLink</link:usedOn>
+</link:roleType>
+<link:roleType roleURI="http://www.nicholasfinancial.com/role/FinanceReceivablesInformationRegardingDelinquencyRatesWithRespectToContractsAndDirectLoansDetails4" id="FinanceReceivablesInformationRegardingDelinquencyRatesWithRespectToContractsAndDirectLoansDetails4">
+<link:definition>029 - Disclosure - Finance Receivables - Information regarding delinquency rates with respect to contracts and direct loans (Details 4)</link:definition>
+<link:usedOn>link:presentationLink</link:usedOn>
+<link:usedOn>link:definitionLink</link:usedOn>
+<link:usedOn>link:calculationLink</link:usedOn>
+</link:roleType>
+<link:roleType roleURI="http://www.nicholasfinancial.com/role/FinanceReceivablesDetailTextuals" id="FinanceReceivablesDetailTextuals">
+<link:definition>030 - Disclosure - Finance Receivables (Detail Textuals)</link:definition>
+<link:usedOn>link:presentationLink</link:usedOn>
+<link:usedOn>link:definitionLink</link:usedOn>
+<link:usedOn>link:calculationLink</link:usedOn>
+</link:roleType>
+<link:roleType roleURI="http://www.nicholasfinancial.com/role/FinanceReceivablesDetailTextuals1" id="FinanceReceivablesDetailTextuals1">
+<link:definition>031 - Disclosure - Finance Receivables (Detail Textuals 1)</link:definition>
+<link:usedOn>link:presentationLink</link:usedOn>
+<link:usedOn>link:definitionLink</link:usedOn>
+<link:usedOn>link:calculationLink</link:usedOn>
+</link:roleType>
+<link:roleType roleURI="http://www.nicholasfinancial.com/role/FinanceReceivablesDetailTextuals2" id="FinanceReceivablesDetailTextuals2">
+<link:definition>032 - Disclosure - Finance Receivables (Detail Textuals 2)</link:definition>
+<link:usedOn>link:presentationLink</link:usedOn>
+<link:usedOn>link:definitionLink</link:usedOn>
+<link:usedOn>link:calculationLink</link:usedOn>
+</link:roleType>
+<link:roleType roleURI="http://www.nicholasfinancial.com/role/LineOfCreditDetailTextuals" id="LineOfCreditDetailTextuals">
+<link:definition>033 - Disclosure - Line of Credit (Detail Textuals)</link:definition>
+<link:usedOn>link:presentationLink</link:usedOn>
+<link:usedOn>link:definitionLink</link:usedOn>
+<link:usedOn>link:calculationLink</link:usedOn>
+</link:roleType>
+<link:roleType roleURI="http://www.nicholasfinancial.com/role/InterestRateSwapAgreementsSummaryOfLocationsAndAmountsOfGainsLossesInIncomeDetails1" id="InterestRateSwapAgreementsSummaryOfLocationsAndAmountsOfGainsLossesInIncomeDetails1">
+<link:definition>034 - Disclosure - Interest Rate Swap Agreements - Summary of locations and amounts of gains (losses) in income (Details 1)</link:definition>
+<link:usedOn>link:presentationLink</link:usedOn>
+<link:usedOn>link:definitionLink</link:usedOn>
+<link:usedOn>link:calculationLink</link:usedOn>
+</link:roleType>
+<link:roleType roleURI="http://www.nicholasfinancial.com/role/InterestRateSwapAgreementsSummaryOfVariableRatesReceivedAndFixedRatesPaidUnderSwapDetails2" id="InterestRateSwapAgreementsSummaryOfVariableRatesReceivedAndFixedRatesPaidUnderSwapDetails2">
+<link:definition>035 - Disclosure - Interest Rate Swap Agreements - Summary of variable rates received and fixed rates paid under swap (Details 2)</link:definition>
+<link:usedOn>link:presentationLink</link:usedOn>
+<link:usedOn>link:definitionLink</link:usedOn>
+<link:usedOn>link:calculationLink</link:usedOn>
+</link:roleType>
+<link:roleType roleURI="http://www.nicholasfinancial.com/role/InterestRateSwapAgreementsDetailTextuals" id="InterestRateSwapAgreementsDetailTextuals">
+<link:definition>036 - Disclosure - Interest Rate Swap Agreements (Detail Textuals)</link:definition>
+<link:usedOn>link:presentationLink</link:usedOn>
+<link:usedOn>link:definitionLink</link:usedOn>
+<link:usedOn>link:calculationLink</link:usedOn>
+</link:roleType>
+<link:roleType roleURI="http://www.nicholasfinancial.com/role/IncomeTaxesDetailTextuals" id="IncomeTaxesDetailTextuals">
+<link:definition>037 - Disclosure - Income Taxes (Detail Textuals)</link:definition>
+<link:usedOn>link:presentationLink</link:usedOn>
+<link:usedOn>link:definitionLink</link:usedOn>
+<link:usedOn>link:calculationLink</link:usedOn>
+</link:roleType>
+<link:roleType roleURI="http://www.nicholasfinancial.com/role/FairValueDisclosuresAssetsAndLiabilitiesRecordedAtFairValueOnRecurringBasisDetails" id="FairValueDisclosuresAssetsAndLiabilitiesRecordedAtFairValueOnRecurringBasisDetails">
+<link:definition>038 - Disclosure - Fair Value Disclosures - Assets and liabilities recorded at fair value on recurring basis (Details)</link:definition>
+<link:usedOn>link:presentationLink</link:usedOn>
+<link:usedOn>link:definitionLink</link:usedOn>
+<link:usedOn>link:calculationLink</link:usedOn>
+</link:roleType>
+<link:roleType roleURI="http://www.nicholasfinancial.com/role/FairValueDisclosuresSummaryOfFinancialInstrumentsNotMeasuredAtFairValueDetails1" id="FairValueDisclosuresSummaryOfFinancialInstrumentsNotMeasuredAtFairValueDetails1">
+<link:definition>039 - Disclosure - Fair Value Disclosures - Summary of financial instruments not measured at fair value (Details 1)</link:definition>
+<link:usedOn>link:presentationLink</link:usedOn>
+<link:usedOn>link:definitionLink</link:usedOn>
+<link:usedOn>link:calculationLink</link:usedOn>
+</link:roleType>
+<link:roleType roleURI="http://www.nicholasfinancial.com/role/FairValueDisclosuresDetailTextuals" id="FairValueDisclosuresDetailTextuals">
+<link:definition>040 - Disclosure - Fair Value Disclosures (Detail Textuals)</link:definition>
+<link:usedOn>link:presentationLink</link:usedOn>
+<link:usedOn>link:definitionLink</link:usedOn>
+<link:usedOn>link:calculationLink</link:usedOn>
+</link:roleType>
+<link:roleType roleURI="http://www.nicholasfinancial.com/role/CashDividendDetailTextuals" id="CashDividendDetailTextuals">
+<link:definition>041 - Disclosure - Cash Dividend (Detail Textuals)</link:definition>
+<link:usedOn>link:presentationLink</link:usedOn>
+<link:usedOn>link:definitionLink</link:usedOn>
+<link:usedOn>link:calculationLink</link:usedOn>
+</link:roleType>
+<link:roleType roleURI="http://www.nicholasfinancial.com/role/SubsequentEventsDetailTextuals" id="SubsequentEventsDetailTextuals">
+<link:definition>042 - Disclosure - Subsequent Events (Detail Textuals)</link:definition>
+<link:usedOn>link:presentationLink</link:usedOn>
+<link:usedOn>link:definitionLink</link:usedOn>
+<link:usedOn>link:calculationLink</link:usedOn>
+</link:roleType>
+<link:linkbaseRef xlink:type="simple" xlink:href="nick-20141231_pre.xml" xlink:role="http://www.xbrl.org/2003/role/presentationLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase"/>
+<link:linkbaseRef xlink:type="simple" xlink:href="nick-20141231_def.xml" xlink:role="http://www.xbrl.org/2003/role/definitionLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase"/>
+<link:linkbaseRef xlink:type="simple" xlink:href="nick-20141231_lab.xml" xlink:role="http://www.xbrl.org/2003/role/labelLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase"/>
+<link:linkbaseRef xlink:type="simple" xlink:href="nick-20141231_cal.xml" xlink:role="http://www.xbrl.org/2003/role/calculationLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase"/>
+</appinfo></annotation>
+<import namespace="http://www.xbrl.org/2003/instance" schemaLocation="http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd"/>
+<import namespace="http://www.xbrl.org/2003/linkbase" schemaLocation="http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd"/>
+<import namespace="http://xbrl.org/2005/xbrldt" schemaLocation="http://www.xbrl.org/2005/xbrldt-2005.xsd"/>
+<import namespace="http://fasb.org/us-gaap/2014-01-31" schemaLocation="http://xbrl.fasb.org/us-gaap/2014/elts/us-gaap-2014-01-31.xsd"/>
+<import namespace="http://xbrl.sec.gov/invest/2013-01-31" schemaLocation="http://xbrl.sec.gov/invest/2013/invest-2013-01-31.xsd"/>
+<import namespace="http://xbrl.sec.gov/country/2013-01-31" schemaLocation="http://xbrl.sec.gov/country/2013/country-2013-01-31.xsd"/>
+<import namespace="http://xbrl.sec.gov/currency/2014-01-31" schemaLocation="http://xbrl.sec.gov/currency/2014/currency-2014-01-31.xsd"/>
+<import namespace="http://xbrl.sec.gov/exch/2014-01-31" schemaLocation="http://xbrl.sec.gov/exch/2014/exch-2014-01-31.xsd"/>
+<import namespace="http://xbrl.sec.gov/naics/2011-01-31" schemaLocation="http://xbrl.sec.gov/naics/2011/naics-2011-01-31.xsd"/>
+<import namespace="http://xbrl.sec.gov/sic/2011-01-31" schemaLocation="http://xbrl.sec.gov/sic/2011/sic-2011-01-31.xsd"/>
+<import namespace="http://xbrl.sec.gov/stpr/2011-01-31" schemaLocation="http://xbrl.sec.gov/stpr/2011/stpr-2011-01-31.xsd"/>
+<import namespace="http://www.xbrl.org/2009/role/negated" schemaLocation="http://www.xbrl.org/lrr/role/negated-2009-12-16.xsd"/>
+<import namespace="http://www.xbrl.org/2009/role/net" schemaLocation="http://www.xbrl.org/lrr/role/net-2009-12-16.xsd"/>
+<import namespace="http://www.xbrl.org/2009/arcrole/fact-explanatoryFact" schemaLocation="http://www.xbrl.org/lrr/arcrole/factExplanatory-2009-12-16.xsd"/>
+<import namespace="http://xbrl.sec.gov/dei/2014-01-31" schemaLocation="http://xbrl.sec.gov/dei/2014/dei-2014-01-31.xsd"/>
+<import namespace="http://www.xbrl.org/dtr/type/numeric" schemaLocation="http://www.xbrl.org/dtr/type/numeric-2009-12-16.xsd"/>
+<import namespace="http://www.xbrl.org/dtr/type/non-numeric" schemaLocation="http://www.xbrl.org/dtr/type/nonNumeric-2009-12-16.xsd"/>
+<import namespace="http://fasb.org/us-types/2014-01-31" schemaLocation="http://xbrl.fasb.org/us-gaap/2014/elts/us-types-2014-01-31.xsd"/>
+<element name="DocumentAndEntityInformationAbstract" id="nick_DocumentAndEntityInformationAbstract" type="xbrli:stringItemType" abstract="true" xbrli:periodType="duration" nillable="true" substitutionGroup="xbrli:item"/> 
+<element name="DividendTaxExpense" id="nick_DividendTaxExpense" type="xbrli:monetaryItemType" abstract="false" xbrli:periodType="duration" xbrli:balance="debit" nillable="true" substitutionGroup="xbrli:item"/> 
+<element name="PurchaseAndOriginationOfFinanceContracts" id="nick_PurchaseAndOriginationOfFinanceContracts" type="xbrli:monetaryItemType" abstract="false" xbrli:periodType="duration" xbrli:balance="credit" nillable="true" substitutionGroup="xbrli:item"/> 
+<element name="IncreaseInAssetsHeldForResale" id="nick_IncreaseInAssetsHeldForResale" type="xbrli:monetaryItemType" abstract="false" xbrli:periodType="duration" xbrli:balance="credit" nillable="true" substitutionGroup="xbrli:item"/> 
+<element name="IncreaseDecreaseInDraftsPayable" id="nick_IncreaseDecreaseInDraftsPayable" type="xbrli:monetaryItemType" abstract="false" xbrli:periodType="duration" xbrli:balance="credit" nillable="true" substitutionGroup="xbrli:item"/> 
+<element name="LineOfCreditFacilitiesTextBlock" id="nick_LineOfCreditFacilitiesTextBlock" type="nonnum:textBlockItemType" abstract="false" xbrli:periodType="duration" nillable="true" substitutionGroup="xbrli:item"/> 
+<element name="CashDividendsTextBlock" id="nick_CashDividendsTextBlock" type="nonnum:textBlockItemType" abstract="false" xbrli:periodType="duration" nillable="true" substitutionGroup="xbrli:item"/> 
+<element name="ScheduleOfInformationRegardingDelinquencyRatesTableTextBlock" id="nick_ScheduleOfInformationRegardingDelinquencyRatesTableTextBlock" type="nonnum:textBlockItemType" abstract="false" xbrli:periodType="duration" nillable="true" substitutionGroup="xbrli:item"/> 
+<element name="ScheduleOfAverageVariableRatesReceivedAndAverageFixedRatesPaidUnderSwapAgreementsTableTextBlock" id="nick_ScheduleOfAverageVariableRatesReceivedAndAverageFixedRatesPaidUnderSwapAgreementsTableTextBlock" type="nonnum:textBlockItemType" abstract="false" xbrli:periodType="duration" nillable="true" substitutionGroup="xbrli:item"/> 
+<element name="PercentageOfReceivableInterestDiscount" id="nick_PercentageOfReceivableInterestDiscount" type="num:percentItemType" abstract="false" xbrli:periodType="duration" nillable="true" substitutionGroup="xbrli:item"/> 
+<element name="ContractsAndDirectLoansMember" id="nick_ContractsAndDirectLoansMember" type="nonnum:domainItemType" abstract="true" xbrli:periodType="duration" nillable="true" substitutionGroup="xbrli:item"/> 
+<element name="NotesReceivableNetUnearnedInterest" id="nick_NotesReceivableNetUnearnedInterest" type="xbrli:monetaryItemType" abstract="false" xbrli:periodType="instant" xbrli:balance="debit" nillable="true" substitutionGroup="xbrli:item"/> 
+<element name="UnearnedDiscountIncludedInFinancingReceivables" id="nick_UnearnedDiscountIncludedInFinancingReceivables" type="xbrli:monetaryItemType" abstract="false" xbrli:periodType="instant" xbrli:balance="credit" nillable="true" substitutionGroup="xbrli:item"/> 
+<element name="FinanceReceivablesNetOfUnearnedInterestAndUnearnedDealerDiscounts" id="nick_FinanceReceivablesNetOfUnearnedInterestAndUnearnedDealerDiscounts" type="xbrli:monetaryItemType" abstract="false" xbrli:periodType="instant" xbrli:balance="debit" nillable="true" substitutionGroup="xbrli:item"/> 
+<element name="FinancingReceivableAllowanceForCreditLossesAbsorbed" id="nick_FinancingReceivableAllowanceForCreditLossesAbsorbed" type="xbrli:monetaryItemType" abstract="false" xbrli:periodType="duration" xbrli:balance="debit" nillable="true" substitutionGroup="xbrli:item"/> 
+<element name="BankruptAccountsFinancingReceivableMember" id="nick_BankruptAccountsFinancingReceivableMember" type="nonnum:domainItemType" abstract="true" xbrli:periodType="duration" nillable="true" substitutionGroup="xbrli:item"/> 
+<element name="NotesReceivableGrossAmountExcludingChapter13BankruptAccounts" id="nick_NotesReceivableGrossAmountExcludingChapter13BankruptAccounts" type="xbrli:monetaryItemType" abstract="false" xbrli:periodType="instant" xbrli:balance="debit" nillable="true" substitutionGroup="xbrli:item"/> 
+<element name="NotesReceivableGrossAmountIncludingChapter13BankruptAccounts" id="nick_NotesReceivableGrossAmountIncludingChapter13BankruptAccounts" type="xbrli:monetaryItemType" abstract="false" xbrli:periodType="instant" xbrli:balance="debit" nillable="true" substitutionGroup="xbrli:item"/> 
+<element name="PercentageOfFinancingReceivableRecordedInvestment30To59DaysPastDue" id="nick_PercentageOfFinancingReceivableRecordedInvestment30To59DaysPastDue" type="num:percentItemType" abstract="false" xbrli:periodType="instant" nillable="true" substitutionGroup="xbrli:item"/> 
+<element name="PercentageOfFinancingReceivableRecordedInvestment60To89DaysPastDue" id="nick_PercentageOfFinancingReceivableRecordedInvestment60To89DaysPastDue" type="num:percentItemType" abstract="false" xbrli:periodType="instant" nillable="true" substitutionGroup="xbrli:item"/> 
+<element name="PercentageOfFinancingReceivableRecordedInvestmentEqualToGreaterThan90DaysPastDue" id="nick_PercentageOfFinancingReceivableRecordedInvestmentEqualToGreaterThan90DaysPastDue" type="num:percentItemType" abstract="false" xbrli:periodType="instant" nillable="true" substitutionGroup="xbrli:item"/> 
+<element name="PercentageOfFinancingReceivableRecordedInvestmentPastDueTotal" id="nick_PercentageOfFinancingReceivableRecordedInvestmentPastDueTotal" type="num:percentItemType" abstract="false" xbrli:periodType="instant" nillable="true" substitutionGroup="xbrli:item"/> 
+<element name="InitialTermsOfFinanceReceivables" id="nick_InitialTermsOfFinanceReceivables" type="xbrli:durationItemType" abstract="false" xbrli:periodType="duration" nillable="true" substitutionGroup="xbrli:item"/> 
+<element name="FinanceReceivablesWeightedAverageInterestRate" id="nick_FinanceReceivablesWeightedAverageInterestRate" type="num:percentItemType" abstract="false" xbrli:periodType="instant" nillable="true" substitutionGroup="xbrli:item"/> 
+<element name="FinanceReceivablesPercentage" id="nick_FinanceReceivablesPercentage" type="num:percentItemType" abstract="false" xbrli:periodType="instant" nillable="true" substitutionGroup="xbrli:item"/> 
+<element name="AverageLoanToValueRatio" id="nick_AverageLoanToValueRatio" type="num:percentItemType" abstract="false" xbrli:periodType="duration" nillable="true" substitutionGroup="xbrli:item"/> 
+<element name="PerformingAccountCriteriaMaximumPeriod" id="nick_PerformingAccountCriteriaMaximumPeriod" type="xbrli:durationItemType" abstract="false" xbrli:periodType="duration" nillable="true" substitutionGroup="xbrli:item"/> 
+<element name="NonPerformingAccountCriteriaMinimumPeriod" id="nick_NonPerformingAccountCriteriaMinimumPeriod" type="xbrli:durationItemType" abstract="false" xbrli:periodType="duration" nillable="true" substitutionGroup="xbrli:item"/> 
+<element name="DelinquentAccountCriteriaPeriod" id="nick_DelinquentAccountCriteriaPeriod" type="xbrli:durationItemType" abstract="false" xbrli:periodType="duration" nillable="true" substitutionGroup="xbrli:item"/> 
+ 
+<element name="LineOfCreditFacilityFloorRate" id="nick_LineOfCreditFacilityFloorRate" type="num:percentItemType" abstract="false" xbrli:periodType="duration" nillable="true" substitutionGroup="xbrli:item"/> 
+<element name="PeriodicSettlementsIncludedInInterestExpense" id="nick_PeriodicSettlementsIncludedInInterestExpense" type="xbrli:monetaryItemType" abstract="false" xbrli:periodType="duration" xbrli:balance="debit" nillable="true" substitutionGroup="xbrli:item"/> 
+<element name="PreTaxIncomeLossRecognizedInIncome" id="nick_PreTaxIncomeLossRecognizedInIncome" type="xbrli:monetaryItemType" abstract="false" xbrli:periodType="duration" xbrli:balance="credit" nillable="true" substitutionGroup="xbrli:item"/> 
+<element name="DerivativeAverageVariableInterestRateReceived" id="nick_DerivativeAverageVariableInterestRateReceived" type="num:percentItemType" abstract="false" xbrli:periodType="duration" nillable="true" substitutionGroup="xbrli:item"/> 
+<element name="DerivativeAverageFixedInterestRatePaid" id="nick_DerivativeAverageFixedInterestRatePaid" type="num:percentItemType" abstract="false" xbrli:periodType="duration" nillable="true" substitutionGroup="xbrli:item"/> 
+<element name="DerivativeDescriptionOfVariableRateBasisTwo" id="nick_DerivativeDescriptionOfVariableRateBasisTwo" type="xbrli:stringItemType" abstract="false" xbrli:periodType="duration" nillable="true" substitutionGroup="xbrli:item"/> 
+<element name="FinancialInstrumentsNotMeasuredAtFairValueTable" id="nick_FinancialInstrumentsNotMeasuredAtFairValueTable" type="xbrli:stringItemType" abstract="true" xbrli:periodType="duration" nillable="true" substitutionGroup="xbrldt:hypercubeItem"/> 
+<element name="FinancialInstrumentsNotMeasuredAtFairValueLineItems" id="nick_FinancialInstrumentsNotMeasuredAtFairValueLineItems" type="xbrli:stringItemType" abstract="true" xbrli:periodType="duration" nillable="true" substitutionGroup="xbrli:item"/> 
+<element name="DividendDistributionWithholdingTaxPercentage" id="nick_DividendDistributionWithholdingTaxPercentage" type="num:percentItemType" abstract="false" xbrli:periodType="duration" nillable="true" substitutionGroup="xbrli:item"/> 
+<element name="AgreementAxis" id="nick_AgreementAxis" type="xbrli:stringItemType" abstract="true" xbrli:periodType="duration" nillable="true" substitutionGroup="xbrldt:dimensionItem"/> 
+<element name="AgreementDomain" id="nick_AgreementDomain" type="nonnum:domainItemType" abstract="true" xbrli:periodType="duration" nillable="true" substitutionGroup="xbrli:item"/> 
+<element name="AmendmentToSecondAmendedAndRestatedLoanAndSecurityAgreementMember" id="nick_AmendmentToSecondAmendedAndRestatedLoanAndSecurityAgreementMember" type="nonnum:domainItemType" abstract="true" xbrli:periodType="duration" nillable="true" substitutionGroup="xbrli:item"/> 
+<element name="DutchAuctionTenderOfferMember" id="nick_DutchAuctionTenderOfferMember" type="nonnum:domainItemType" abstract="true" xbrli:periodType="duration" nillable="true" substitutionGroup="xbrli:item"/> 
+</schema>
