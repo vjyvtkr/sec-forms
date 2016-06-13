@@ -1,0 +1,18 @@
+supplier
+customer relationships
+.*[0-9]*%.* (*percent*)
+sales (net sales, total sales, total net sales, *sales* can be associated with *to* and *its subcontractors, subsidaries*)
+revenue (net revenue, total revenue, total net revenue)
+
+      So basically in sales and revenue, these 2 words act as nouns, and have adjectives as its prior word
+      and can be associated with another noun with a to tag. Can again be followed by Adverb(s)
+
+customer/distributor (*customer/distributor* can be associated with *wholesale/retail/(any adjective)*)
+(even *sales/revenue* can be associated with adjectives like *wholesale/retail*)
+Also look for company names (can create a db of company names). If no company names, look for *customer(s) + revenue/sales*
+
+.* $[0-9]*\.[0-9]* [[million][s]]* [accounts/whatever].*
+
+receivable?
+
+sales volume -> sales is a plural noun and volume is a singular noun
