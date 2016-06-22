@@ -1,0 +1,7 @@
+http://www.wildml.com/2015/09/implementing-a-neural-network-from-scratch/
+
+http://pybrain.org/
+
+https://www.quora.com/What-is-the-best-neural-network-library-for-Python
+
+http://stackoverflow.com/questions/19130512/stopword-removal-with-nltk
